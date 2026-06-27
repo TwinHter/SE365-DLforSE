@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "link": "https://ctsv.uit.edu.vn/bai-viet/diem-ren-luyen-sinh-vien-0",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "hierachy": "Sổ tay sinh viên khóa 2025 - Điểm rèn luyện sinh viên",
+    "content": "Việc đánh giá kết quả rèn luyện sinh viên tại UIT nhằm đưa ra các định hướng và nội dung rèn luyện cụ thể, phù hợp, tạo điều kiện để sinh viên có môi trường rèn luyện trong quá trình học tập. Kết quả rèn luyện được lưu và sử dụng để xét khen thưởng, học bổng khuyến khích học tập của Trường, học bổng từ doanh nghiệp, tổ chức và các học bổng khác dành cho sinh viên. Kết quả phân loại rèn luyện toàn khóa học được lưu trong hồ sơ quản lý sinh viên của Trường và được ghi vào bảng điểm kết quả học tập và rèn luyện của sinh viên khi ra trường. Nếu sinh viên bị xếp loại rèn luyện kém trong một học kỳ thì có thể bị áp dụng biện pháp tạm ngừng học ở học kỳ tiếp theo. Nếu sinh viên bị xếp loại rèn luyện kém cả năm lần thứ hai thì có thể bị buộc thôi học. Điểm rèn luyện được tính trực tuyến; sinh viên theo dõi và kiểm tra điểm rèn luyện của mình tại website https://drl.uit.edu.vn.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "active"
+    }
+  },
+  {
+    "id": 2,
+    "link": "https://drl.uit.edu.vn",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "hierachy": "Sổ tay sinh viên khóa 2025 - Điểm rèn luyện sinh viên",
+    "content": "Website https://drl.uit.edu.vn là hệ thống trực tuyến để sinh viên UIT theo dõi điểm rèn luyện. Theo cấu trúc tiêu chí trên hệ thống, điểm rèn luyện được tổ chức thành các nhóm tiêu chí lớn. Tiêu chí 1 đánh giá ý thức và thái độ tham gia học tập, nghiên cứu khoa học, bao gồm việc chấp hành quy chế đào tạo, tham gia nghiên cứu khoa học, cuộc thi học thuật, kết quả học tập, tinh thần phấn đấu, tham gia câu lạc bộ học thuật và các hoạt động học thuật. Tiêu chí 2 đánh giá ý thức chấp hành nội quy, quy chế, quy định trong Nhà trường, bao gồm việc chấp hành nội quy, tham gia tuần sinh hoạt công dân sinh viên, tham gia bảo hiểm y tế, thực hiện khảo sát môn học, sinh hoạt lớp, họp lớp xét điểm rèn luyện và các nội dung liên quan đến văn minh, văn hóa học đường.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "active"
+    }
+  },
+  {
+    "id": 3,
+    "link": "https://drl.uit.edu.vn",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "hierachy": "Sổ tay sinh viên khóa 2025 - Điểm rèn luyện sinh viên",
+    "content": "Tiêu chí 3 đánh giá ý thức tham gia các hoạt động chính trị, xã hội, văn hóa, văn nghệ, thể dục thể thao, phòng chống tội phạm và tệ nạn xã hội, bao gồm hoạt động Đoàn - Hội, hội thao, câu lạc bộ văn nghệ hoặc thể dục thể thao, hoạt động cấp Trường, ĐHQG, cấp Khoa, cấp lớp, hoạt động kỹ năng, tuyên truyền, hướng nghiệp tuyển sinh và các đợt huy động lực lượng. Tiêu chí 4 đánh giá ý thức công dân trong quan hệ cộng đồng, bao gồm chấp hành và tuyên truyền chủ trương của Đảng, chính sách pháp luật của Nhà nước, tham gia Xuân Tình Nguyện, Mùa Hè Xanh, hiến máu tình nguyện, hoạt động cộng đồng, hoạt động tổ chức, bầu cử và hỗ trợ thi đánh giá năng lực. Tiêu chí 5 là các nội dung cộng thêm như khen thưởng cấp quốc tế, khen thưởng sinh viên và sinh viên có bài báo khoa học theo quyết định. Các hoạt động trên hệ thống có thể có trạng thái như đang diễn ra, đã hết hạn hoặc đã cập nhật danh sách; sinh viên cần theo dõi hệ thống để biết hoạt động nào được tính điểm và tình trạng cập nhật điểm của mình.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "active"
+    }
+  }
+]

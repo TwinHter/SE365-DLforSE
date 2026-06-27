@@ -1,0 +1,1284 @@
+[
+  {
+    "id": 1,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. NGUYỄN VĂN KIỆT",
+      "nhóm nghiên cứu": "NLPQUIT",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Social Media Text Processing",
+        "Cognitive Science for NLP",
+        "Multimodal Learning",
+        "LLMs for a Specific Domain",
+        "Natural Language Intelligence"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "GG scholar: Kiet Van Nguyen",
+        "Email: kietnv@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 2,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. NGUYỄN TẤN HOÀNG PHƯỚC",
+      "nhóm nghiên cứu": "iTwin",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Agentic Al, Multi-Agent Al Systems",
+        "Human Digital Twin",
+        "Speech/Video Processing"
+      ],
+      "Yêu cầu": [
+        "Tiếng Anh đọc tốt tài liệu chuyên ngành",
+        "Khả năng tự tìm tòi học hỏi và làm việc độc lập",
+        "GPA > 8.0",
+        "Làm việc ở Lab từ 2 buổi / tuần"
+      ],
+      "Ghi chú": [
+        "GG scholar: Phuoc Nguyen T. H.",
+        "Website: https://link.uit.edu.vn/itwin",
+        "Email: phuocnth@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 3,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. HÀ MINH TÂN",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Học máy, học sâu trong xử lý âm thanh, tăng cường âm thanh, phân tách âm thanh",
+        "Học máy, học sâu trong nhận dạng giọng nói tự động, tổng hợp âm thanh",
+        "Phân tích dữ liệu lớn, cơ sở hạ tầng dữ liệu lớn",
+        "Học máy, học sâu trong phân tích dữ liệu, phân loại dữ liệu hình ảnh, và ảnh y khoa."
+      ],
+      "Yêu cầu": [
+        "Có khả năng đọc hiểu các nghiên cứu khoa học",
+        "Tự giác, ham học hỏi và kiên nhẫn trong việc tìm hiểu các vấn đề phức tạp",
+        "Hiếu biết cơ bản về Python, Dữ liệu lớn (Big Data), Trí tuệ nhân tạo (AI), Học máy (ML), Học sâu (DL)"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Ha Minh Tan",
+        "Email: tanhm@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Thiết bị di động và Công nghệ web",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 4,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. HUỲNH VĂN TÍN",
+      "nhóm nghiên cứu": "NLPQUIT",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Vietnamese Language Understanding & Generation",
+        "Natural Language Inference & Reasoning",
+        "Social Media Text Processing",
+        "LLM Evaluation, Alignment & Low-Resource NLP",
+        "Intelligent Recommendation & Decision Support"
+      ],
+      "Yêu cầu": [
+        "Là sinh viên năm 3 hoặc đầu năm 4, có định hướng làm nghiên cứu",
+        "Có nền tảng lập trình tốt, ưu tiên Python và tư duy giải quyết vấn đề",
+        "Có kiến thức cơ bản về AI, Machine Learning hoặc Deep Learning",
+        "Có khả năng đọc tài liệu tiếng Anh và chủ động học công nghệ mới",
+        "Có tinh thần nghiêm túc, kiên trì và khả năng làm việc nhóm tốt"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Tin Van Huynh",
+        "Email: tinhv@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 5,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. LƯU THANH SƠN",
+      "nhóm nghiên cứu": "NLPQUIT",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Mô hình ngôn ngữ lớn và ứng dụng.",
+        "Xử lý dữ liệu truyền thông xã hội và dữ liệu đa phương thức",
+        "Truy vấn thông tin, đặc biệt là truy vấn thông tin có sử dụng yếu tố thời gian (temporal)"
+      ],
+      "Yêu cầu": [
+        "Có kiến thức cơ bản tốt",
+        "Khả năng sử dụng tiếng Anh tốt đế đọc và viết tài liệu",
+        "Kỹ năng lập trình tốt. Biết sử dụng các thư viện như Pytorch hay Hugging Face là lợi thế.",
+        "Siêng năng, chịu khó"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Son T. Luu",
+        "Email: sonlt@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 6,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. NGUYỄN HIẾU NGHĨA",
+      "nhóm nghiên cứu": "NLPQUIT",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Computational Linguistics",
+        "Language Modeling",
+        "Speech Representation"
+      ],
+      "Yêu cầu": [
+        "Có nền tảng lập trình vững chắc",
+        "Có nền tảng toán sâu",
+        "Bền bỉ, kiên trì, không sợ thất bại"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Nghia Hieu Nguyen",
+        "Email: nghiangh@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 7,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "PGS.TS. NGUYỄN TẤN CẦM",
+      "nhóm nghiên cứu": "eSecurity",
+      "Hướng nghiên cứu/ứng dụng": [
+        "An toàn thông tin",
+        "Trí tuệ nhân tạo đa phương thức",
+        "An toàn ứng dụng và hệ thống",
+        "Phát hiện mã độc và bất thường dựa trên học sâu"
+      ],
+      "Yêu cầu": [
+        "Sinh viên có tinh thần ham học hỏi, chủ động và trách nhiệm",
+        "Yêu thích nghiên cứu và khám phá tri thức",
+        "Có khả năng làm việc nhóm nghiêm túc"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Nguyen Tan Cam",
+        "Email: camnt@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Thiết bị di động và Công nghệ web",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 8,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. NGUYỄN TẤT BẢO THIỆN",
+      "nhóm nghiên cứu": "Khoa Học Dữ Liệu Y-Sinh",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý hình ảnh y khoa (Điện tâm đồ, X-quang, CT, MRI, PET, siêu âm...)",
+        "AI dự đoán và chẩn đoán các bệnh trong não, ngực, bụng, xương, khớp, thận, thai nhi và mạch máu"
+      ],
+      "Yêu cầu": [
+        "Loại giỏi",
+        "Có nền tảng về xử lý dữ liệu",
+        "Có kinh nghiệm về học sâu"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Thien B. Nguyen-Tat",
+        "Email: thientb@uit.edu.vn",
+        "Website: https://sites.google.com/view/ds-medlab/home"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Thiết bị di động và Công nghệ web",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 9,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. NGUYỄN THÀNH LUÂN",
+      "nhóm nghiên cứu": "NLPQUIT",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Natural Language Processing",
+        "Speech Processing",
+        "Machine Translation",
+        "Large Language Models",
+        "Mechanistic Interpretability"
+      ],
+      "Yêu cầu": [
+        "Có tinh thần chủ động tìm tòi và thực hiện nghiên cứu",
+        "Có khả năng đọc hiểu tài liệu tiếng Anh",
+        "GPA trung bình >= 8.0"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Luan Thanh Nguyen",
+        "Email: luannt@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 10,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. NGUYỄN THỊ ANH THƯ",
+      "nhóm nghiên cứu": "Data Chain",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Học máy thích nghi cho dự đoán sớm trên dữ liệu lớn dị thể và mất cân bằng",
+        "Quản lý và đánh giá chất lượng dữ liệu cho hệ thống Al ra quyết định sớm",
+        "Khai thác dữ liệu đồ thị mạng và học biểu diễn graph cho các bài toán phân tích quan hệ, lan truyền và phát hiện bất thường",
+        "Phân tích hội thoại, cảm xúc người dùng và hỗ trợ ra quyết định sớm trong hệ thống chăm sóc khách hàng",
+        "Chẩn đoán và dự đoán sớm bệnh trầm cảm dựa trên dữ liệu ngôn ngữ tự nhiên và hành vi số"
+      ],
+      "Yêu cầu": [
+        "Tinh thần tự học và chủ động nghiên cứu",
+        "Kỹ năng làm việc nhóm và giao tiếp học thuật",
+        "Nền tảng lập trình và xử lý dữ liệu",
+        "Kiến thức nền về AI, học máy và khai thác dữ liệu",
+        "Kỷ luật nghiên cứu và tư duy phản biện"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Thu Nguyen",
+        "Email: thunta@uit.edu.vn",
+        "Website: https://github.com/datachain-uit"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 11,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "CN. NGUYỄN THỊ HOÀNG ANH",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Vietnamese Natural Language Processing",
+        "Social Media Analytics",
+        "Multimodal Learning",
+        "Urban Al and Spatiotemporal Modeling",
+        "Applied Al and Large Language Models for Domain-Specific Applications"
+      ],
+      "Yêu cầu": [
+        "Là sinh viên từ năm 2 trở lên, có định hướng làm nghiên cứu",
+        "Có nền tảng lập trình và tư duy giải quyết vấn đề",
+        "Có kiến thức về Al, Machine Learning và Deep Learning",
+        "Chủ động trao đổi và báo cáo tiến độ định kỳ"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Anh Thi-Hoang Nguyen",
+        "Email: anhnth@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 12,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. PHẠM NGUYỄN PHÚC TOÀN",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Phân tích dữ liệu giáo dục",
+        "Phân tích dữ liệu chuỗi thời gian",
+        "Phân tích dữ liệu thống kê",
+        "Học máy và học sâu"
+      ],
+      "Yêu cầu": [
+        "Đối tượng: Từ năm 2 trở lên",
+        "Kiến thức: Có kiến thức về Đại số tuyến tính, Xác suất thống kê, Học máy, Học sâu, Phân tích dữ liệu",
+        "Kỹ năng: Biết cách xây dựng và phát triển mô hình toán thống kê, Học máy, Học sâu. Vận dụng phân tích dữ liệu trong các lĩnh vực của đời sống. Lập trình tốt với Python hoặc R. Tìm kiếm và đọc bài báo khoa học.",
+        "Thái độ: Siêng năng, kiên trì. Chịu khó tìm tòi, học hỏi điều mới"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Phạm Nguyễn",
+        "Phúc Toàn",
+        "Email: toanpnp@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 13,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. PHẠM NHẬT DUY",
+      "nhóm nghiên cứu": "eSecurity",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Phát hiện và phân loại mã độc",
+        "Phát hiện và phân loại tấn công/lỗ hống bảo mật website",
+        "Cơ chế bảo mật cho các mô hình trí tuệ nhân tạo"
+      ],
+      "Yêu cầu": [
+        "Chủ động liên hệ sớm từ năm 2, 3",
+        "Làm việc nghiêm túc"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Duy Nhat Pham",
+        "Email: duypn@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Thiết bị di động và Công nghệ web",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 14,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. PHẠM THẾ SƠN",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Intelligent system",
+        "Data Analytics",
+        "MLOps"
+      ],
+      "Yêu cầu": [
+        "Năng lực lập trình tốt",
+        "Năng lực phân tích thiết kế quy trình khá"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Pham The Son",
+        "Email: sonpt@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 15,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. TẠ THU THỦY",
+      "nhóm nghiên cứu": "Data Chain",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Phương pháp máy học (Machine Learning)",
+        "Khoa học dữ liệu (Data Science)",
+        "Xử lý ngôn ngữ tự nhiên (Natural Language Processing)"
+      ],
+      "Yêu cầu": [
+        "Sinh viên chăm chỉ, chịu khó, có tinh thần trách nhiệm",
+        "Có khả năng tự học, tự tìm hiểu về các kiến thức liên quan",
+        "Trai đi với giảng viên hướng dẫn thường xuyên"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Thủy Tạ Thu",
+        "Email: thuyta@uit.edu.vn"
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 16,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. VÕ TẤN KHOA",
+      "nhóm nghiên cứu": "Data Chain",
+      "Hướng nghiên cứu/ứng dụng": [
+        "Blockchain trong giáo dục và xác thực văn bằng số",
+        "Zero-Knowledge Proof cho bảo mật và quyền riêng tư",
+        "Rollup và Layer-2 cho hệ thống blockchain mở rộng",
+        "Smart contract, Web3 và ứng dụng phi tập trung",
+        "Tối ưu chi phí, hiệu năng và lưu trữ trên blockchain"
+      ],
+      "Yêu cầu": [
+        "Có nền tảng lập trình và tư duy xây dựng hệ thống",
+        "Quan tâm đến blockchain, Web3 hoặc bảo mật dữ liệu",
+        "Sẵn sàng đọc tài liệu tiếng Anh và paper khoa học",
+        "Có tinh thần tự học, làm việc nhóm và báo cáo định kỳ",
+        "Có định hướng làm khóa luận, nghiên cứu hoặc công bố bài báo"
+      ],
+      "Ghi chú": [
+        "GG Scholar: Khoa Tan VO",
+        "Wedsite: https://datachain.uit.edu.vn",
+        "Email: khoavt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Thông tin bổ sung từ file static:\nTrang nguồn: https://datachain.uit.edu.vn/nhom-nghien-cuu/\nTiêu đề: Thông tin nhóm nghiên cứu DataChain\nThông tin nhóm nghiên cứu DataChain\nNhóm nghiên cứu có đủ chuyên môn, kinh nghiệm nghiên cứu khoa học và hợp tác triển khai dự án ứng dụng vào các lĩnh vực thực tế:\n- Lĩnh vực nghiên cứu: Khoa học dữ liệu, dữ liệu lớn, điện toán phân tán, trí tuệ nhân tạo, công nghệ blockchain, khai thác dữ liệu, khai thác dữ liệu mạng xã hội, khoa học giáo dục.\n- Kinh nghiệm nghiên cứu: Đã thực hiện nhiều đề tài nghiên cứu khoa học từ cấp Trường đến cấp Đại học Quốc gia TPHCM, có nhiều công trình nghiên cứu được đăng trong các hội nghị và tạp chí uy tín.\n- Hợp tác triển khai: Kết nối với các nhóm nghiên cứu trong và ngoài nước, nghiên cứu công nghệ mới để triển khai dự án và công bố khoa học. Các đối tác gồm: Phòng Thí nghiệm Truyền thông Đa phương (MMLab, thuộc Trường Đại học Công nghệ Thông tin), Phòng thí nghiệm An Toàn Thông Tin (InSec Lab, thuộc Trường Đại học Công nghệ Thông tin), Department of IT Convergence (Soongsil University, Seoul, South Korea) và Faculty of Computer Science and Engineering (University of Oulu, Finland).\n- Triển khai ứng dụng liên ngành: Hợp tác với các nhóm nghiên cứu tìm hiểu công nghệ mới và triển khai các dự án liên ngành, ứng dụng vào nhiều lĩnh vực khác nhau như: tiếp thị, giáo dục, truy xuất nguồn gốc thực phẩm, bất động sản, kinh doanh, sức khỏe, …\n\nThành viên\n- PGS. TS. Nguyễn Hoàng Tú Anh — Nhóm trưởng.\n- TS. Nguyễn Hồng Trí — Cộng tác viên, thư ký khoa học.\n- ThS. Nguyễn Thị Anh Thư — Thành viên chính.\n- ThS. Võ Tấn Khoa.\n- ThS. Tạ Thu Thuỷ — Thành viên.\n- ThS. Nguyễn Quang Phúc.\n- ThS. Nguyễn Thị Mộng Thy.\n- CN. Nguyễn Hồ Phương Thảo — Cộng tác viên.\n\nMột số bài viết/dự án gần đây trên trang\n- Distributed Key Architecture (DKA) for Blockchain Wallets.\n- SSSM: A Secure and Scalable Approach for Scholarship Funding Management Based on Blockchain Technology with Zk-Rollups.\n- Beyond Immutable: The Landscape of Blockchain Credential Revocation Solutions.\n- ZUni: The Application of Blockchain Technology in Validating and Securing Educational Credentials.\n- SFA – Scholar Funding Decentralized App."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Thiết bị di động và Công nghệ web",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 17,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Gia Tuấn Anh Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Dữ liệu, cơ sở dữ liệu, trực quan hoá dữ liệu.",
+        "Các hệ thống thông tin phân tán, di động, thời gian.",
+        "Khoa học thông tin địa lý 3 chiều."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: anhngt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Các ứng dụng bản đồ trên thiết bị đi động, PC.\n- 2. Các ứng dụng khai thác dữ liệu, cơ sở dữ liệu phục vụ trong xã hội, giáo dục, kinh tế, giải trí.\n- 3. Đặc biệt hỗ trợ các dự án STARTUP.\n- 4. Các chủ đề về GIS 3, 4 chiều và CSDL hiện đại"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 18,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Văn Kiệt Phó Trưởng khoa, Phụ trách Khoa, Trưởng Bộ môn Khoa học Dữ liệu",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: Khoa học Dữ liệu (Data Science) và Trí tuệ Nhân tạo (AI)."
+      ],
+      "Yêu cầu": [
+        "thái độ làm việc NGHIÊM TÚC, lập trình tốt (Python, hoặc Java). Lưu ý: Chỉ nhận sinh viên năm 2, 3."
+      ],
+      "Ghi chú": [
+        "Email: kietnv@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Phân tích cảm xúc (Sentiment Analysis) hoặc phân tích quan điểm người dùng.\n- 2. Chatbot, Đọc hiểu Tự động (Machine Reading Comprehension), và Hỏi đáp (Question Answering).\n- 3. Xử lý dữ liệu văn bản (Text Classification) liên quan đến các chủ đề Khoa học Dữ liệu (Data Science).\n- 4. Nhận dạng truy vấn SQL dưới dạng ngôn ngữ tự nhiên (Text-To-SQL).\n- 5. Nghiên cứu tạo và đảm bảo chất lượng cho các bộ dữ liệu (datasets) phục vụ nghiên cứu và ứng dụng.\n- 6. Xây dựng các ứng dụng thông minh tích hợp các công nghệ AI (xử lý giọng nói và ngôn ngữ) trên nền tảng ứng dụng di động và web."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 19,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Đỗ Trọng Hợp Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý tín hiệu số, xử lý ảnh."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: hopdt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Liên lạc cho phương tiện giao thông dùng camera.\n- 2. Theo dõi, dự đoán di chuyển của các phương tiện giao thông trên đường.\n- 3. Liên lạc và định vị dùng ánh sáng nhìn thấy."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 20,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Võ Ngọc Tân Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xây dựng WebSite",
+        "Xây dựng ứng dụng quản lý quy trình quản lý Doanh nghiệp",
+        "Xây dựng Website thương mại điện tử",
+        "Xây dựng ứng dụng"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: tanvn@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Xây dựng WebSite thương mại điện tử.\n- 2. Xây dựng ứng dụng."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 21,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Nguyễn Thị Anh Thư Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Phương pháp máy học (Machine Learning).",
+        "Khai thác dữ liệu (Data Mining).",
+        "Khoa học dữ liệu (Data Science)."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: thunta@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Xây dựng module xử lý dữ liệu Mạng xã hội."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 22,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Võ Tấn Khoa Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Deep Learning.",
+        "Xử lý video đám đông.",
+        "Phát triển web, ứng dụng di động.",
+        "Công nghệ blockchain."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: khoavt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Sử dụng Deep Learning vào phân tích video đám đông."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 23,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Tạ Thu Thủy Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ngôn ngữ tự nhiên."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: thuthuyt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Nhận diện quan hệ diễn ngôn, sửa lỗi trong văn bản tiếng anh dùng sai từ liên kết"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 24,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Phạm Thế Sơn Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Khoa học dữ liệu (Data Science) .",
+        "Học máy (Machine Learning)."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: sonpt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Các hệ thống dự đoán dùng học máy (Prediction systems using machine learning).\n- 2. Các hệ thống gợi ý (Recommender Systems).\n- 3. Phân tích thăm dò dữ liệu (Exploratory Data Analysis - EDA).\n- 4. Phân tích dữ liệu lớn (Big Data Analysis).\n- 5. Feature engineering techniques."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 25,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Lưu Thanh Sơn Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: + Máy học (Machine Learning).",
+        "Xử lý ngôn ngữ tự nhiên (Natural language processing)."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: sonlt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Phân loại bình luận xúc phạm trên mạng xã hội.\n- 2. Đọc hiểu tự động."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 26,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Tấn Cầm Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Privacy and security in mobile devices, IoT, Network",
+        "Mobile forensic",
+        "Blockchain for information assurance",
+        "Applied IoT, blockchain"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: camnt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Phát hiện và phân loại mã độc Android.\n- Điều tra số trên thiết bị di động\n- Tăng cường an ninh thông tin.\n- Blockchain và ứng dụng"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 27,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Tất Bảo Thiện Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ảnh",
+        "Tính toán mềm",
+        "Học máy/ học sâu",
+        "Tin Y-sinh"
+      ],
+      "Yêu cầu": [
+        "Toán, Tiếng Anh và Python tốt",
+        "Email: nguyentatbaothien@gmail.com"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Xử lý ảnh Y-sinh\n- Chuẩn đoán bệnh tim trên tín hiệu điện tâm đồ\n- Chuẩn đoán bệnh phổi trên ảnh X-quang\n- Phát hiện bất thường trên ảnh sinh thiết"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 28,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Tô Quốc Huy Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ngôn ngữ tự nhiên.",
+        "Xây dựng hệ thống Web (ứng dụng các mô hình máy học)"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: huytq@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Hệ thống tóm tắt đa văn bản tự động.\n- Phân loại văn bản."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 29,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Huỳnh Văn Tín Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ngôn ngữ tự nhiên.",
+        "Hệ khuyến nghị"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: tinhv@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Phân tích cảm xúc (Sentiment Analysis) hoặc phân tích quan điểm người dùng.\n- 2. Suy luận Ngôn ngữ Tự nhiên.\n- 3. Đọc hiểu Tự động (Machine Reading Comprehension), và Hỏi đáp (Question Answering).\n- 4. Xử lý dữ liệu văn bản (Text Classification) liên quan đến các chủ đề Khoa học Dữ liệu (Data Science).\n- 5. Fact checking\n- 6. Hệ khuyến nghị."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 30,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Phạm Nguyễn Phúc Toàn",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ảnh và thị giác máy tính"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: toanpnp@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Nhận diện đối tượng trong ảnh và video.\n- Tăng cường dữ liệu ảnh phục vụ cho bài toán phân loại ảnh.\n- Tạo sinh ảnh bằng mạng GAN và các biến thể"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 31,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "CN. Trần Quốc Khánh",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ngôn ngữ tự nhiên",
+        "Trích xuất thông tin",
+        "Máy học ứng dụng"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: khanhtq@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Xác thực thông tin và tìm kiếm bằng chứng.\n- Phân tích cảm xúc.\n- Trích xuất và phân loại quan hệ ngữ nghĩa."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 32,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "CN. Nguyễn Hiếu Nghĩa",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ngôn ngữ tự nhiên",
+        "Học máy Thông kê"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: nghiangh@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Phân tích dữ liệu lớn"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 33,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Phạm Nhật Duy Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Phân tích mã độc",
+        "Bảo mật trên thiết bị di động"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: duypn@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- Phân loại mã độc Android"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 34,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Tấn Trần Minh Khang Giảng viên, Phó Hiệu trưởng",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: + Khoa học Dữ liệu (Data Science).",
+        "Trí tuệ Nhân tạo (AI).",
+        "Website nhóm nghiên cứu: tại đây (https://sites.google.com/site/nnctochuc/)."
+      ],
+      "Yêu cầu": [
+        "có mặt ở trường 8h/ ngày để học tập và NCKH."
+      ],
+      "Ghi chú": [
+        "Email: khangnttm@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Object detection in Documents Image.\n- 2. Object Detection in Aerial Image.\n- 3. Human Action Recognition."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 35,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "PGS.TS. Nguyễn Lưu Thuỳ Ngân Giảng viên, Phó Hiệu Trưởng",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: Xử lý ngôn ngữ tự nhiên.",
+        "Website nhóm nghiên cứu: tại đây (http://nlp.uit.edu.vn)."
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: ngannlt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Xử lý văn bản.\n- 2. Phân tích cảm xúc, phân tích bình luận/ 3. Nhận dạng tin giả.kiến.\n- 4. Hỏi đáp, đọc hiểu văn bản.\n- 5. Phân tích dữ liệu.",
+        "Thông tin bổ sung từ file static:\nTrang nguồn: https://nlp.uit.edu.vn/research\nTiêu đề: The UIT NLP Group - Research\nResearch Activities\nWe concentrate on machine-learning models and algorithms to understand natural language. Here are our major research topics that we are currently interested in as follows.\n\nParsing\nWe have studied syntactic theories and techniques that computers are able to parse natural-language sentences and understand the meanings of these sentences. Currently, we concentrate on dependency parsing for Vietnamese and archive state-of-the-art results. In the future, we want to improve the performance of this parsing and implement dependency structures to improve the quality of text-analysis applications. Especially, we are interested in dependency parsing in next research works. If you would like to understand in detail, please refer to our related paper in the section Publications.\n\nSentiment Analysis\nWe have concentrated on the state-of-the-art techniques and algorithms of sentiment analysis or opinion mining on specified domains. These studies are from the sentence level to document level as well as aspect-based sentiment. Two main domains which we are interested in are education and commercial products. We perform three research works such as building corpora, finding good models and creating beneficial applications. If you would like to understand in detail, please refer to our related paper in the section Publications.\n\nWriting Assistance\nWriting Assistance is a beneficial tool to support non-native speakers to make reports or papers to be better. In this application, we use the NLP platform technologies to build this app which is able to auto-correct grammars and spellings, and styles. In particular, we merely focus on the scientific domain from collecting research papers and articles. If you would like to understand in detail, please refer to our related paper in the section Publications.\n\nQuestion Answering and Machine Reading Comprehension\nQuestion Answering (QA) is a perfect AI system of natural language processing which is able to understand the meaning of any question and then return its correct answer. For example, if we ask “What is the unique university to train information technology in Vietnam?” this QA system would answer “In Vietnam there is merely the University of Information Technology – VNU-HCM” and this will save our time to search the huge information on the Internet. If you would like to understand in detail, please refer to our related paper in the section Publications.\n\nMore information: this slide (https://drive.google.com/file/d/14q5tAE4QuIZlZZ9cat989JTJlyJvaVfV/view)",
+        "Thông tin bổ sung từ file static:\nTrang nguồn: https://nlp.uit.edu.vn/members\nTiêu đề: The UIT NLP Group - Members\nSupervisor\n- Ngan Luu-Thuy Nguyen (Nguyễn Lưu Thùy Ngân), PhD, University of Tokyo; University of Information Technology, Vietnam National University - Ho Chi Minh City; Email: ngannlt@uit.edu.vn.\n- Google Scholar: https://scholar.google.com.vn/citations?user=VoTCbXYAAAAJ&hl=en\n- ResearchGate: https://www.researchgate.net/profile/Ngan_Nguyen155\n\nCore / listed members\n- Kiet Van Nguyen (Nguyễn Văn Kiệt), Vice Dean, Faculty of Information Science and Engineering, UIT; Deputy Head, Department of Data Science, UIT; Email: kietnv@uit.edu.vn.\n- Thin Van Dang (Đặng Văn Thìn), PhD candidate, Research Assistant, Laboratory of Multimedia Communications, UIT; Email: thindv@uit.edu.vn.\n- Son Thanh Luu (Lưu Thanh Sơn), Lecturer, Faculty of Information Science and Engineering, UIT; Email: sonlt@uit.edu.vn.\n- Tin Van Huynh (Huỳnh Văn Tín), Email: tinhv@uit.edu.vn.\n- Huy Quoc To (Tô Quốc Huy), Email: huytq@uit.edu.vn.\n- MSc. Duc-Vu Nguyen (Nguyễn Đức Vũ), Research Assistant, Laboratory of Multimedia Communications, UIT; Email: vund@uit.edu.vn.\n- Luan Thanh Nguyen (Nguyễn Thành Luân).\n- Khoa Thi-Kim Phan (Phan Thị Kim Khoa), Assistant, UIT.\n- Khanh Quoc Tran (Trần Quốc Khánh), Teaching Assistant, Faculty of Information Science and Engineering, UIT; Email: khanhtq@uit.edu.vn.\n- Nghia Hieu Nguyen (Nguyễn Hiếu Nghĩa).\n- Son Quoc Tran (Trần Quốc Sơn), Denison University, USA.\n\nStudent groups listed on the page\n- PhD Students: Trang Thi-Phuong Nguyen (D3, 2015, UIT-VNU-HCM); Thin Van Dang (D2, 2022, UIT-VNU-HCM).\n- Master Students: Hao Minh Nguyen (M2, 2017, UIT-VNU-HCM); Sau Ton-Nu (M2, 2017, UIT-VNU-HCM); Dung Tri Doan (M2, 2017, UIT-VNU-HCM).\n- The page also lists undergraduate students and former members."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 36,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Lương Ngọc Hoàng Giảng viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: + Thuật toán tiến hóa (Evolutionary Algorithms).",
+        "Trí tuệ nhân tạo (Artificial Intelligence)",
+        "NeuroEvolution.",
+        "Website cá nhân: tại đây (https://sites.google.com/view/hoangluong)."
+      ],
+      "Yêu cầu": [
+        "1. Đồng ý viết luận văn, và các báo cáo, bằng tiếng Anh.",
+        "2. Khiêm tốn, thật thà, chịu khó."
+      ],
+      "Ghi chú": [
+        "Email: hoangln@uit.edu.vn",
+        "Lưu ý: Giảng viên thuộc khoa Khoa Học Máy Tính nên ưu tiên cho các sinh viên liên hệ với giảng viên từ năm 2, hoặc đầu học kì 1 năm 3 để có thể tìm hiểu và xác định đề tài nghiên cứu phù hợp."
+      ],
+      "additional_content": []
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 37,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "ThS. Phan Thế Duy Nghiên cứu viên",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Lĩnh vực nghiên cứu: + Software Engineering (Nghiên cứu và phát triển phần mềm ứng dụng).",
+        "Information Security ( An toàn thông tin).",
+        "Website Nhóm NC Phòng thí nghiệm ATTT: tại đây (https://inseclab.uit.edu.vn/). https://inseclab.uit.edu.vn/"
+      ],
+      "Yêu cầu": [],
+      "Ghi chú": [
+        "Email: duypt@uit.edu.vn"
+      ],
+      "additional_content": [
+        "Chủ đề nghiên cứu:\n- 1. Tele-conference app (audio and video meeting) developement: mobile app (Android/ios/react Native)/ web app/ window app: + End-to-end encryption for messaging and communicating.\n- Muti-control unit.\n- Large-scale users support.\n- High quality & performance of tele-conference app.\n- 2. Blockchain Development for Security and Privacy-Preserving: + Blockchain for AI & smart environments.\n- Blockchain for software engineering.\n- 3. Deep learning in cyber security: + Deep-Learning based Intrusion detection System.\n- Generative Adversarial Networks & adversarial attacks on Deep-learning based security approach.\n- 4. Software-Defined Networking (SDN) security.",
+        "Thông tin bổ sung từ file static:\nTrang nguồn: https://inseclab.uit.edu.vn/gioi-thieu/\nTiêu đề: Giới thiệu - Phòng Thí nghiệm An toàn thông tin\nGiới thiệu - Phòng Thí nghiệm An toàn thông tin\nPhòng thí nghiệm An Toàn Thông Tin (InSec Lab) thuộc Trường Đại học Công nghệ Thông tin – ĐHQG TP.HCM được thành lập theo quyết định số 19/QĐ-ĐHCNTT-TCHC ngày 19/01/2016, hướng đến việc xây dựng một phòng thí nghiệm chuyên sâu về an toàn thông tin, có chức năng nghiên cứu khoa học trong lĩnh vực an toàn thông tin, giải quyết các nhu cầu đặt ra bởi thực tiễn cũng như các giải pháp cho tương lai, tham gia đào tạo đại học, sau đại học, hợp tác quốc tế, chuyển giao công nghệ trong lĩnh vực an toàn thông tin.\nPhòng Thí nghiệm An toàn thông tin (UIT InSec Lab) là một môi trường nghiên cứu, thực nghiệm chuyên dụng dành cho các nghiên cứu về an toàn thông tin, hỗ trợ sinh viên, nghiên cứu viên tham gia vào các hoạt động liên quan đến an toàn thông tin trên các hệ thống mạng với các tài nguyên máy tính, môi trường thực nghiệm, cũng như các dịch vụ ứng dụng được kiểm soát, mà không ảnh hưởng đến các môi trường mạng khác.\nCơ sở hạ tầng phục vụ nghiên cứu của Phòng Thí nghiệm bao gồm hệ thống server mạnh mẽ với nhiều cơ chế phân phối, xử lý dữ liệu đa dạng và các dịch vụ về an toàn thông tin.\nUIT InSec Lab hướng đến việc cung cấp một nền tảng hỗ trợ và thúc đẩy sự hợp tác giữa các nghiên cứu viên trong môi trường học thuật, chính phủ điện tử và doanh nghiệp. Hệ thống phần mềm quản lý cơ sở hạ tầng của Phòng Thí nghiệm An toàn thông tin được đặt tại Phòng E8.1 (tòa nhà E) và Data Center (tòa nhà A) - UIT.\n\nLĩnh vực hoạt động của PTN\n- Thực hiện các nhiệm vụ nghiên cứu khoa học liên quan đến an toàn thông tin.\n- Triển khai các đề án nghiên cứu khoa học và công nghệ có tính cấp thiết, tính đi trước trên cơ sở bám sát định hướng phát triển, mục tiêu kinh tế, xã hội Quốc gia và tiến bộ khoa học hiện đại trên thế giới.\n- Tập hợp và phát triển đội ngũ cán bộ khoa học công nghệ có trình độ cao, ưu tiên các nghiên cứu, hợp tác quốc tế, tạo điều kiện thuận lợi triển khai các nghiên cứu theo định hướng về An toàn thông tin.\n- Thực hiện tư vấn, nghiên cứu giải pháp và chuyển giao công nghệ nhằm giải quyết vấn đề kĩ thuật, công nghệ cụ thể có liên quan đến an toàn thông tin do địa phương, doanh nghiệp đặt hàng.\n\nNhững hướng nghiên cứu chính tại PTN\n- SPS: Software-defined programmable security (SDN, NFV, Cloud, Edge).\n- Lập trình an toàn & khai thác lỗ hổng bảo mật phần mềm: giải pháp kiểm thử xâm nhập, bảo mật thông tin và tính riêng tư cho người dùng trong các ứng dụng (end-to-end encryption, pentesting, software vulnerability...).\n- Điều tra bằng chứng số, tội phạm số (digital forensics).\n- AI security and AI-based security: an toàn thông tin, tính riêng tư dữ liệu cho các mô hình AI và ứng dụng trí tuệ nhân tạo (deep learning, GenAI, LLM) cho bài toán an ninh trên không gian mạng.\n- Agentic AI for Cybersecurity.\n- Internet malware/botnet/APT detection, defense, and analysis: phát hiện/ngăn chặn xâm nhập, mã độc trên Android, iOS, Windows, Linux, Web; intrusion detection, anomaly detection.\n- Blockchain: các công nghệ nền tảng, giao thức và các ứng dụng thực tế.\n- Mobile and IoT security.\n\nLiên hệ\n- Phòng thí nghiệm An toàn thông tin (UIT InSecLab), Phòng E8.1, Trường Đại học Công nghệ Thông tin.\n- Website: https://inseclab.uit.edu.vn/\n- Email: inseclab@uit.edu.vn; ptn.attt@uit.edu.vn\n- Fanpage: https://www.facebook.com/inseclab/\n- Điện thoại: (028) 372 52002 (Nhánh 171).\n- Địa chỉ: Phòng E8.1, Trường ĐH Công nghệ Thông tin ĐHQG-HCM, số 01, đường Hàn Thuyên, Khu phố 6, phường Linh Trung, Thành phố Thủ Đức, Tp. HCM."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 38,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "PGS.TS. Lê Trung Quân",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Các hướng nghiên cứu về lĩnh vực Internet of things (IoTs), bao gồm: i) Phát triển giao thức mạng, kiến trúc mạng thông minh ii) Tái cấu hình hệ thống, tối ưu hóa tài nguyên iii) Giải pháp lưu trữ và truy xuất dữ liệu IoTs lớn dựa trên nền tảng cloud"
+      ],
+      "Yêu cầu": [
+        "Cần có kiến thức nền tảng tốt ở các lĩnh vực: i) Hệ thống mạng, mạng không dây ii) Lập trình mạng và hệ thống, C/C++ iii) Toán tối ưu hóa, đồ thị"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Số lượng NCS còn có thể nhận:\n- 02"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 39,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Phạm Văn Hậu",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Các hướng nghiên cứu về lĩnh vực an ninh thông tin, bao gồm: i) Các vấn đề về an ninh thông tin mạng và hệ thống ii) Các khía cạnh về an ninh thông tin liên quan đến xử lý dữ liệu lớn trên nền tảng cloud"
+      ],
+      "Yêu cầu": [
+        "Cần có kiến thức nền tảng tốt ở các lĩnh vực: i) mạng máy tính ii) Hệ thống iii) Thành thạo ít nhất một ngôn ngữ lập trình"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Các chế độ hỗ trợ NCS:\n- Tham gia đề tài nghiên cứu khoa học, trợ giảng\nSố lượng NCS còn có thể nhận:\n- 01"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 40,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "TS. Nguyễn Gia Tuấn Anh",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Các chủ đê về dữ liệu và cơ sở dữ liệu.",
+        "GIS 3, 4 chiều"
+      ],
+      "Yêu cầu": [
+        "Có kiến thức về dữ liệu, CSDL"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Các chế độ hỗ trợ NCS:\n- Trợ giảng, tham gia đề tài\nSố lượng NCS còn có thể nhận:\n- 01"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 41,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "PGS.TS. Vũ Đức Lung",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Nhận dạng giọng nói tiếng Việt ứng dụng trong giao tiếp Người-Máy"
+      ],
+      "Yêu cầu": [
+        "Nắm vững kiến thức xử lý tín hiệu số, máy học và khả năng lập trình tốt"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Các chế độ hỗ trợ NCS:\n- Được tham gia cùng nhóm nghiên cứu và được hỗ trợ kinh phí tùy theo mức độ đóng góp\nSố lượng NCS còn có thể nhận:\n- 1\nCác yêu cầu khác:\n- Nhận dạng giọng nói tiếng Việt ứng dụng trong giao tiếp Người-Máy"
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 42,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": {
+      "Giảng viên hướng dẫn": "PGS.TS. Vũ Đức Lung",
+      "nhóm nghiên cứu": null,
+      "Hướng nghiên cứu/ứng dụng": [
+        "Xử lý ảnh, nhận dạng và phân loại ảnh ứng dụng trong bài toán phát hiện và ngăn chặn các website có nội dung khiêu dâm."
+      ],
+      "Yêu cầu": [
+        "Nắm vững kiến thức xử lý tín hiệu số, xử lý ảnh, máy học và khả năng lập trình tốt"
+      ],
+      "Ghi chú": [],
+      "additional_content": [
+        "Các chế độ hỗ trợ NCS:\n- Được tham gia cùng nhóm nghiên cứu và được hỗ trợ kinh phí tùy theo mức độ đóng góp\nSố lượng NCS còn có thể nhận:\n- 1\nCác yêu cầu khác:\n- Xử lý ảnh, nhận dạng và phân loại ảnh ứng dụng trong bài toán phát hiện và ngăn chặn các website có nội dung khiêu dâm."
+      ]
+    },
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  }
+]

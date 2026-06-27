@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "link": "https://ctsv.uit.edu.vn/bai-viet/khoa-hoc-lop-sinh-vien-thoi-gian-tiet-hoc",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "parent": "Sổ tay sinh viên khóa 2025 - Khóa học - Lớp sinh viên - Thời gian tiết học",
+    "content": "Trong Sổ tay sinh viên, khóa học của sinh viên UIT được đặt tên theo năm sinh viên trúng tuyển vào Trường. Lớp sinh viên, còn gọi là lớp sinh hoạt, được tổ chức theo khóa, khoa, chương trình, ngành và chuyên ngành đào tạo. Lớp sinh viên được ổn định trong suốt các năm học để triển khai các hoạt động liên quan đến học tập và rèn luyện sinh viên. Lớp sinh viên có quyền tổ chức các hoạt động hợp pháp để có thêm nguồn kinh phí duy trì và nâng cao chất lượng hoạt động của lớp. Ban cán sự lớp gồm lớp trưởng, một hoặc hai lớp phó hoặc các tổ trưởng nếu cần. Ban cán sự lớp do Trường bổ nhiệm dựa trên phiếu tín nhiệm giới thiệu của tập thể sinh viên trong lớp và ý kiến của Cố vấn học tập. Tên lớp sinh hoạt được đặt theo quy tắc: <Mã ngành hoặc tên chương trình><Khóa>[.<Số thứ tự>]. Trong đó, mã ngành hoặc tên chương trình là mã viết tắt theo danh mục của Trường; khóa là năm sinh viên trúng tuyển vào Trường; số thứ tự được dùng khi số sinh viên mỗi lớp đông và Khoa cần tách thành nhiều lớp nhỏ. Lớp sinh viên do Phòng Công tác Sinh viên thành lập và tồn tại theo thời gian học tập được thiết kế của chương trình đào tạo. Sinh viên học quá thời gian thiết kế của chương trình đào tạo sẽ tự động được gán vào lớp có tên dạng <Tên Khoa quản lý><0001>.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": null
+    }
+  },
+  {
+    "id": 2,
+    "link": "https://ctsv.uit.edu.vn/bai-viet/khoa-hoc-lop-sinh-vien-thoi-gian-tiet-hoc",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "parent": "Sổ tay sinh viên khóa 2025 - Khóa học - Lớp sinh viên - Thời gian tiết học",
+    "content": "Danh mục mã ngành hoặc tên chương trình dùng trong tên lớp sinh hoạt tại UIT gồm: ATTN là Kỹ sư tài năng ngành An toàn Thông tin; KHTN là Cử nhân tài năng ngành Khoa học Máy tính; ATBC là ngành Mạng máy tính và An toàn thông tin – Chương trình liên kết BCU; ATCL là ngành An toàn Thông tin – Chương trình Chất lượng cao; ATTT là ngành An toàn Thông tin; CNCL là ngành Công nghệ Thông tin – Chương trình Chất lượng cao định hướng Nhật Bản; CNTT là ngành Công nghệ Thông tin; CTTT là ngành Hệ thống Thông tin – Chương trình tiên tiến; HTCL là ngành Hệ thống Thông tin; HTTT là ngành Hệ thống Thông tin; KHBC là ngành Khoa học Máy tính – Chương trình liên kết BCU; KHCL là ngành Khoa học Máy tính – Chương trình Chất lượng cao; KHDL là ngành Khoa học Dữ liệu; KHMT là ngành Khoa học Máy tính; KHNT là ngành Khoa học Máy tính – Chuyên ngành Trí tuệ Nhân tạo; KTMT là ngành Kỹ thuật Máy tính; KTPM là ngành Kỹ thuật Phần mềm; MMCL là ngành Mạng máy tính và truyền thông dữ liệu – Chương trình Chất lượng cao; MMTT là ngành Mạng máy tính và truyền thông dữ liệu; MTCL là ngành Kỹ thuật Máy tính – Chương trình Chất lượng cao; MTIO là ngành Kỹ thuật Máy tính – Chuyên ngành Hệ thống nhúng và IoT; PMCL là ngành Kỹ thuật Phần mềm – Chương trình Chất lượng cao; TMCL là ngành Thương mại Điện tử – Chương trình Chất lượng cao; TMĐT là ngành Thương mại Điện tử.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": null
+    }
+  },
+  {
+    "id": 3,
+    "link": "https://ctsv.uit.edu.vn/bai-viet/khoa-hoc-lop-sinh-vien-thoi-gian-tiet-hoc",
+    "parent_document": "Sổ tay sinh viên khóa 2025",
+    "parent": "Sổ tay sinh viên khóa 2025 - Khóa học - Lớp sinh viên - Thời gian tiết học",
+    "content": "Thời gian tiết học tại UIT được chia theo tiết, ca và buổi. Buổi sáng gồm Ca 1 và Ca 2. Ca 1 gồm tiết 1 từ 7h30 đến 8h15, tiết 2 từ 8h15 đến 9h00 và tiết 3 từ 9h00 đến 9h45. Ca 2 gồm tiết 4 từ 10h00 đến 10h45 và tiết 5 từ 10h45 đến 11h30. Buổi chiều gồm Ca 3 và Ca 4. Ca 3 gồm tiết 6 từ 13h00 đến 13h45 và tiết 7 từ 13h45 đến 14h30. Ca 4 gồm tiết 8 từ 14h30 đến 15h15, tiết 9 từ 15h30 đến 16h15 và tiết 10 từ 16h15 đến 17h00. Tiết 10 được sử dụng khi có nhu cầu.",
+    "metadata": {
+      "category": null,
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": null
+    }
+  }
+]

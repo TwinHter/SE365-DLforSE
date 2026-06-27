@@ -1,0 +1,590 @@
+[
+  {
+    "id": 1,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. NGUYỄN VĂN KIỆT. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu NLPQUIT. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Social Media Text Processing; Cognitive Science for NLP; Multimodal Learning; LLMs for a Specific Domain; và Natural Language Intelligence. Thông tin ghi chú: GG scholar: Kiet Van Nguyen; và Email: kietnv@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 2,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. NGUYỄN TẤN HOÀNG PHƯỚC. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu iTwin. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Agentic Al, Multi-Agent Al Systems; Human Digital Twin; và Speech/Video Processing. Yêu cầu đối với sinh viên gồm Tiếng Anh đọc tốt tài liệu chuyên ngành; Khả năng tự tìm tòi học hỏi và làm việc độc lập; GPA > 8.0; và Làm việc ở Lab từ 2 buổi / tuần. Thông tin ghi chú: GG scholar: Phuoc Nguyen T. H; Website: https://link.uit.edu.vn/itwin; và Email: phuocnth@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 3,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. HÀ MINH TÂN. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Học máy, học sâu trong xử lý âm thanh, tăng cường âm thanh, phân tách âm thanh; Học máy, học sâu trong nhận dạng giọng nói tự động, tổng hợp âm thanh; Phân tích dữ liệu lớn, cơ sở hạ tầng dữ liệu lớn; và Học máy, học sâu trong phân tích dữ liệu, phân loại dữ liệu hình ảnh, và ảnh y khoa. Yêu cầu đối với sinh viên gồm Có khả năng đọc hiểu các nghiên cứu khoa học; Tự giác, ham học hỏi và kiên nhẫn trong việc tìm hiểu các vấn đề phức tạp; và Hiếu biết cơ bản về Python, Dữ liệu lớn (Big Data), Trí tuệ nhân tạo (AI), Học máy (ML), Học sâu (DL). Thông tin ghi chú: GG Scholar: Ha Minh Tan; và Email: tanhm@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Công nghệ phần mềm (CNPM)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 4,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. HUỲNH VĂN TÍN. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu NLPQUIT. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Vietnamese Language Understanding & Generation; Natural Language Inference & Reasoning; Social Media Text Processing; LLM Evaluation, Alignment & Low-Resource NLP; và Intelligent Recommendation & Decision Support. Yêu cầu đối với sinh viên gồm Là sinh viên năm 3 hoặc đầu năm 4, có định hướng làm nghiên cứu; Có nền tảng lập trình tốt, ưu tiên Python và tư duy giải quyết vấn đề; Có kiến thức cơ bản về AI, Machine Learning hoặc Deep Learning; Có khả năng đọc tài liệu tiếng Anh và chủ động học công nghệ mới; và Có tinh thần nghiêm túc, kiên trì và khả năng làm việc nhóm tốt. Thông tin ghi chú: GG Scholar: Tin Van Huynh; và Email: tinhv@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 5,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. LƯU THANH SƠN. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu NLPQUIT. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Mô hình ngôn ngữ lớn và ứng dụng; Xử lý dữ liệu truyền thông xã hội và dữ liệu đa phương thức; và Truy vấn thông tin, đặc biệt là truy vấn thông tin có sử dụng yếu tố thời gian (temporal). Yêu cầu đối với sinh viên gồm Có kiến thức cơ bản tốt; Khả năng sử dụng tiếng Anh tốt đế đọc và viết tài liệu; Kỹ năng lập trình tốt. Biết sử dụng các thư viện như Pytorch hay Hugging Face là lợi thế; và Siêng năng, chịu khó. Thông tin ghi chú: GG Scholar: Son T. Luu; và Email: sonlt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 6,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. NGUYỄN HIẾU NGHĨA. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu NLPQUIT. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Computational Linguistics; Language Modeling; và Speech Representation. Yêu cầu đối với sinh viên gồm Có nền tảng lập trình vững chắc; Có nền tảng toán sâu; và Bền bỉ, kiên trì, không sợ thất bại. Thông tin ghi chú: GG Scholar: Nghia Hieu Nguyen; và Email: nghiangh@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 7,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là PGS.TS. NGUYỄN TẤN CẦM. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu eSecurity. Các hướng nghiên cứu hoặc ứng dụng tập trung vào An toàn thông tin; Trí tuệ nhân tạo đa phương thức; An toàn ứng dụng và hệ thống; và Phát hiện mã độc và bất thường dựa trên học sâu. Yêu cầu đối với sinh viên gồm Sinh viên có tinh thần ham học hỏi, chủ động và trách nhiệm; Yêu thích nghiên cứu và khám phá tri thức; và Có khả năng làm việc nhóm nghiêm túc. Thông tin ghi chú: GG Scholar: Nguyen Tan Cam; và Email: camnt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Công nghệ phần mềm (CNPM)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 8,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. NGUYỄN TẤT BẢO THIỆN. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu Khoa Học Dữ Liệu Y-Sinh. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý hình ảnh y khoa (Điện tâm đồ, X-quang, CT, MRI, PET, siêu âm...); và AI dự đoán và chẩn đoán các bệnh trong não, ngực, bụng, xương, khớp, thận, thai nhi và mạch máu. Yêu cầu đối với sinh viên gồm Loại giỏi; Có nền tảng về xử lý dữ liệu; và Có kinh nghiệm về học sâu. Thông tin ghi chú: GG Scholar: Thien B. Nguyen-Tat; Email: thientb@uit.edu.vn; và Website: https://sites.google.com/view/ds-medlab/home.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Công nghệ phần mềm (CNPM)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 9,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. NGUYỄN THÀNH LUÂN. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu NLPQUIT. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Natural Language Processing; Speech Processing; Machine Translation; Large Language Models; và Mechanistic Interpretability. Yêu cầu đối với sinh viên gồm Có tinh thần chủ động tìm tòi và thực hiện nghiên cứu; Có khả năng đọc hiểu tài liệu tiếng Anh; và GPA trung bình >= 8.0. Thông tin ghi chú: GG Scholar: Luan Thanh Nguyen; và Email: luannt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 10,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. NGUYỄN THỊ ANH THƯ. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu Data Chain. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Học máy thích nghi cho dự đoán sớm trên dữ liệu lớn dị thể và mất cân bằng; Quản lý và đánh giá chất lượng dữ liệu cho hệ thống Al ra quyết định sớm; Khai thác dữ liệu đồ thị mạng và học biểu diễn graph cho các bài toán phân tích quan hệ, lan truyền và phát hiện bất thường; Phân tích hội thoại, cảm xúc người dùng và hỗ trợ ra quyết định sớm trong hệ thống chăm sóc khách hàng; và Chẩn đoán và dự đoán sớm bệnh trầm cảm dựa trên dữ liệu ngôn ngữ tự nhiên và hành vi số. Yêu cầu đối với sinh viên gồm Tinh thần tự học và chủ động nghiên cứu; Kỹ năng làm việc nhóm và giao tiếp học thuật; Nền tảng lập trình và xử lý dữ liệu; Kiến thức nền về AI, học máy và khai thác dữ liệu; và Kỷ luật nghiên cứu và tư duy phản biện. Thông tin ghi chú: GG Scholar: Thu Nguyen; Email: thunta@uit.edu.vn; và Website: https://github.com/datachain-uit.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 11,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là CN. NGUYỄN THỊ HOÀNG ANH. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Vietnamese Natural Language Processing; Social Media Analytics; Multimodal Learning; Urban Al and Spatiotemporal Modeling; và Applied Al and Large Language Models for Domain-Specific Applications. Yêu cầu đối với sinh viên gồm Là sinh viên từ năm 2 trở lên, có định hướng làm nghiên cứu; Có nền tảng lập trình và tư duy giải quyết vấn đề; Có kiến thức về Al, Machine Learning và Deep Learning; và Chủ động trao đổi và báo cáo tiến độ định kỳ. Thông tin ghi chú: GG Scholar: Anh Thi-Hoang Nguyen; và Email: anhnth@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 12,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. PHẠM NGUYỄN PHÚC TOÀN. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Phân tích dữ liệu giáo dục; Phân tích dữ liệu chuỗi thời gian; Phân tích dữ liệu thống kê; và Học máy và học sâu. Yêu cầu đối với sinh viên gồm Đối tượng: Từ năm 2 trở lên; Kiến thức: Có kiến thức về Đại số tuyến tính, Xác suất thống kê, Học máy, Học sâu, Phân tích dữ liệu; Kỹ năng: Biết cách xây dựng và phát triển mô hình toán thống kê, Học máy, Học sâu. Vận dụng phân tích dữ liệu trong các lĩnh vực của đời sống. Lập trình tốt với Python hoặc R. Tìm kiếm và đọc bài báo khoa học; và Thái độ: Siêng năng, kiên trì. Chịu khó tìm tòi, học hỏi điều mới. Thông tin ghi chú: GG Scholar: Phạm Nguyễn; Phúc Toàn; và Email: toanpnp@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 13,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. PHẠM NHẬT DUY. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu eSecurity. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Phát hiện và phân loại mã độc; Phát hiện và phân loại tấn công/lỗ hống bảo mật website; và Cơ chế bảo mật cho các mô hình trí tuệ nhân tạo. Yêu cầu đối với sinh viên gồm Chủ động liên hệ sớm từ năm 2, 3; và Làm việc nghiêm túc. Thông tin ghi chú: GG Scholar: Duy Nhat Pham; và Email: duypn@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Công nghệ phần mềm (CNPM)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 14,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. PHẠM THẾ SƠN. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Intelligent system; Data Analytics; và MLOps. Yêu cầu đối với sinh viên gồm Năng lực lập trình tốt; và Năng lực phân tích thiết kế quy trình khá. Thông tin ghi chú: GG Scholar: Pham The Son; và Email: sonpt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 15,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. TẠ THU THỦY. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu Data Chain. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Phương pháp máy học (Machine Learning); Khoa học dữ liệu (Data Science); và Xử lý ngôn ngữ tự nhiên (Natural Language Processing). Yêu cầu đối với sinh viên gồm Sinh viên chăm chỉ, chịu khó, có tinh thần trách nhiệm; Có khả năng tự học, tự tìm hiểu về các kiến thức liên quan; và Trai đi với giảng viên hướng dẫn thường xuyên. Thông tin ghi chú: GG Scholar: Thủy Tạ Thu; và Email: thuyta@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Khoa học dữ liệu (KHDL)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 16,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. VÕ TẤN KHOA. Giảng viên thuộc hoặc hướng dẫn trong nhóm nghiên cứu Data Chain. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Blockchain trong giáo dục và xác thực văn bằng số; Zero-Knowledge Proof cho bảo mật và quyền riêng tư; Rollup và Layer-2 cho hệ thống blockchain mở rộng; Smart contract, Web3 và ứng dụng phi tập trung; và Tối ưu chi phí, hiệu năng và lưu trữ trên blockchain. Yêu cầu đối với sinh viên gồm Có nền tảng lập trình và tư duy xây dựng hệ thống; Quan tâm đến blockchain, Web3 hoặc bảo mật dữ liệu; Sẵn sàng đọc tài liệu tiếng Anh và paper khoa học; Có tinh thần tự học, làm việc nhóm và báo cáo định kỳ; và Có định hướng làm khóa luận, nghiên cứu hoặc công bố bài báo. Thông tin ghi chú: GG Scholar: Khoa Tan VO; Wedsite: https://datachain.uit.edu.vn; và Email: khoavt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": "Công nghệ phần mềm (CNPM)",
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu",
+      "source_table_type": "faculty_research_groups_2026"
+    }
+  },
+  {
+    "id": 17,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Gia Tuấn Anh Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Dữ liệu, cơ sở dữ liệu, trực quan hoá dữ liệu; Các hệ thống thông tin phân tán, di động, thời gian; và Khoa học thông tin địa lý 3 chiều. Thông tin ghi chú: Email: anhngt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 18,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Văn Kiệt Phó Trưởng khoa, Phụ trách Khoa, Trưởng Bộ môn Khoa học Dữ liệu. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: Khoa học Dữ liệu (Data Science) và Trí tuệ Nhân tạo (AI). Yêu cầu đối với sinh viên gồm thái độ làm việc NGHIÊM TÚC, lập trình tốt (Python, hoặc Java). Lưu ý: Chỉ nhận sinh viên năm 2, 3. Thông tin ghi chú: Email: kietnv@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 19,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Đỗ Trọng Hợp Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý tín hiệu số, xử lý ảnh. Thông tin ghi chú: Email: hopdt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 20,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Võ Ngọc Tân Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xây dựng WebSite; Xây dựng ứng dụng quản lý quy trình quản lý Doanh nghiệp; Xây dựng Website thương mại điện tử; và Xây dựng ứng dụng. Thông tin ghi chú: Email: tanvn@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 21,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Nguyễn Thị Anh Thư Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Phương pháp máy học (Machine Learning); Khai thác dữ liệu (Data Mining); và Khoa học dữ liệu (Data Science). Thông tin ghi chú: Email: thunta@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 22,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Võ Tấn Khoa Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Deep Learning; Xử lý video đám đông; Phát triển web, ứng dụng di động; và Công nghệ blockchain. Thông tin ghi chú: Email: khoavt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 23,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Tạ Thu Thủy Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ngôn ngữ tự nhiên. Thông tin ghi chú: Email: thuthuyt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 24,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Phạm Thế Sơn Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Khoa học dữ liệu (Data Science) ; và Học máy (Machine Learning). Thông tin ghi chú: Email: sonpt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 25,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Lưu Thanh Sơn Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: + Máy học (Machine Learning); và Xử lý ngôn ngữ tự nhiên (Natural language processing). Thông tin ghi chú: Email: sonlt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 26,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Tấn Cầm Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Privacy and security in mobile devices, IoT, Network; Mobile forensic; Blockchain for information assurance; và Applied IoT, blockchain. Thông tin ghi chú: Email: camnt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 27,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Tất Bảo Thiện Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ảnh; Tính toán mềm; Học máy/ học sâu; và Tin Y-sinh. Yêu cầu đối với sinh viên gồm Toán, Tiếng Anh và Python tốt; và Email: nguyentatbaothien@gmail.com.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 28,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Tô Quốc Huy Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ngôn ngữ tự nhiên; và Xây dựng hệ thống Web (ứng dụng các mô hình máy học). Thông tin ghi chú: Email: huytq@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 29,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Huỳnh Văn Tín Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ngôn ngữ tự nhiên; và Hệ khuyến nghị. Thông tin ghi chú: Email: tinhv@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 30,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Phạm Nguyễn Phúc Toàn. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ảnh và thị giác máy tính. Thông tin ghi chú: Email: toanpnp@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 31,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là CN. Trần Quốc Khánh. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ngôn ngữ tự nhiên; Trích xuất thông tin; và Máy học ứng dụng. Thông tin ghi chú: Email: khanhtq@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 32,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là CN. Nguyễn Hiếu Nghĩa. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ngôn ngữ tự nhiên; và Học máy Thông kê. Thông tin ghi chú: Email: nghiangh@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 33,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Phạm Nhật Duy Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Phân tích mã độc; và Bảo mật trên thiết bị di động. Thông tin ghi chú: Email: duypn@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "1. Danh sách giảng viên trong Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 34,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Tấn Trần Minh Khang Giảng viên, Phó Hiệu trưởng. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: + Khoa học Dữ liệu (Data Science); Trí tuệ Nhân tạo (AI); và Website nhóm nghiên cứu: tại đây (https://sites.google.com/site/nnctochuc/). Yêu cầu đối với sinh viên gồm có mặt ở trường 8h/ ngày để học tập và NCKH. Thông tin ghi chú: Email: khangnttm@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 35,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là PGS.TS. Nguyễn Lưu Thuỳ Ngân Giảng viên, Phó Hiệu Trưởng. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: Xử lý ngôn ngữ tự nhiên; và Website nhóm nghiên cứu: tại đây (http://nlp.uit.edu.vn). Thông tin ghi chú: Email: ngannlt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 36,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Lương Ngọc Hoàng Giảng viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: + Thuật toán tiến hóa (Evolutionary Algorithms); Trí tuệ nhân tạo (Artificial Intelligence); NeuroEvolution; và Website cá nhân: tại đây (https://sites.google.com/view/hoangluong). Yêu cầu đối với sinh viên gồm 1. Đồng ý viết luận văn, và các báo cáo, bằng tiếng Anh; và 2. Khiêm tốn, thật thà, chịu khó. Thông tin ghi chú: Email: hoangln@uit.edu.vn; và Lưu ý: Giảng viên thuộc khoa Khoa Học Máy Tính nên ưu tiên cho các sinh viên liên hệ với giảng viên từ năm 2, hoặc đầu học kì 1 năm 3 để có thể tìm hiểu và xác định đề tài nghiên cứu phù hợp.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 37,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là ThS. Phan Thế Duy Nghiên cứu viên. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Lĩnh vực nghiên cứu: + Software Engineering (Nghiên cứu và phát triển phần mềm ứng dụng); Information Security ( An toàn thông tin); và Website Nhóm NC Phòng thí nghiệm ATTT: tại đây (https://inseclab.uit.edu.vn/). https://inseclab.uit.edu.vn/. Thông tin ghi chú: Email: duypt@uit.edu.vn.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "2. Danh sách giảng viên ngoài Khoa hướng dẫn nghiên cứu và KLTN",
+      "source_table_type": "research_topics_kltn"
+    }
+  },
+  {
+    "id": 38,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là PGS.TS. Lê Trung Quân. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Các hướng nghiên cứu về lĩnh vực Internet of things (IoTs), bao gồm: i) Phát triển giao thức mạng, kiến trúc mạng thông minh ii) Tái cấu hình hệ thống, tối ưu hóa tài nguyên iii) Giải pháp lưu trữ và truy xuất dữ liệu IoTs lớn dựa trên nền tảng cloud. Yêu cầu đối với sinh viên gồm Cần có kiến thức nền tảng tốt ở các lĩnh vực: i) Hệ thống mạng, mạng không dây ii) Lập trình mạng và hệ thống, C/C++ iii) Toán tối ưu hóa, đồ thị.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 39,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Phạm Văn Hậu. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Các hướng nghiên cứu về lĩnh vực an ninh thông tin, bao gồm: i) Các vấn đề về an ninh thông tin mạng và hệ thống ii) Các khía cạnh về an ninh thông tin liên quan đến xử lý dữ liệu lớn trên nền tảng cloud. Yêu cầu đối với sinh viên gồm Cần có kiến thức nền tảng tốt ở các lĩnh vực: i) mạng máy tính ii) Hệ thống iii) Thành thạo ít nhất một ngôn ngữ lập trình.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 40,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là TS. Nguyễn Gia Tuấn Anh. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Các chủ đê về dữ liệu và cơ sở dữ liệu; và GIS 3, 4 chiều. Yêu cầu đối với sinh viên gồm Có kiến thức về dữ liệu, CSDL.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 41,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là PGS.TS. Vũ Đức Lung. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Nhận dạng giọng nói tiếng Việt ứng dụng trong giao tiếp Người-Máy. Yêu cầu đối với sinh viên gồm Nắm vững kiến thức xử lý tín hiệu số, máy học và khả năng lập trình tốt.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  },
+  {
+    "id": 42,
+    "parent_document": "Các nhóm nghiên cứu UIT 2026",
+    "content": "Giảng viên hướng dẫn là PGS.TS. Vũ Đức Lung. Các hướng nghiên cứu hoặc ứng dụng tập trung vào Xử lý ảnh, nhận dạng và phân loại ảnh ứng dụng trong bài toán phát hiện và ngăn chặn các website có nội dung khiêu dâm. Yêu cầu đối với sinh viên gồm Nắm vững kiến thức xử lý tín hiệu số, xử lý ảnh, máy học và khả năng lập trình tốt.",
+    "metadata": {
+      "category": "nghien_cuu",
+      "major": null,
+      "program": null,
+      "year": 2026,
+      "status": "Active",
+      "source_section": "3. Danh mục các hướng nghiên cứu, GVHD cho HVCH và NCS",
+      "source_table_type": "postgraduate_research_directions"
+    }
+  }
+]
