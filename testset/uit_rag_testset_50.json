@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "uit_q001",
+    "question": "Kỳ tới mình muốn học môn Kiến trúc phần mềm ở CNPM. Theo danh mục môn học của UIT thì mình cần hoàn thành gì trước?",
+    "options": {
+      "A": "Chỉ cần SE104",
+      "B": "SE104 và SE100",
+      "C": "IT001 và IT003",
+      "D": "SE114",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc",
+      "https://daa.uit.edu.vn/content/cu-nhan-nganh-ky-thuat-phan-mem-ap-dung-tu-khoa-20-2025"
+    ],
+    "gold_context": "Trong danh mục môn học, SE356 (Kiến trúc phần mềm) ghi môn học trước là SE104 và SE100. Ở CTĐT Kỹ thuật phần mềm khóa 20-2025, môn này nằm trong nhóm định hướng phát triển phần mềm.",
+    "explanation": "SE356 không chỉ yêu cầu nền tảng nhập môn CNPM mà còn cần SE100, nên phương án đầy đủ là SE104 và SE100."
+  },
+  {
+    "id": "uit_q002",
+    "question": "Mình đã xong SE100 và SE104 nhưng chưa có IT002, IT004. Nếu kỳ tới muốn ưu tiên các môn nền CNPM theo hướng phân tích yêu cầu - kiến trúc - quản lý dự án mà vẫn đăng ký được ngay, nên chọn những môn nào?",
+    "options": {
+      "A": "SE356 - Kiến trúc phần mềm",
+      "B": "SE357 - Kỹ thuật phân tích yêu cầu",
+      "C": "SE358 - Quản lý dự án phát triển phần mềm",
+      "D": "SE361 - Phát triển phần mềm theo kiến trúc Microservices",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Trong danh mục môn học, SE356 cần SE104 và SE100; SE357 cần SE104; SE358 cần SE104; còn SE361 cần IT002 và IT004. Vì người học đã có SE100 và SE104 nhưng chưa có IT002, IT004, ba môn đăng ký được ngay trong nhóm nêu ra là SE356, SE357 và SE358.",
+    "explanation": "Câu này không nằm nguyên văn trong một chunk; cần đối chiếu điều kiện học trước của bốn môn rồi loại SE361 vì còn thiếu IT002 và IT004."
+  },
+  {
+    "id": "uit_q004",
+    "question": "Nếu mình muốn học SE361 ở kỳ tới thì phải có những môn nền nào trước đó?",
+    "options": {
+      "A": "IT002 và IT004",
+      "B": "IT001 và IT003",
+      "C": "SE104 và SE100",
+      "D": "IT007 và IT008",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Trong danh mục môn học, SE361 (Phát triển phần mềm theo kiến trúc Microservices) ghi điều kiện học trước là IT002 và IT004.",
+    "explanation": "SE361 là môn có điều kiện học trước khá rõ: IT002 và IT004."
+  },
+  {
+    "id": "uit_q006",
+    "question": "Mình chưa học IT001. Nếu phải tránh đăng ký các môn chắc chắn có yêu cầu IT001 trong danh sách dưới đây thì nên loại môn nào?",
+    "options": {
+      "A": "SE364",
+      "B": "MM106",
+      "C": "SE357",
+      "D": "MM209",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "SE364 yêu cầu IT001. MM106 (Thu thập và phân tích khám phá dữ liệu truyền thông đa phương tiện) cũng yêu cầu IT001. Các cặp còn lại không cùng lúc đều có IT001.",
+    "explanation": "SE364 và MM106 đều ghi IT001 là điều kiện học trước. SE357 cần SE104, còn MM209 cần MM104."
+  },
+  {
+    "id": "uit_q007",
+    "question": "Mình đang cân nhắc học thêm các môn AI ứng dụng cho phần mềm. Nếu muốn đi từ nền học máy sang hướng này, môn nào ở CNPM cho thấy có liên hệ gần nhất?",
+    "options": {
+      "A": "SE355 rồi đến SE365",
+      "B": "SE400 rồi đến SE401",
+      "C": "SE358 rồi đến SE364",
+      "D": "SE356 rồi đến SE357",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc",
+      "https://daa.uit.edu.vn/content/bang-tom-tat-mon-hoc"
+    ],
+    "gold_context": "Danh mục môn học có SE355 (Máy học và các công cụ) và SE365 (Học sâu ứng dụng trong phát triển phần mềm). Đây là cặp môn gần nhất với hướng AI ứng dụng trong CNPM.",
+    "explanation": "Từ học máy sang học sâu ứng dụng trong phát triển phần mềm, cặp hợp logic nhất là SE355 và SE365."
+  },
+  {
+    "id": "uit_q012",
+    "question": "Nếu mục tiêu là học về design patterns theo nghĩa tổng quát trước, chứ chưa đi thẳng vào biến thể hướng đối tượng, thì trong các môn dưới đây nên ưu tiên môn nào hơn?",
+    "options": {
+      "A": "SE401 - Mẫu thiết kế",
+      "B": "SE406 - Mẫu thiết kế hướng đối tượng",
+      "C": "SE358 - Quản lý dự án phát triển phần mềm",
+      "D": "SE365 - Học sâu ứng dụng trong phát triển phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc",
+      "https://daa.uit.edu.vn/content/bang-tom-tat-mon-hoc"
+    ],
+    "gold_context": "Danh mục môn học ghi SE401 là 'Mẫu thiết kế', còn SE406 là 'Mẫu thiết kế hướng đối tượng'. Bảng tóm tắt môn học cũng mô tả SE401 là môn trình bày các mẫu thiết kế dùng trong phát triển hệ thống phần mềm.",
+    "explanation": "Câu hỏi yêu cầu phân biệt giữa design patterns nói chung và biến thể hướng đối tượng. Môn khái quát hơn là SE401."
+  },
+  {
+    "id": "uit_q013",
+    "question": "Mình đi theo hướng mobile/pervasive trong CNPM. Trong các môn sau, đâu là nhóm môn nên ưu tiên nếu đã có nền từ SE114?",
+    "options": {
+      "A": "SE405",
+      "B": "SE407",
+      "C": "SE356",
+      "D": "SE357",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học ghi SE405 và SE407 đều có điều kiện học trước là SE114; cả hai đều thuộc hướng mobile/pervasive computing.",
+    "explanation": "Nhánh mobile/pervasive trong CNPM gắn trực tiếp với SE405 và SE407; cả hai đều dùng nền từ SE114."
+  },
+  {
+    "id": "uit_q014",
+    "question": "Mình đang học mảng multimedia và muốn môn nào dạy NLP cho truyền thông đa phương tiện. Nên chọn môn nào?",
+    "options": {
+      "A": "MM202 - Học sâu ứng dụng trong truyền thông đa phương tiện",
+      "B": "MM203 - Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện",
+      "C": "MM204 - Xử lý ảnh số và video trong truyền thông đa phương tiện",
+      "D": "MM220 - Phân tích dữ liệu truyền thông số",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học liệt kê MM203 là 'Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện'.",
+    "explanation": "NLP cho multimedia tương ứng trực tiếp với MM203."
+  },
+  {
+    "id": "uit_q015",
+    "question": "Mình muốn tìm các môn multimedia đang cùng có điều kiện IT001 để lên kế hoạch học trước cho gọn. Chọn phương án đúng.",
+    "options": {
+      "A": "MM106",
+      "B": "MM107",
+      "C": "MM209",
+      "D": "MM222",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Trong danh mục môn học, MM106 và MM107 đều ghi điều kiện học trước là IT001. MM206 và MM222 dùng IT007; MM209 dùng MM104.",
+    "explanation": "MM106 và MM107 là hai môn multimedia cùng yêu cầu IT001."
+  },
+  {
+    "id": "uit_q017",
+    "question": "Mình viết content và muốn học môn báo chí/truyền thông nhưng thấy có một môn yêu cầu phải học Viết nội dung đa phương tiện (MM104) trước. Đó là môn nào?",
+    "options": {
+      "A": "MM208",
+      "B": "MM209",
+      "C": "MM216",
+      "D": "MM223",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "MM209 (Nghiệp vụ truyền thông và báo chí) trong danh mục môn học có điều kiện học trước là MM104.",
+    "explanation": "Môn gắn trực tiếp với prerequisite MM104 là MM209."
+  },
+  {
+    "id": "uit_q019",
+    "question": "Mình đang nhắm giai đoạn tốt nghiệp. Những môn nào dưới đây đang cùng phụ thuộc SE122 trong danh mục môn học?",
+    "options": {
+      "A": "SE505",
+      "B": "SE506",
+      "C": "SE507",
+      "D": "SE400",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học ghi SE505, SE506 và SE507 đều có điều kiện SE122, trong khi các nhóm còn lại dùng các điều kiện khác.",
+    "explanation": "Ba môn SE505, SE506 và SE507 đều phụ thuộc SE122; SE400 thì không."
+  },
+  {
+    "id": "uit_q022",
+    "question": "Mình chưa xong IT002 và IT004 nhưng lại muốn đăng ký một môn thật sát kiến trúc microservices. Theo danh mục môn học thì nên làm gì?",
+    "options": {
+      "A": "Đăng ký SE361 luôn vì không có tiên quyết",
+      "B": "Hoãn SE361 vì môn này cần IT002 và IT004",
+      "C": "Đổi sang SE401 vì cũng cùng chủ đề microservices",
+      "D": "Đổi sang MM205 vì học thay thế được",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "SE361 trong danh mục môn học yêu cầu IT002 và IT004.",
+    "explanation": "Chưa có IT002 và IT004 thì chưa nên đăng ký SE361."
+  },
+  {
+    "id": "uit_q025",
+    "question": "Nếu chỉ có thể ưu tiên hoàn thành 2 môn nền trong năm nay để mở đường cho nhiều môn chuyên sâu CNPM nhất ở các học kỳ sau, cặp nào đáng ưu tiên nhất?",
+    "options": {
+      "A": "SE100 và SE104",
+      "B": "IT001 và IT003",
+      "C": "SE114 và MM104",
+      "D": "IS402 và IT008",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "SE100 và SE104 lặp lại ở nhiều điều kiện học trước của khối chuyên sâu CNPM: SE356 cần cả SE100 và SE104; SE400 cần cả SE100 và SE104; SE401 và SE406 cần SE100; SE357 và SE358 cần SE104. Các cặp còn lại không phủ được nhiều môn CNPM như vậy.",
+    "explanation": "Muốn trả lời đúng phải nhìn trên nhiều môn rồi đánh giá cặp prerequisite nào “mở khóa” được nhiều lựa chọn nhất."
+  },
+  {
+    "id": "uit_q027",
+    "question": "Em không hứng thú với web/app doanh nghiệp hay phân tích dữ liệu, mà muốn đụng vào VLSI, FPGA, ASIC và thiết kế phần cứng máy tính. Nếu loại dần các lựa chọn ít liên quan, cuối cùng nên giữ lại ngành nào?",
+    "options": {
+      "A": "Khoa học dữ liệu",
+      "B": "Kỹ thuật phần mềm",
+      "C": "Kỹ thuật máy tính",
+      "D": "Hệ thống thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-ky-thuat-may-tinh"
+    ],
+    "gold_context": "Trang ngành Kỹ thuật máy tính của UIT nêu rõ các nội dung chính như VLSI Design, PCB Design, Computer Hardware Design, IC/SoC Design, ASIC, FPGA.",
+    "explanation": "Các từ khóa VLSI, FPGA, ASIC và thiết kế phần cứng gắn rất chặt với Kỹ thuật máy tính, nên đây là ngành nên giữ lại sau khi loại trừ các lựa chọn khác."
+  },
+  {
+    "id": "uit_q030",
+    "question": "Nếu em đang phân vân giữa Khoa học máy tính và AI, và muốn một ngành được mô tả là xây trên nền Khoa học máy tính nhưng tăng cường chiều sâu AI ngay trong chương trình, thì nên nghiêng về lựa chọn nào hơn?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Trí tuệ nhân tạo",
+      "C": "Khoa học dữ liệu",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-tri-tue-nhan-tao"
+    ],
+    "gold_context": "Trang ngành Trí tuệ nhân tạo nêu ngành này được xây dựng trên nền tảng vững chắc của Khoa học máy tính và tăng cường kiến thức, kỹ năng chuyên sâu về AI.",
+    "explanation": "Câu này đòi hỏi nối quan hệ giữa hai ngành: nền tảng là Khoa học máy tính nhưng lựa chọn phù hợp hơn cho định hướng AI chuyên sâu là Trí tuệ nhân tạo."
+  },
+  {
+    "id": "uit_q032",
+    "question": "Nếu em thích kiểu công việc phân tích, thiết kế, tổ chức và vận hành hệ thống thông tin cho doanh nghiệp/cơ quan hơn là đi sâu mạng hay phần cứng, nên ưu tiên ngành nào?",
+    "options": {
+      "A": "Hệ thống thông tin",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Kỹ thuật máy tính",
+      "D": "An toàn thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-he-thong-thong-tin"
+    ],
+    "gold_context": "Trang ngành Hệ thống thông tin của UIT nhấn mạnh việc đào tạo kỹ sư có nền tảng công nghệ vững và khả năng phân tích, tổ chức hệ thống thông tin hiệu quả cho doanh nghiệp, tổ chức và cơ quan quản lý.",
+    "explanation": "Nếu thiên về phân tích và tổ chức hệ thống cho doanh nghiệp, Hệ thống thông tin là phù hợp nhất."
+  },
+  {
+    "id": "uit_q033",
+    "question": "Nếu em muốn một ngành mà đầu ra có thể đi từ quản trị/thiết kế mạng đến phát triển phần mềm mạng và các ứng dụng truyền thông thời gian thực như VoIP, hội nghị truyền hình, thì nên chọn ngành nào thay vì An toàn thông tin thuần?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Khoa học máy tính",
+      "D": "Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-mang-may-tinh-truyen-thong-du-lieu"
+    ],
+    "gold_context": "Trang ngành Mạng máy tính & Truyền thông dữ liệu liệt kê các vị trí như quản trị mạng và hệ thống, thiết kế mạng, phát triển phần mềm mạng, ứng dụng di động/mạng không dây và các ứng dụng truyền thông như VoIP, hội nghị truyền hình.",
+    "explanation": "Câu hỏi buộc phải loại An toàn thông tin và nhận ra tập hợp nghề nghiệp này khớp nhất với Mạng máy tính và Truyền thông dữ liệu."
+  },
+  {
+    "id": "uit_q034",
+    "question": "Nếu em thích cơ chế bảo mật, mã hóa/giải mã, xây dựng mạng an toàn và xử lý tấn công mạng thì nên nhắm ngành nào?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Kỹ thuật phần mềm",
+      "C": "Công nghệ thông tin",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-an-toan-thong-tin"
+    ],
+    "gold_context": "Trang ngành An toàn thông tin nêu sinh viên được trang bị kiến thức về cơ chế bảo mật, kỹ thuật mã hóa - giải mã, xây dựng và quản lý hệ thống mạng an toàn, phát hiện và xử lý các cuộc tấn công mạng.",
+    "explanation": "Đó là mô tả trực tiếp của ngành An toàn thông tin."
+  },
+  {
+    "id": "uit_q039",
+    "question": "Nếu em cân nhắc chương trình liên kết Newcastle của UIT, mức học phí dự kiến năm 2025-2026 được nêu là bao nhiêu?",
+    "options": {
+      "A": "55 triệu",
+      "B": "80 triệu",
+      "C": "90 triệu",
+      "D": "140 triệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/hoc-phi-hoc-bong"
+    ],
+    "gold_context": "Trang Học phí & học bổng ghi chương trình liên kết với Đại học Newcastle (dự kiến) có học phí 90 triệu đồng cho năm 2025-2026.",
+    "explanation": "Theo bảng dự kiến học phí, chương trình Newcastle là 90 triệu."
+  },
+  {
+    "id": "uit_q041",
+    "question": "Nếu em muốn học chương trình dạy và học bằng tiếng Anh ở UIT nhưng không tính các chương trình liên kết quốc tế, trong các lựa chọn sau nên giữ lại những ngành nào?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Khoa học dữ liệu",
+      "C": "Kỹ thuật phần mềm",
+      "D": "Hệ thống thông tin chương trình tiên tiến",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/2026-du-kien-phuong-huong-tuyen-sinh-dai-hoc-chinh-quy-nam-2026"
+    ],
+    "gold_context": "Trong thông tin tuyển sinh 2026, UIT nêu các ngành có chương trình dạy và học bằng tiếng Anh như An toàn thông tin, Khoa học dữ liệu, Kỹ thuật phần mềm, Khoa học máy tính... Trong khi đó Hệ thống thông tin chương trình tiên tiến là một loại chương trình khác, không phải mục “dạy và học bằng tiếng Anh” theo cách liệt kê này.",
+    "explanation": "Cần đọc phần danh sách ngành và phân biệt “chương trình dạy và học bằng tiếng Anh” với “chương trình tiên tiến” hoặc chương trình liên kết."
+  },
+  {
+    "id": "uit_q044",
+    "question": "Nếu em muốn sau này làm AI nhưng vẫn muốn chương trình được mô tả là đào tạo kỹ sư AI toàn diện, đủ nền để phân tích độc lập và còn có khả năng học tiếp sau đại học, thì nên xem ngành nào trước?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Truyền thông đa phương tiện",
+      "C": "Trí tuệ nhân tạo",
+      "D": "Công nghệ thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-tri-tue-nhan-tao"
+    ],
+    "gold_context": "Trang ngành Trí tuệ nhân tạo nêu mục tiêu đào tạo kỹ sư AI có năng lực toàn diện, có thể phân tích độc lập và tiếp tục học tập sau đại học.",
+    "explanation": "Đây không chỉ là câu hỏi 'thích AI chọn gì' mà còn gắn với mô tả năng lực đầu ra và khả năng học tiếp. Ngành phù hợp nhất là Trí tuệ nhân tạo."
+  },
+  {
+    "id": "uit_q047",
+    "question": "Nếu chỉ nhìn vào cơ hội nghề nghiệp trên trang tuyển sinh, ngành nào được nêu rõ có thể làm ở ISP, trung tâm dữ liệu, ngân hàng hoặc phát triển VoIP/hội nghị truyền hình?",
+    "options": {
+      "A": "Mạng máy tính và truyền thông dữ liệu",
+      "B": "Công nghệ thông tin",
+      "C": "Hệ thống thông tin",
+      "D": "Khoa học máy tính",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-mang-may-tinh-truyen-thong-du-lieu"
+    ],
+    "gold_context": "Trang ngành Mạng máy tính & Truyền thông dữ liệu liệt kê rõ ISP, data center, ngân hàng, VoIP và hội nghị truyền hình là môi trường/công việc điển hình.",
+    "explanation": "Các ví dụ việc làm đó gắn trực tiếp với ngành Mạng máy tính và truyền thông dữ liệu."
+  },
+  {
+    "id": "uit_q048",
+    "question": "Nếu em muốn làm các hệ thống phần mềm thực tiễn cho doanh nghiệp, biết từ phân tích yêu cầu, thiết kế UI, kiến trúc, lập trình, kiểm thử tới triển khai, ngành nào mô tả đúng nhất?",
+    "options": {
+      "A": "Kỹ thuật phần mềm",
+      "B": "An toàn thông tin",
+      "C": "Kỹ thuật máy tính",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-ky-thuat-phan-mem"
+    ],
+    "gold_context": "Trang ngành Kỹ thuật phần mềm mô tả sinh viên học từ phân tích yêu cầu, thiết kế giao diện, kiến trúc hệ thống, lập trình, kiểm thử, bảo trì tới triển khai phần mềm trên nền tảng thực tế.",
+    "explanation": "Mô tả vòng đời phần mềm khớp nhất với ngành Kỹ thuật phần mềm."
+  },
+  {
+    "id": "uit_q049",
+    "question": "Em thấy UIT có vừa chương trình chuẩn, vừa chương trình tiếng Anh, vừa liên kết quốc tế. Nếu muốn chương trình liên kết quốc tế nhưng nhắm networking/security chứ không phải computer engineering thì nên chọn gì?",
+    "options": {
+      "A": "Kỹ thuật máy tính - liên kết Newcastle",
+      "B": "Mạng máy tính & An toàn thông tin - liên kết BCU",
+      "C": "Khoa học máy tính chính quy",
+      "D": "An toàn thông tin tiếng Anh",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://www.uit.edu.vn/",
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-mang-may-tinh-toan-thong-tin-chuong-trinh-lien-ket-quoc-te"
+    ],
+    "gold_context": "Trang chủ UIT liệt kê cả chương trình tiếng Anh lẫn liên kết quốc tế. Trong các chương trình liên kết, networking/security gắn với chương trình Mạng máy tính & An toàn thông tin do BCU cấp bằng.",
+    "explanation": "Nếu đích là networking/security theo mô hình liên kết quốc tế, đáp án là chương trình BCU."
+  },
+  {
+    "id": "uit_q050",
+    "question": "Nếu một học sinh muốn học ngành có thể mở rộng sang nghiên cứu tiếp và được mô tả là 'định hướng ứng dụng và nghiên cứu' rõ ràng trên trang ngành, nên xem ngành nào đầu tiên?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Công nghệ thông tin",
+      "C": "Kỹ thuật máy tính",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/nganh-dao-tao/nganh-khoa-hoc-may-tinh"
+    ],
+    "gold_context": "Trang ngành Khoa học máy tính nhấn mạnh chương trình được thiết kế theo định hướng ứng dụng và nghiên cứu.",
+    "explanation": "Nếu chỉ xét cụm mô tả này, Khoa học máy tính là lựa chọn đầu tiên nên xem."
+  },
+  {
+    "id": "uit_q051",
+    "question": "Nếu em muốn ưu tiên những lựa chọn có quy mô tuyển sinh nhỏ dưới 100 chỉ tiêu để cân nhắc kỹ hơn, trong bốn lựa chọn sau những ngành/chương trình nào của UIT thuộc nhóm đó?",
+    "options": {
+      "A": "Trí tuệ nhân tạo",
+      "B": "Khoa học dữ liệu",
+      "C": "Hệ thống thông tin chương trình tiên tiến",
+      "D": "Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/2026-du-kien-phuong-huong-tuyen-sinh-dai-hoc-chinh-quy-nam-2026"
+    ],
+    "gold_context": "Theo phương hướng tuyển sinh 2026, Trí tuệ nhân tạo có 40 chỉ tiêu, Khoa học dữ liệu có 55 chỉ tiêu, Hệ thống thông tin chương trình tiên tiến có 80 chỉ tiêu, còn Kỹ thuật phần mềm có 240 chỉ tiêu.",
+    "explanation": "Không thể trả lời bằng cách đọc một dòng duy nhất; phải so sánh chỉ tiêu giữa nhiều ngành/chương trình rồi lọc các lựa chọn dưới 100."
+  },
+  {
+    "id": "uit_q052",
+    "question": "Tương lai mình muốn nghiên cứu về malware, web vulnerability và cả bảo mật cho mô hình AI. Trong các nhóm/giảng viên ở FIT, đâu là nơi nên ưu tiên tìm hiểu?",
+    "options": {
+      "A": "Nhóm eSecurity của ThS. Phạm Nhật Duy",
+      "B": "Nhóm của ThS. Tô Quốc Huy",
+      "C": "Nhóm NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "D": "Nhóm của ThS. Phạm Nguyễn Phúc Toàn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu/7546-cac-nhom-nghien-cuu-cap-nhat-05-2026"
+    ],
+    "gold_context": "Trang cập nhật nhóm nghiên cứu 05/2026 ghi nhóm eSecurity của ThS. Phạm Nhật Duy có các hướng: phát hiện/phân loại mã độc, phát hiện/phân loại tấn công-lỗ hổng bảo mật website, cơ chế bảo mật cho các mô hình AI.",
+    "explanation": "Mục tiêu malware + web vulnerability + AI security khớp nhất với eSecurity của ThS. Phạm Nhật Duy."
+  },
+  {
+    "id": "uit_q054",
+    "question": "Mình muốn đi sâu vào blockchain, zero-knowledge proof, Web3 và xác thực văn bằng số. Nhóm nào ở FIT đang hợp nhất với hướng đó?",
+    "options": {
+      "A": "NLP@UIT",
+      "B": "eSecurity của ThS. Phạm Nhật Duy",
+      "C": "Data Chain của ThS. Võ Tấn Khoa",
+      "D": "Nhóm của ThS. Lưu Thanh Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu/7546-cac-nhom-nghien-cuu-cap-nhat-05-2026"
+    ],
+    "gold_context": "Trang cập nhật nhóm nghiên cứu 05/2026 ghi Data Chain của ThS. Võ Tấn Khoa có các hướng blockchain trong giáo dục và xác thực văn bằng số, zero-knowledge proof, rollup/layer-2, smart contract và Web3.",
+    "explanation": "Blockchain + ZKP + Web3 + xác thực văn bằng số khớp trực tiếp với Data Chain của ThS. Võ Tấn Khoa."
+  },
+  {
+    "id": "uit_q055",
+    "question": "Nếu mình muốn làm đề tài về LLM ứng dụng, xử lý dữ liệu mạng xã hội và truy vấn thông tin có yếu tố thời gian thì ở UIT nên tìm ai trước?",
+    "options": {
+      "A": "TS. Lưu Thanh Sơn",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "ThS. Phạm Thế Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trong chunk về các nhóm nghiên cứu UIT 2026, TS. Lưu Thanh Sơn thuộc nhóm NLPQUIT với các hướng: mô hình ngôn ngữ lớn và ứng dụng, xử lý dữ liệu truyền thông xã hội và dữ liệu đa phương thức, truy vấn thông tin có sử dụng yếu tố thời gian.",
+    "explanation": "Ba ý trong câu hỏi khớp trực tiếp với mô tả của TS. Lưu Thanh Sơn."
+  },
+  {
+    "id": "uit_q056",
+    "question": "Mình thích NLP nhưng muốn làm ra web app có ứng dụng mô hình học máy, không thiên về blockchain hay security. Ở UIT nên tìm ai?",
+    "options": {
+      "A": "ThS. Tô Quốc Huy",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "TS. Hà Minh Tân",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trong chunk các nhóm nghiên cứu UIT 2026, ThS. Tô Quốc Huy có hướng xử lý ngôn ngữ tự nhiên và xây dựng hệ thống Web ứng dụng các mô hình máy học.",
+    "explanation": "Mô tả trong câu hỏi khớp nhất với ThS. Tô Quốc Huy."
+  },
+  {
+    "id": "uit_q058",
+    "question": "Mình muốn theo hướng NLP có thêm trích xuất thông tin và một chút máy học ứng dụng, thay vì blockchain hay an toàn thông tin. Ai phù hợp hơn ở UIT?",
+    "options": {
+      "A": "CN. Trần Quốc Khánh",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "PGS.TS. Nguyễn Tấn Cầm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trong danh sách giảng viên hướng dẫn nghiên cứu và KLTN, CN. Trần Quốc Khánh có các hướng: xử lý ngôn ngữ tự nhiên, trích xuất thông tin và máy học ứng dụng.",
+    "explanation": "Nếu ưu tiên NLP + information extraction + applied ML thì CN. Trần Quốc Khánh là lựa chọn khớp nhất."
+  },
+  {
+    "id": "uit_q060",
+    "question": "Nếu mình muốn đọc thêm về parsing và sentiment analysis trên website nhóm NLP của UIT thì nên tìm nhóm nào?",
+    "options": {
+      "A": "Nhóm NLP của UIT / NLPQUIT",
+      "B": "Nhóm Data Chain",
+      "C": "Nhóm eSecurity",
+      "D": "Nhóm iTwin",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu",
+      "https://nlp.uit.edu.vn/research"
+    ],
+    "gold_context": "Chunk bổ sung từ nlp.uit.edu.vn nêu rõ nhóm NLP của UIT nghiên cứu các hướng như dependency parsing cho tiếng Việt và sentiment analysis/opinion mining. Trong danh sách nhóm nghiên cứu UIT 2026, cụm NLPQUIT là nhóm tương ứng với mảng NLP này.",
+    "explanation": "Các chủ đề parsing và sentiment analysis nằm ở nhóm NLP của UIT, không phải Data Chain, eSecurity hay iTwin."
+  },
+  {
+    "id": "uit_q062",
+    "question": "Nếu mình muốn shortlist tối đa 3 người ở UIT cho hướng NLP hiện đại nhưng thiên về social media text, Vietnamese understanding/generation, temporal retrieval hoặc language modeling thay vì security/computer vision, nên cân nhắc ai?",
+    "options": {
+      "A": "TS. Nguyễn Văn Kiệt",
+      "B": "ThS. Huỳnh Văn Tín",
+      "C": "TS. Lưu Thanh Sơn",
+      "D": "PGS.TS. Nguyễn Tấn Cầm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "TS. Nguyễn Văn Kiệt trong nhóm NLPQUIT có các hướng như Social Media Text Processing, Cognitive Science for NLP, Multimodal Learning, Temporal Information Retrieval. ThS. Huỳnh Văn Tín có Vietnamese Language Understanding & Generation, NLI, QA/MRC. TS. Lưu Thanh Sơn có language modeling và các hướng NLP/ML liên quan. PGS.TS. Nguyễn Tấn Cầm thuộc eSecurity nên không nằm trong shortlist NLP này.",
+    "explanation": "Cần đối chiếu nhiều hồ sơ nghiên cứu rồi loại một lựa chọn ngoài hướng NLP."
+  },
+  {
+    "id": "uit_q067",
+    "question": "Nếu mình thích data analytics, intelligent systems và MLOps hơn là NLP hay blockchain thì nên tìm ai ở UIT?",
+    "options": {
+      "A": "ThS. Phạm Thế Sơn",
+      "B": "ThS. Huỳnh Văn Tín",
+      "C": "ThS. Võ Tấn Khoa",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trong chunk nhóm nghiên cứu UIT 2026, ThS. Phạm Thế Sơn có các hướng: Intelligent system, Data Analytics và MLOps.",
+    "explanation": "Nếu đích là intelligent systems + data analytics + MLOps, ThS. Phạm Thế Sơn là đáp án đúng."
+  },
+  {
+    "id": "uit_q069",
+    "question": "Nếu mình ưu tiên một nhóm có website riêng datachain.uit.edu.vn và định hướng cả khóa luận/công bố bài báo, thì nhóm nào đang được mô tả như vậy?",
+    "options": {
+      "A": "Data Chain của ThS. Võ Tấn Khoa",
+      "B": "NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "C": "eSecurity của PGS.TS. Nguyễn Tấn Cầm",
+      "D": "Nhóm của ThS. Lưu Thanh Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu/7546-cac-nhom-nghien-cuu-cap-nhat-05-2026"
+    ],
+    "gold_context": "Trang cập nhật 05/2026 ghi Data Chain của ThS. Võ Tấn Khoa có website datachain.uit.edu.vn và lưu ý về định hướng làm khóa luận, nghiên cứu hoặc công bố bài báo.",
+    "explanation": "Dấu hiệu website riêng cùng định hướng khóa luận/bài báo khớp nhất với nhóm của ThS. Võ Tấn Khoa."
+  },
+  {
+    "id": "uit_q073",
+    "question": "Nếu sinh viên bị xếp loại rèn luyện kém cả năm lần thứ hai thì theo sổ tay UIT có thể bị xử lý ở mức nào?",
+    "options": {
+      "A": "Chỉ bị nhắc nhở nội bộ",
+      "B": "Bị trừ điểm học tập",
+      "C": "Có thể bị buộc thôi học",
+      "D": "Bị khóa email sinh viên",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/diem-ren-luyen-sinh-vien"
+    ],
+    "gold_context": "Trong chunk 'Điểm rèn luyện sinh viên', sổ tay nêu rằng nếu sinh viên bị xếp loại rèn luyện kém cả năm lần thứ hai thì có thể bị buộc thôi học.",
+    "explanation": "Đây là mức xử lý nặng nhất được nêu trong chunk về điểm rèn luyện."
+  },
+  {
+    "id": "uit_q077",
+    "question": "Nếu mình muốn tham gia hoạt động môi trường, sống xanh và bảo vệ cảnh quan ở UIT thì nên theo dõi hoạt động nào nhiều nhất?",
+    "options": {
+      "A": "Ngày Chủ nhật xanh",
+      "B": "UIT Job Fair",
+      "C": "Kỳ thi đánh giá năng lực",
+      "D": "Khóa luận tốt nghiệp",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://tuoitre.uit.edu.vn/ngay-chu-nhat-xanh-2026-huong-ung-ngay-doan-vien-2026",
+      "https://tuoitre.uit.edu.vn/ngay-chu-nhat-xanh-2026-huong-ung-ngay-doan-vien-2026"
+    ],
+    "gold_context": "Các bài viết của Tuổi trẻ UIT về 'Ngày Chủ nhật xanh' mô tả đây là hoạt động tình nguyện gắn với sống xanh, bảo vệ môi trường và cảnh quan học đường.",
+    "explanation": "Muốn theo dõi các hoạt động sống xanh ở UIT thì nên xem Ngày Chủ nhật xanh."
+  },
+  {
+    "id": "uit_q078",
+    "question": "Mình muốn vừa có môi trường luyện tiếng Anh, vừa tham gia hoạt động công nghệ vì cộng đồng theo kiểu sửa chữa - tái sử dụng máy tính. Nếu chọn một cặp phù hợp nhất ở UIT thì nên chọn gì?",
+    "options": {
+      "A": "OEC và Đội Máy tính cũ - Tri thức mới",
+      "B": "Wakame và Đội Event",
+      "C": "UVC và Lossless",
+      "D": "CLB Cờ UIT và Futsal UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 5,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/gioi-thieu-cac-cau-lac-bo-doi-nhom-cua-uit"
+    ],
+    "gold_context": "OEC là câu lạc bộ học thuật giúp sinh viên UIT có thêm môi trường rèn luyện tiếng Anh. Đội Máy tính cũ - Tri thức mới tập trung kết nối, sửa chữa và tái sử dụng máy tính cũ để mang cơ hội tiếp cận công nghệ cho cộng đồng.",
+    "explanation": "Muốn trả lời đúng phải nối mục tiêu ngoại ngữ với mục tiêu công nghệ vì cộng đồng từ hai chunk câu lạc bộ/đội khác nhau."
+  },
+  {
+    "id": "uit_q079",
+    "question": "Nếu mình muốn có một sân chơi học thuật để luyện tiếng Anh, tham gia trò chơi, workshop và kết nối bạn bè trong trường thì nên tìm CLB nào ở UIT?",
+    "options": {
+      "A": "Open English Club - OEC",
+      "B": "CLB Tiếng Nhật Wakame",
+      "C": "CLB WebDev Studios",
+      "D": "CLB Bóng chuyền UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/gioi-thieu-cac-cau-lac-bo-doi-nhom-cua-uit"
+    ],
+    "gold_context": "Chunk về Open English Club mô tả OEC là một câu lạc bộ học thuật, tạo sân chơi để sinh viên luyện tiếng Anh, tham gia hoạt động, trò chơi và hội thảo kết nối.",
+    "explanation": "Nếu muốn rèn tiếng Anh qua hoạt động CLB, OEC là đáp án khớp nhất."
+  },
+  {
+    "id": "uit_q080",
+    "question": "Nếu mình quên mật khẩu tài khoản chứng thực dùng để vào các hệ thống của trường thì có thể đổi mật khẩu ở đâu?",
+    "options": {
+      "A": "chungthuc.uit.edu.vn",
+      "B": "auth.uit.edu.vn",
+      "C": "drl.uit.edu.vn",
+      "D": "ctsv.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/quan-ly-thong-tin-sinh-vien"
+    ],
+    "gold_context": "Trong chunk 'Quản lý thông tin sinh viên', tài khoản chứng thực được dùng để truy cập các hệ thống website và wifi của trường. Sinh viên có thể thay đổi mật khẩu tại chungthuc.uit.edu.vn hoặc auth.uit.edu.vn.",
+    "explanation": "Cả hai địa chỉ A và B đều được nêu là nơi đổi mật khẩu tài khoản chứng thực."
+  },
+  {
+    "id": "uit_q081",
+    "question": "Tôi đi xe máy 125cc nhưng quên mang giấy phép lái xe. Theo luật giao thông hiện hành tôi bị phạt bao nhiêu?",
+    "options": {
+      "A": "37 triệu đồng/năm",
+      "B": "631.800 đồng",
+      "C": "drl.uit.edu.vn",
+      "D": "Mạng máy tính & An toàn thông tin - liên kết BCU",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 2,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q082",
+    "question": "Đội nào vô địch Chung kết Thế giới Liên Minh Huyền Thoại gần nhất?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "SE361",
+      "C": "UIT Job Fair",
+      "D": "BCU",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q083",
+    "question": "Tôi đang tìm cách đổi giấy phép lái xe online thì phải vào cổng nào của Nhà nước?",
+    "options": {
+      "A": "daa.uit.edu.vn",
+      "B": "student.uit.edu.vn",
+      "C": "drl.uit.edu.vn",
+      "D": "courses.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 2,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q085",
+    "question": "Giá vàng SJC hôm nay là bao nhiêu?",
+    "options": {
+      "A": "37 triệu",
+      "B": "55 triệu",
+      "C": "80 triệu",
+      "D": "90 triệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q087",
+    "question": "Tôi muốn học IELTS từ 5.5 lên 7.0 trong 3 tháng thì nên theo lộ trình nào?",
+    "options": {
+      "A": "Ngành Trí tuệ nhân tạo",
+      "B": "UIT Career Day",
+      "C": "SE355",
+      "D": "Thư viện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q089",
+    "question": "Top 3 quán phở ngon ở Hà Nội là quán nào?",
+    "options": {
+      "A": "Thư viện UIT",
+      "B": "E-Learning UIT",
+      "C": "Ngày Chủ nhật xanh",
+      "D": "SE401",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q090",
+    "question": "Tôi cần chọn card đồ họa nào để chơi Cyberpunk 2077 ở 2K Ultra?",
+    "options": {
+      "A": "Kỹ thuật máy tính",
+      "B": "SE351",
+      "C": "MM204",
+      "D": "Đội Máy tính cũ - Tri thức mới",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q094",
+    "question": "Thủ tục cấp lại căn cước công dân bị mất cần làm gì?",
+    "options": {
+      "A": "BHYT UIT",
+      "B": "Kế hoạch xét tốt nghiệp UIT",
+      "C": "NLP@UIT",
+      "D": "Mạng máy tính & truyền thông dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 2,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q096",
+    "question": "Tôi muốn build PC để train Stable Diffusion thì nên chọn CPU/GPU thế nào?",
+    "options": {
+      "A": "Kỹ thuật máy tính - liên kết Newcastle",
+      "B": "SE365",
+      "C": "Phạm Nhật Duy",
+      "D": "Job Fair UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 2,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  },
+  {
+    "id": "uit_q099",
+    "question": "Năm nay Euro hoặc World Cup diễn ra ở nước nào?",
+    "options": {
+      "A": "UIT Linh Xuân",
+      "B": "Birmingham City University",
+      "C": "Newcastle",
+      "D": "Thư viện UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": 1,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test này.",
+    "explanation": "Đây là câu ngoài miền UIT; hệ RAG nên chọn E = 'Không liên quan đến UIT'."
+  }
+]
