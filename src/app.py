@@ -7,6 +7,7 @@ import logging
 import sys
 from pathlib import Path
 
+# pyrefly: ignore [missing-import]
 import streamlit as st
 
 # Add src to path
@@ -262,14 +263,16 @@ def main():
         # MCQ options
         options = None
         if mode == "mcq":
-            st.markdown("**Đáp án (MCQ):**")
-            col_a, col_b = st.columns(2)
-            with col_a:
+            st.markdown("**Đáp án (MCQ - 5 đáp án):**")
+            sub_col1, sub_col2, sub_col3 = st.columns(3)
+            with sub_col1:
                 opt_a = st.text_input("A:", key="opt_a")
                 opt_b = st.text_input("B:", key="opt_b")
-            with col_b:
+            with sub_col2:
                 opt_c = st.text_input("C:", key="opt_c")
                 opt_d = st.text_input("D:", key="opt_d")
+            with sub_col3:
+                opt_e = st.text_input("E:", key="opt_e")
 
             options = {}
             if opt_a:
@@ -280,6 +283,8 @@ def main():
                 options["C"] = opt_c
             if opt_d:
                 options["D"] = opt_d
+            if opt_e:
+                options["E"] = opt_e
 
         submitted = st.button("🚀 Tra cứu", type="primary", use_container_width=True)
 
