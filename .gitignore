@@ -223,5 +223,5 @@ __marimo__/
 
 # Ignore embedded vector artifacts (large JSONL files stored in Milvus instead)
 embedded/
-docs/  # Uncomment to ignore all files in the docs directory
+docs/
 volumes/
