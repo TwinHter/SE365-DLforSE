@@ -14,3 +14,7 @@ OUTPUT_DIR = PROJECT_ROOT / "embedded"
 EMBEDDING_MODEL = "keepitreal/vietnamese-sbert"
 EMBEDDING_DEVICE = "cpu"
 EMBEDDING_DIMENSION = 768
+
+# Milvus configuration
+MILVUS_URI = "http://localhost:19530"
+MILVUS_COLLECTION = "rag_chunks"

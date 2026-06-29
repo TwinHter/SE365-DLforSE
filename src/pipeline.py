@@ -17,7 +17,6 @@ from src.llm_utils import (
     EXTRACT_JSON_A_PROMPT,
     GENERATE_ANSWER_PROMPT,
     REPHRASE_PROMPT,
-    SUPPORT_CHECK_PROMPT,
     get_llm_client,
     parse_json_safely,
 )
@@ -45,8 +44,11 @@ def _get_embedding_model():
             from sentence_transformers import SentenceTransformer
             _embedding_model = SentenceTransformer(EMBEDDING_MODEL)
             logger.info(f"Loaded embedding model: {EMBEDDING_MODEL}")
-        except ImportError:
-            logger.warning("sentence-transformers not installed, using pseudo-embeddings")
+        except ImportError as e:
+            logger.warning(f"sentence-transformers not installed: {e}")
+            _embedding_model = None
+        except Exception as e:
+            logger.warning(f"Failed to load embedding model: {e}")
             _embedding_model = None
     return _embedding_model
 
@@ -126,7 +128,6 @@ class RAGPipeline:
             PipelineStep(name="Hard Filter"),
             PipelineStep(name="Hybrid Search"),
             PipelineStep(name="Generate Answer"),
-            PipelineStep(name="Support Check"),
         ]
 
         try:
@@ -151,7 +152,6 @@ class RAGPipeline:
 
             if not is_about_uit:
                 self.result.steps[5].status = "done"
-                self.result.steps[6].status = "skipped"
                 self.result.answer = "Câu hỏi này không liên quan đến UIT."
                 self.result.explanation = "Hệ thống chỉ trả lời các câu hỏi liên quan đến Trường Đại học Công nghệ Thông tin (UIT)."
                 self.result.success = True
@@ -176,11 +176,6 @@ class RAGPipeline:
             self.result.answer = answer_data.get("Answer", "")
             self.result.explanation = answer_data.get("Explanation", "")
             self.result.support_context = answer_data.get("SupportContext", "")
-
-            # Step 7: Support Check
-            support_check = self._step_support_check(question, self.result.answer, top_chunks)
-            self.result.is_supported = support_check.get("isSupported", False)
-            self.result.support_confidence = support_check.get("confidence", 0.0)
 
             self.result.success = True
 
@@ -380,47 +375,79 @@ class RAGPipeline:
 
         try:
             # 1. Embedding search - Top 10
-            query_vec = generate_embedding(query)
-            step.add_log(f"Generated query embedding (dim={len(query_vec)})")
+            try:
+                query_vec = generate_embedding(query)
+                step.add_log(f"Generated query embedding (dim={len(query_vec)})")
 
-            embedding_results = self.db.vector_search(
-                query_vector=query_vec,
-                candidate_indices=candidate_indices,
-                top_k=10,
-            )
-            step.add_log(f"Embedding search: {len(embedding_results)} results")
-            for idx, (chunk_idx, score) in enumerate(embedding_results[:3]):
-                chunk = self.db.get_chunk(chunk_idx)
-                if chunk:
-                    step.add_log(f"  [Emb {idx+1}] Score={score:.3f}: {chunk['chunk_id']}")
+                embedding_results = self.db.vector_search(
+                    query_vector=query_vec,
+                    candidate_indices=candidate_indices,
+                    top_k=10,
+                )
+                step.add_log(f"Embedding search: {len(embedding_results)} results")
+                for idx, (chunk_idx, score) in enumerate(embedding_results[:3]):
+                    chunk = self.db.get_chunk(chunk_idx)
+                    if chunk:
+                        step.add_log(f"  [Emb {idx+1}] Score={score:.3f}: {chunk['chunk_id']}")
+            except Exception as e:
+                step.add_log(f"Embedding search failed: {e}, using empty results")
+                embedding_results = []
 
-            # 2. BM25 search - Top 10
-            bm25_results = self.db.bm25.search(
-                query=query,
-                candidate_indices=candidate_indices,
-                top_k=10,
-            )
-            step.add_log(f"BM25 search: {len(bm25_results)} results")
-            for idx, (chunk_idx, score) in enumerate(bm25_results[:3]):
-                chunk = self.db.get_chunk(chunk_idx)
-                if chunk:
-                    step.add_log(f"  [BM25 {idx+1}] Score={score:.3f}: {chunk['chunk_id']}")
+            # 2. BM25 search - Top 20 (increased from 10 to capture more relevant results)
+            try:
+                bm25_results = self.db.bm25.search(
+                    query=query,
+                    candidate_indices=candidate_indices,
+                    top_k=20,
+                )
+                step.add_log(f"BM25 search: {len(bm25_results)} results")
+                for idx, (chunk_idx, score) in enumerate(bm25_results[:3]):
+                    chunk = self.db.get_chunk(chunk_idx)
+                    if chunk:
+                        step.add_log(f"  [BM25 {idx+1}] Score={score:.3f}: {chunk['chunk_id']}")
+            except Exception as e:
+                step.add_log(f"BM25 search failed: {e}, using empty results")
+                bm25_results = []
 
-            # 3. RRF Fusion - combine to 20 unique
-            fused_results = reciprocal_rank_fusion([embedding_results, bm25_results], k=60)
-            step.add_log(f"RRF Fusion: {len(fused_results)} unique results")
+            # 3. RRF Fusion - combine to 30 unique (increased to capture more BM25 results)
+            # Use weighted RRF to preserve quality from high-scoring retrievers
+            try:
+                fused_results = reciprocal_rank_fusion(
+                    [embedding_results, bm25_results],
+                    k=60,
+                    use_weighted_scores=True
+                )
+                step.add_log(f"RRF Fusion: {len(fused_results)} unique results (weighted)")
+            except Exception as e:
+                step.add_log(f"RRF Fusion failed: {e}")
+                # Fallback: combine results manually
+                all_idx = set(idx for idx, _ in embedding_results) | set(idx for idx, _ in bm25_results)
+                fused_results = [(idx, 1.0) for idx in all_idx]
 
-            # 4. Get top 20 candidates for reranking
-            top_20_indices = [idx for idx, _ in fused_results[:20]]
-            top_20_chunks = self.db.get_chunks_by_indices(top_20_indices)
+            # 4. Get top 30 candidates for reranking (increased from 20)
+            top_30_indices = [idx for idx, _ in fused_results[:30]]
 
-            # 5. Cross-Encoder Rerank - Top 5
-            reranker = CrossEncoderReranker()
-            reranked = reranker.rerank(query, top_20_chunks, top_k=5)
+            if not top_30_indices:
+                step.add_log("No results after fusion")
+                step.status = "done"
+                return []
 
-            step.add_log(f"Reranked: {len(reranked)} final results")
-            for idx, (chunk, score) in enumerate(reranked[:5]):
-                step.add_log(f"  [Final {idx+1}] Score={score:.4f}: {chunk['chunk_id']}")
+            top_30_chunks = self.db.get_chunks_by_indices(top_30_indices)
+
+            # 5. Cross-Encoder Rerank - Top 10 (return more for LLM context)
+            try:
+                reranker = CrossEncoderReranker()
+                reranked = reranker.rerank(query, top_30_chunks, top_k=10)
+
+                step.add_log(f"Reranked: {len(reranked)} final results")
+                for idx, (chunk, score) in enumerate(reranked[:5]):
+                    step.add_log(f"  [Final {idx+1}] Score={score:.4f}: {chunk['chunk_id']}")
+            except Exception as e:
+                step.add_log(f"Reranking failed: {e}, using fusion results instead")
+                # Fallback: return fusion results without reranking
+                reranked = [(chunk, 1.0 / (i + 1)) for i, chunk in enumerate(top_30_chunks[:10])]
+                for idx, (chunk, score) in enumerate(reranked[:5]):
+                    step.add_log(f"  [Fallback {idx+1}] Score={score:.4f}: {chunk['chunk_id']}")
 
             step.output_data = {
                 "embedding_results": len(embedding_results),
@@ -476,7 +503,7 @@ class RAGPipeline:
             response, usage = self.llm.chat(
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.3,
-                max_tokens=1500,
+                max_tokens=8000,
             )
 
             step.add_log(f"Tokens used: {usage.get('total_tokens', 'N/A')}")
@@ -507,38 +534,3 @@ class RAGPipeline:
         finally:
             step.end_time = time.time()
 
-    def _step_support_check(self, question: str, answer: str, chunks: list[dict]) -> dict:
-        """Check if answer is supported by context."""
-        step = self.result.steps[6]
-        step.status = "running"
-        step.start_time = time.time()
-
-        context = "\n\n".join([c["content"] for c in chunks])
-
-        try:
-            prompt = SUPPORT_CHECK_PROMPT.format(
-                question=question,
-                answer=answer,
-                context=context[:2000],  # Limit context length
-            )
-
-            response, usage = self.llm.chat(
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.1,
-            )
-
-            result = parse_json_safely(response) or {}
-
-            step.add_log(f"Support check result: {result}")
-            step.output_data = result
-            step.status = "done"
-
-            return result
-
-        except Exception as e:
-            step.add_log(f"Lỗi: {e}")
-            step.status = "error"
-            step.error = str(e)
-            return {"isSupported": False, "confidence": 0.0, "reason": str(e)}
-        finally:
-            step.end_time = time.time()

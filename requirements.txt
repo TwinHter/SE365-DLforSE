@@ -1,6 +1,6 @@
-# Milvus and embedding models
-pymilvus[model,milvus_lite]>=2.4.0
-milvus-lite>=3.0.0
+# Milvus client (for Docker Milvus)
+# Note: If using milvus-lite (local, no Docker), use: pip install pymilvus[model,milvus_lite]
+pymilvus>=2.4.0
 
 # Sentence transformers for embeddings
 sentence-transformers>=2.0.0
