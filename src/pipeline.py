@@ -3,6 +3,7 @@ RAG Pipeline - Orchestrate the full RAG flow.
 Handles: rephrase -> extract JSON A -> hard filter -> retrieval -> rerank -> answer -> support check.
 """
 
+import json
 import logging
 import time
 from dataclasses import dataclass, field
@@ -118,6 +119,37 @@ class RAGPipeline:
         self.db = get_chunk_database()
         self.result = PipelineResult(success=False)
 
+    @staticmethod
+    def _find_out_of_scope_option(options: dict[str, str]) -> str | None:
+        """Tìm option letter mang nhãn 'không liên quan UIT / ngoài phạm vi'.
+
+        Trả về letter (vd 'E') hoặc None nếu không tìm thấy.
+        Match không phân biệt hoa thường, bỏ dấu (Unicode NFKD).
+        """
+        import re
+        import unicodedata
+
+        def strip_vi(s: str) -> str:
+            nfkd = unicodedata.normalize("NFKD", s)
+            ascii_only = "".join(c for c in nfkd if not unicodedata.combining(c))
+            return re.sub(r"[^a-z0-9]+", " ", ascii_only.lower()).strip()
+
+        keywords_ascii = {
+            "khong lien quan",      # không liên quan
+            "khong thuoc",          # không thuộc
+            "ngoai pham vi",        # ngoài phạm vi
+            "khong lien quan den uit",
+            "khong lien quan giao duc",  # không liên quan giáo dục
+        }
+        for letter, text in options.items():
+            normalized = strip_vi(text)
+            tokens = normalized.split()
+            for kw in keywords_ascii:
+                # Match nếu keyword là substring hoặc xuất hiện dưới dạng các token trong normalized.
+                if kw in normalized:
+                    return letter
+        return None
+
     def run(self, question: str, mode: str = "normal", options: dict | None = None) -> PipelineResult:
         """Run the full RAG pipeline."""
         self.result = PipelineResult(success=False)
@@ -152,8 +184,21 @@ class RAGPipeline:
 
             if not is_about_uit:
                 self.result.steps[5].status = "done"
-                self.result.answer = "Câu hỏi này không liên quan đến UIT."
-                self.result.explanation = "Hệ thống chỉ trả lời các câu hỏi liên quan đến Trường Đại học Công nghệ Thông tin (UIT)."
+                # Trong MCQ mode, tìm option mang nhãn "Không liên quan UIT / ngoài phạm vi / không liên quan đến giáo dục..."
+                # để trả về JSON đúng đáp án, thay vì câu từ chối thuần túy.
+                if mode == "mcq" and options:
+                    no_uit_letter = self._find_out_of_scope_option(options)
+                    if no_uit_letter:
+                        self.result.answer = json.dumps({
+                            "Answer": no_uit_letter,
+                            "Explanation": "Câu hỏi này không liên quan đến UIT."
+                        }, ensure_ascii=False)
+                    else:
+                        self.result.answer = "Câu hỏi này không liên quan đến UIT."
+                        self.result.explanation = "Hệ thống chỉ trả lời các câu hỏi liên quan đến Trường Đại học Công nghệ Thông tin (UIT)."
+                else:
+                    self.result.answer = "Câu hỏi này không liên quan đến UIT."
+                    self.result.explanation = "Hệ thống chỉ trả lời các câu hỏi liên quan đến Trường Đại học Công nghệ Thông tin (UIT)."
                 self.result.success = True
                 return self.result
 
@@ -168,7 +213,7 @@ class RAGPipeline:
                 return self.result
 
             # Step 6: Generate Answer
-            answer_data = self._step_generate_answer(question, top_chunks, mode, options)
+            answer_data = self._step_generate_answer(question, top_chunks, mode, options, json_a)
             if not answer_data:
                 self.result.error = "Failed to generate answer"
                 return self.result
@@ -374,7 +419,7 @@ class RAGPipeline:
         step.add_log(f"Hybrid searching in {len(candidate_indices)} candidates...")
 
         try:
-            # 1. Embedding search - Top 10
+            # 1. Embedding search - Top 50 (semantic coverage)
             try:
                 query_vec = generate_embedding(query)
                 step.add_log(f"Generated query embedding (dim={len(query_vec)})")
@@ -382,7 +427,7 @@ class RAGPipeline:
                 embedding_results = self.db.vector_search(
                     query_vector=query_vec,
                     candidate_indices=candidate_indices,
-                    top_k=10,
+                    top_k=50,
                 )
                 step.add_log(f"Embedding search: {len(embedding_results)} results")
                 for idx, (chunk_idx, score) in enumerate(embedding_results[:3]):
@@ -393,12 +438,12 @@ class RAGPipeline:
                 step.add_log(f"Embedding search failed: {e}, using empty results")
                 embedding_results = []
 
-            # 2. BM25 search - Top 20 (increased from 10 to capture more relevant results)
+            # 2. BM25 search - Top 50 (keyword coverage)
             try:
                 bm25_results = self.db.bm25.search(
                     query=query,
                     candidate_indices=candidate_indices,
-                    top_k=20,
+                    top_k=50,
                 )
                 step.add_log(f"BM25 search: {len(bm25_results)} results")
                 for idx, (chunk_idx, score) in enumerate(bm25_results[:3]):
@@ -409,7 +454,7 @@ class RAGPipeline:
                 step.add_log(f"BM25 search failed: {e}, using empty results")
                 bm25_results = []
 
-            # 3. RRF Fusion - combine to 30 unique (increased to capture more BM25 results)
+            # 3. RRF Fusion - combine to 60 unique
             # Use weighted RRF to preserve quality from high-scoring retrievers
             try:
                 fused_results = reciprocal_rank_fusion(
@@ -424,20 +469,20 @@ class RAGPipeline:
                 all_idx = set(idx for idx, _ in embedding_results) | set(idx for idx, _ in bm25_results)
                 fused_results = [(idx, 1.0) for idx in all_idx]
 
-            # 4. Get top 30 candidates for reranking (increased from 20)
-            top_30_indices = [idx for idx, _ in fused_results[:30]]
+            # 4. Get top 60 candidates for reranking
+            top_60_indices = [idx for idx, _ in fused_results[:60]]
 
-            if not top_30_indices:
+            if not top_60_indices:
                 step.add_log("No results after fusion")
                 step.status = "done"
                 return []
 
-            top_30_chunks = self.db.get_chunks_by_indices(top_30_indices)
+            top_60_chunks = self.db.get_chunks_by_indices(top_60_indices)
 
-            # 5. Cross-Encoder Rerank - Top 10 (return more for LLM context)
+            # 5. Cross-Encoder Rerank - Top 15 (quality filter)
             try:
                 reranker = CrossEncoderReranker()
-                reranked = reranker.rerank(query, top_30_chunks, top_k=10)
+                reranked = reranker.rerank(query, top_60_chunks, top_k=15)
 
                 step.add_log(f"Reranked: {len(reranked)} final results")
                 for idx, (chunk, score) in enumerate(reranked[:5]):
@@ -445,7 +490,7 @@ class RAGPipeline:
             except Exception as e:
                 step.add_log(f"Reranking failed: {e}, using fusion results instead")
                 # Fallback: return fusion results without reranking
-                reranked = [(chunk, 1.0 / (i + 1)) for i, chunk in enumerate(top_30_chunks[:10])]
+                reranked = [(chunk, 1.0 / (i + 1)) for i, chunk in enumerate(top_60_chunks[:15])]
                 for idx, (chunk, score) in enumerate(reranked[:5]):
                     step.add_log(f"  [Fallback {idx+1}] Score={score:.4f}: {chunk['chunk_id']}")
 
@@ -473,33 +518,63 @@ class RAGPipeline:
         chunks: list[dict],
         mode: str,
         options: dict | None,
+        json_a: dict | None = None,
     ) -> dict | None:
         """Generate the final answer from chunks."""
         step = self.result.steps[5]
         step.status = "running"
         step.start_time = time.time()
 
+        # Limit to top 10 chunks for LLM context
+        max_context_chunks = 10
+        chunks_for_context = chunks[:max_context_chunks]
+
         # Build context from chunks
         context = "\n\n".join([
             f"[Chunk {i+1}] {c['content']}"
-            for i, c in enumerate(chunks)
+            for i, c in enumerate(chunks_for_context)
         ])
 
-        step.input_data = {"question": question, "chunks_count": len(chunks)}
-        step.add_log(f"Building context from {len(chunks)} chunks...")
+        step.input_data = {"question": question, "chunks_count": len(chunks_for_context)}
+        step.add_log(f"Building context from {len(chunks_for_context)} chunks (top {max_context_chunks} of {len(chunks)} retrieved)...")
         step.add_log(f"Context preview: {context[:300]}...")
+
+        # Check if multiple answers expected
+        is_multi = False
+        if json_a:
+            is_multi = json_a.get("isMultiAnswer", False)
+        step.add_log(f"isMultiAnswer: {is_multi}")
+
+        # Build multi-answer context for prompt
+        if is_multi:
+            is_multi_context = (
+                "**CHẾ ĐỘ MULTIPLE CHOICE**: Câu hỏi này cho phép CHỌN NHIỀU đáp án đúng.\n"
+                "Hãy chọn TẤT CẢ các đáp án đúng và liệt kê chúng, ví dụ: 'A, B, C'"
+            )
+            answer_format = "A, B, C (danh sách các đáp án đúng, phân cách bằng dấu phẩy)"
+        else:
+            is_multi_context = (
+                "**CHẾ ĐỘ SINGLE CHOICE**: Câu hỏi này chỉ có MỘT đáp án đúng.\n"
+                "Hãy chọn duy nhất một đáp án đúng."
+            )
+            answer_format = "X (chỉ một đáp án đúng, ví dụ: B)"
 
         try:
             prompt = GENERATE_ANSWER_PROMPT.format(
                 question=question,
+                is_multi_context=is_multi_context,
+                answer_format=answer_format,
                 context=context,
             )
 
             if mode == "mcq" and options:
                 options_text = "\n".join([f"- {k}: {v}" for k, v in options.items()])
-                prompt += f"\n\n**QUAN TRỌNG - MCQ Mode**: Đáp án phải là MỘT TRONG các lựa chọn sau:\n{options_text}\nNếu không tìm thấy thông tin, chọn đáp án 'E'."
+                # KHÔNG bắt buộc chọn E khi câu hỏi thuộc UIT
+                # Chỉ chọn E khi câu hỏi KHÔNG thuộc UIT (đã xử lý ở hàm run)
+                prompt += f"\n\n**QUAN TRỌNG - MCQ Mode**: Đáp án phải là MỘT TRONG các lựa chọn sau:\n{options_text}"
 
             step.add_log(f"Calling LLM to generate answer...")
+            step.add_log(f"Answer format: {answer_format}")
             response, usage = self.llm.chat(
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.3,
@@ -513,6 +588,21 @@ class RAGPipeline:
 
             if answer_data:
                 step.add_log(f"Parsed Answer: {answer_data.get('Answer', '')}")
+
+                # CRITICAL: Nếu LLM xác định câu hỏi THUỘC UIT (isAboutUIT=Yes)
+                # thì KHÔNG ĐƯỢC chọn E - force chọn đáp án khác
+                if json_a and json_a.get("isAboutUIT", "No") == "Yes":
+                    selected = answer_data.get("Answer", "").strip().upper()
+                    if selected == "E":
+                        step.add_log("WARNING: LLM chọn E cho câu hỏi thuộc UIT! Force chọn đáp án khác...")
+                        # Chọn đáp án đầu tiên khác E
+                        for key in options.keys():
+                            if key.upper() != "E":
+                                answer_data["Answer"] = key
+                                answer_data["Explanation"] = "(Hệ thống tự động sửa: không chọn E cho câu hỏi thuộc UIT)"
+                                step.add_log(f"Force chọn đáp án: {key}")
+                                break
+
                 step.output_data = answer_data
             else:
                 step.add_log("Failed to parse JSON, using raw response")

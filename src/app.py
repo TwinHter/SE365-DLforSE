@@ -127,8 +127,8 @@ def load_chunks_sidebar():
 
         st.markdown("---")
         st.markdown("### ⚙️ Configuration")
-        st.info(f"Model: deepseek-v4-flash")
-        st.info("Provider: DeepSeek via xah.io")
+        st.info(f"Model: w3leee/claude-sonnet-4.6")
+        st.info("Provider: Claude via xah.io")
 
 
 def render_step_indicator(step, step_index):

@@ -36,6 +36,13 @@ EMBEDDING_FILE = OUTPUT_DIR / "embedded_chunks.jsonl"
 class ChunkDatabase:
     """Milvus-backed database cho chunks đã embed."""
 
+    @staticmethod
+    def _normalize_category(cat: str | None) -> str:
+        """Normalize category by removing underscores and lowercasing."""
+        if not cat:
+            return cat
+        return cat.replace("_", "").lower()
+
     def __init__(self, uri: str = MILVUS_URI, collection_name: str = MILVUS_COLLECTION):
         self.milvus_client = None
         self.uri = uri
@@ -293,11 +300,13 @@ class ChunkDatabase:
                 categories_to_filter = category
             
             if categories_to_filter and categories_to_filter != ["chung", ""]:
+                # Normalize categories for comparison (remove underscores)
+                normalized_filter = [self._normalize_category(c) for c in categories_to_filter]
                 candidate_indices = [
                     i for i in candidate_indices
-                    if self.chunks[i]["category"] in categories_to_filter + ["chung", ""]
+                    if self._normalize_category(self.chunks[i]["category"]) in normalized_filter + ["chung", ""]
                 ]
-                logger.info(f"After category filter {categories_to_filter} (including chung/null): {len(candidate_indices)} candidates")
+                logger.info(f"After category filter {categories_to_filter} (normalized: {normalized_filter}): {len(candidate_indices)} candidates")
         else:
             # Nếu không specify category, lấy tất cả
             logger.info(f"No category filter, total candidates: {len(candidate_indices)}")
@@ -389,7 +398,7 @@ class ChunkDatabase:
                     
                     # Tìm trong CTĐT
                     for i in range(len(self.chunks)):
-                        if self.chunks[i]["category"] == "chuongtrinhdaotao":
+                        if self._normalize_category(self.chunks[i]["category"]) == "chuongtrinhdaotao":
                             chunk_major = self.chunks[i].get("major", "")
                             if isinstance(chunk_major, list):
                                 chunk_major_upper = [m.upper() for m in chunk_major if m]
@@ -405,7 +414,7 @@ class ChunkDatabase:
                     
                     # Tìm trong danhmucmonhoc (quan trọng cho thông tin ngành!)
                     for i in range(len(self.chunks)):
-                        if self.chunks[i]["category"] == "danhmucmonhoc":
+                        if self._normalize_category(self.chunks[i]["category"]) == "danhmucmonhoc":
                             chunk_major = self.chunks[i].get("major", "")
                             if isinstance(chunk_major, list):
                                 chunk_major_upper = [m.upper() for m in chunk_major if m]
@@ -432,7 +441,8 @@ class ChunkDatabase:
                     
                     # Tìm trong tất cả danhmucmonhoc + chuongtrinhdaotao cho major này
                     for i in range(len(self.chunks)):
-                        if self.chunks[i]["category"] in [category, "chuongtrinhdaotao"]:
+                        chunk_cat = self._normalize_category(self.chunks[i]["category"])
+                        if chunk_cat in [category, "chuongtrinhdaotao"]:
                             # Check year
                             chunk_year = self.chunks[i]["year"]
                             if year and chunk_year not in year_range and chunk_year != 0:
@@ -480,7 +490,8 @@ class ChunkDatabase:
                 
                 # Tìm thêm trong CTĐT và danhmucmonhoc cho major cụ thể (không keyword)
                 for i in range(len(self.chunks)):
-                    if self.chunks[i]["category"] in ["chuongtrinhdaotao", "danhmucmonhoc"]:
+                    chunk_cat = self._normalize_category(self.chunks[i]["category"])
+                    if chunk_cat in ["chuongtrinhdaotao", "danhmucmonhoc"]:
                         # Check year
                         chunk_year = self.chunks[i]["year"]
                         if year and chunk_year not in year_range and chunk_year != 0:

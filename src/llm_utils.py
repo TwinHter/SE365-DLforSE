@@ -163,8 +163,16 @@ Trả lời theo định dạng JSON sau (chỉ trả JSON, không giải thích
     "year": năm (mặc định 2026),
     "major": "KHMT | ATTT | CNPM | HTTT | KTMT | MMT | CNTT | TTNT | ... hoặc null nếu không xác định được",
     "isAboutUIT": "Yes" hoặc "No",
-    "reasoning": "giải thích ngắn về why bạn chọn category, year và major"
+    "isMultiAnswer": true hoặc false - TRUE nếu câu hỏi cho phép/chọn nhiều đáp án, FALSE nếu chỉ chọn 1 đáp án,
+    "reasoning": "giải thích ngắn về why bạn chọn category, year, major và isMultiAnswer"
 }}
+
+Quy tắc xác định isMultiAnswer:
+- TRUE (nhiều đáp án) khi câu hỏi chứa: "những môn nào", "những gì", "những ai", "nào", liệt kê, so sánh nhiều lựa chọn
+  + VD: "kỳ tới muốn ưu tiên các môn nào", "nên chọn những môn nào", "những hoạt động nào"
+- FALSE (một đáp án) khi câu hỏi chứa: "môn nào", "ngành nào", "hướng nào", "cái nào", đang hỏi duy nhất
+  + VD: "nên chọn môn nào", "ngành nào phù hợp nhất", "hướng nào tốt nhất"
+- Nếu không rõ, mặc định là FALSE
 
 Quy tắc xác định major:
 - "Khoa học máy tính", "Khoa hoc may tinh", "KHMT", "Computer Science" -> "KHMT"
@@ -186,18 +194,20 @@ QUAN TRỌNG: Nếu câu hỏi hỏi về "ngành KHMT", "học phí", "tuyển 
 
 Quy tắc xác định category:
 - Nếu câu hỏi về tuyển sinh, điểm chuẩn, học phí -> category = "tuyensinh"
-- Nếu câu hỏi về KHUNG chương trình, cấu trúc năm học, tổng số tín chỉ, thứ tự môn học -> category = "chuongtrinhdaotao"
+- Nếu câu hỏi về KHUNG chương trình, cấu trúc năm học, tổng số tín chỉ -> category = "chuongtrinhdaotao"
   + VD: "chương trình gồm bao nhiêu tín chỉ", "năm 1 học những gì", "cấu trúc chương trình"
-- Nếu câu hỏi về NỘI DUNG môn học cụ thể, các môn cụ thể học gì, học phần -> category = "danhmucmonhoc"
-  + VD: "được học những môn gì", "nội dung môn X", "học những nội dung từ A đến B"
+- Nếu câu hỏi về NỘI DUNG môn học cụ thể, các môn cụ thể học gì, học phần, HOẶC chứa MÃ MÔN HỌC -> category = "danhmucmonhoc"
+  + Mã môn học: IT001, CS101, MATH, AL..., các mã có dạng chữ-số như "INT2201", "INT3110"
+  + VD: "môn INT2201", "CT177", "IT001 học gì", "cấu trúc dữ liệu INT2204"
 - Nếu câu hỏi về hoạt động sinh viên, câu lạc bộ -> category = "hoatdong"
 - Nếu câu hỏi về nghiên cứu khoa học, nhóm nghiên cứu -> category = "nghiencuu"
 - Nếu câu hỏi TƯ VẤN NGÀNH, SO SÁNH ngành, hỏi ngành nào phù hợp dựa trên nội dung học -> category = ["chuongtrinhdaotao", "danhmucmonhoc"]
   + VD: "ngành nào học ML", "ngành nào phù hợp với nghiên cứu", "so sánh ngành A và ngành B", "được học từ cấu trúc dữ liệu đến ML"
 - Các câu hỏi khác, chung chung -> category = "chung"
 
-QUAN TRỌNG: 
+QUAN TRỌNG:
 - Hỏi về nội dung được học -> danhmucmonhoc
+- HỎI VỀ MỘT MÔN CỤ THỂ (có mã môn) -> danhmucmonhoc
 - Hỏi về cấu trúc/khung chương trình hoặc TƯ VẤN NGÀNH -> chuongtrinhdaotao
 - Luôn trả về cả hai: category = ["chuongtrinhdaotao", "danhmucmonhoc"]"""
 
@@ -206,6 +216,7 @@ GENERATE_ANSWER_PROMPT = """Bạn là trợ lý AI thân thiện của Trường
 Hãy đánh giá từng đoạn tài liệu và trả lời câu hỏi dựa trên ngữ cảnh một cách TỰ NHIÊN, THÂN THIỆN như đang trò chuyện với sinh viên.
 
 Câu hỏi: {question}
+{is_multi_context}
 
 Các đoạn tài liệu đã được tìm kiếm (CHỈ có các Chunk bên dưới, KHÔNG có thêm):
 ---
@@ -223,14 +234,18 @@ Yêu cầu:
 Trả lời theo định dạng JSON sau:
 {{
     "relevantChunks": ["Chunk 1", "Chunk 3"],
-    "Answer": "câu trả lời ngắn gọn, dễ hiểu (1-2 câu)",
+    "Answer": "{answer_format}",
     "Explanation": "giải thích lý do, thêm context hữu ích (2-3 câu, viết tự nhiên như đang trò chuyện)",
     "SupportContext": "trích dẫn ngắn từ ngữ cảnh (1-2 câu) làm bằng chứng"
 }}
 
-Ví dụ câu trả lời TỐT:
+Ví dụ câu trả lời TỐT (SINGLE CHOICE - chọn 1 đáp án):
 - "Theo [Chunk 3], đáp án là B. Khung chương trình yêu cầu bạn cần hoàn thành các môn tiên quyết như 'Cấu trúc dữ liệu' trước khi đăng ký môn này."
 - "[Chunk 1] và [Chunk 4] cho thấy mình khuyên bạn chọn phương án C nhé!"
+
+Ví dụ câu trả lời TỐT (MULTIPLE CHOICE - chọn nhiều đáp án):
+- "Theo [Chunk 3], đáp án là A, B, C. Cả ba môn này đều thuộc nhóm học phần cơ bản và bạn đủ điều kiện đăng ký."
+- "[Chunk 1] và [Chunk 2] cho thấy các đáp án đúng là B và D."
 
 Ví dụ câu trả lời XẤU:
 - "Theo [Chunk 5]" khi CHỈ có 3 chunks trong ngữ cảnh
