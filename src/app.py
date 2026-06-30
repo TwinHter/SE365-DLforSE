@@ -210,19 +210,17 @@ def render_context_viewer(result):
     st.markdown("### 📄 Chi tiết Context")
 
     for i, step in enumerate(result.steps):
-        if step.name == "Vector Search" and step.output_data:
-            results = step.output_data.get("results", [])
-            for r in results:
-                idx = r.get("idx", 0)
-                db = get_chunk_database()
-                chunk = db.get_chunk(idx)
-                if chunk:
-                    with st.expander(f"📄 Chunk: {chunk.get('chunk_id', 'Unknown')}"):
-                        st.markdown(f"**Category:** {chunk.get('category', 'N/A')}")
-                        st.markdown(f"**Year:** {chunk.get('year', 'N/A')}")
-                        st.markdown(f"**Major:** {chunk.get('major', 'N/A')}")
+        if step.name in ["Hybrid Search", "Re-Retrieval"] and step.output_data:
+            chunks = step.output_data.get("chunks", [])
+            if chunks:
+                st.markdown(f"#### Ngữ cảnh từ bước: **{step.name}**")
+                for r in chunks:
+                    with st.expander(f"📄 Chunk: {r.get('chunk_id', 'Unknown')}"):
+                        st.markdown(f"**Category:** {r.get('category', 'N/A')}")
+                        st.markdown(f"**Year:** {r.get('year', 'N/A')}")
+                        st.markdown(f"**Major:** {r.get('major', 'N/A')}")
                         st.markdown(f"**Content:**")
-                        st.text(chunk.get("content", "")[:1000])
+                        st.text(r.get("content", ""))
 
 
 def main():

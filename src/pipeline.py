@@ -19,6 +19,8 @@ from src.llm_utils import (
     GENERATE_ANSWER_PROMPT,
     GENERATE_ANSWER_NORMAL_PROMPT,
     REPHRASE_PROMPT,
+    EVALUATE_RETRIEVAL_PROMPT,
+    RETRY_REPHRASE_PROMPT,
     get_llm_client,
     parse_json_safely,
 )
@@ -115,11 +117,12 @@ class PipelineResult:
 class RAGPipeline:
     """Full RAG pipeline with step-by-step execution."""
 
-    def __init__(self, disable_hard_filter: bool = False, no_rag: bool = False):
+    def __init__(self, disable_hard_filter: bool = False, no_rag: bool = False, disable_self_rag: bool = False):
         self.llm = get_llm_client()
         self.db = get_chunk_database()
         self.disable_hard_filter = disable_hard_filter
         self.no_rag = no_rag
+        self.disable_self_rag = disable_self_rag
         self.result = PipelineResult(success=False)
 
     @staticmethod
@@ -153,6 +156,15 @@ class RAGPipeline:
                     return letter
         return None
 
+    def _get_step(self, name: str) -> PipelineStep:
+        for s in self.result.steps:
+            if s.name == name:
+                return s
+        # If not found, append it dynamically
+        new_step = PipelineStep(name=name)
+        self.result.steps.append(new_step)
+        return new_step
+
     def run(self, question: str, mode: str = "normal", options: dict | None = None) -> PipelineResult:
         """Run the full RAG pipeline."""
         self.result = PipelineResult(success=False)
@@ -168,16 +180,16 @@ class RAGPipeline:
         try:
             # Step 1: Load Data
             if self.no_rag:
-                self.result.steps[0].status = "skipped"
-                self.result.steps[0].add_log("Load Data skipped in No RAG mode")
+                self._get_step("Load Data").status = "skipped"
+                self._get_step("Load Data").add_log("Load Data skipped in No RAG mode")
             else:
                 self._step_load_data()
 
             # Step 2: Rephrase Question
             if self.no_rag:
                 rephrased = question
-                self.result.steps[1].status = "skipped"
-                self.result.steps[1].add_log("Rephrase skipped in No RAG mode")
+                self._get_step("Rephrase Question").status = "skipped"
+                self._get_step("Rephrase Question").add_log("Rephrase skipped in No RAG mode")
             else:
                 rephrased = self._step_rephrase(question)
                 if not rephrased:
@@ -195,7 +207,7 @@ class RAGPipeline:
             self.result.is_about_uit = is_about_uit
 
             if not is_about_uit:
-                self.result.steps[5].status = "done"
+                self._get_step("Generate Answer").status = "done"
                 # Trong MCQ mode, tìm option mang nhãn "Không liên quan UIT / ngoài phạm vi / không liên quan đến giáo dục..."
                 # để trả về JSON đúng đáp án, thay vì câu từ chối thuần túy.
                 if mode == "mcq" and options:
@@ -215,10 +227,10 @@ class RAGPipeline:
                 return self.result
 
             if self.no_rag:
-                self.result.steps[3].status = "skipped"
-                self.result.steps[3].add_log("Hard Filter skipped in No RAG mode")
-                self.result.steps[4].status = "skipped"
-                self.result.steps[4].add_log("Hybrid Search skipped in No RAG mode")
+                self._get_step("Hard Filter").status = "skipped"
+                self._get_step("Hard Filter").add_log("Hard Filter skipped in No RAG mode")
+                self._get_step("Hybrid Search").status = "skipped"
+                self._get_step("Hybrid Search").add_log("Hybrid Search skipped in No RAG mode")
                 
                 # Step 6: Generate Answer (No RAG)
                 answer_data = self._step_generate_answer_no_rag(question, mode, options, json_a)
@@ -226,13 +238,70 @@ class RAGPipeline:
                 # Step 4: Hard Filter
                 if self.disable_hard_filter:
                     candidate_indices = None
-                    self.result.steps[3].status = "done"
-                    self.result.steps[3].add_log("Hard filter disabled by configuration (Ablation Study)")
+                    self._get_step("Hard Filter").status = "done"
+                    self._get_step("Hard Filter").add_log("Hard filter disabled by configuration (Ablation Study)")
                 else:
                     candidate_indices = self._step_hard_filter(json_a)
 
                 # Step 5: Hybrid Search
                 top_chunks = self._step_hybrid_search(rephrased, candidate_indices)
+
+                # Self-RAG Step (if enabled)
+                if not self.disable_self_rag and top_chunks:
+                    # Dynamically insert Self-RAG Grading and Re-Retrieval steps
+                    if "Self-RAG Grading" not in [s.name for s in self.result.steps]:
+                        gen_idx = next(i for i, s in enumerate(self.result.steps) if s.name == "Generate Answer")
+                        self.result.steps.insert(gen_idx, PipelineStep(name="Self-RAG Grading"))
+                        self.result.steps.insert(gen_idx + 1, PipelineStep(name="Re-Retrieval"))
+
+                    # Lượt 1: Đánh giá kết quả tìm kiếm ban đầu
+                    is_sufficient = self._step_grade_retrieval(question, top_chunks)
+
+                    if not is_sufficient:
+                        retry_step = self._get_step("Re-Retrieval")
+                        retry_step.status = "running"
+                        retry_step.add_log("Lần 1: Tài liệu thiếu thông tin. Thực hiện Retry 1 (Vẫn dùng Hard Filter, Rephrase truy vấn)...")
+
+                        # Lượt 2 (Retry 1): Rephrase câu truy vấn, giữ nguyên bộ lọc Hard Filter
+                        retry_query = self._step_retry_rephrase(question)
+                        retry_step.add_log(f"Retry 1: Tìm kiếm lại với câu hỏi đã viết lại: {retry_query}")
+                        new_top_chunks = self._step_hybrid_search(retry_query, candidate_indices, step_name="Re-Retrieval")
+
+                        if new_top_chunks:
+                            retry_step.add_log("Retry 1: Đang đánh giá tài liệu mới...")
+                            is_sufficient_retry1 = self._step_grade_retrieval(question, new_top_chunks, step_name="Re-Retrieval")
+                            top_chunks = new_top_chunks
+
+                            # Nếu Retry 1 vẫn không đủ thông tin, và có dùng Hard Filter -> Lượt 3 (Retry 2)
+                            if not is_sufficient_retry1 and not self.disable_hard_filter and candidate_indices is not None:
+                                retry_step.add_log("Lần 2: Vẫn thiếu thông tin. Thực hiện Retry 2 (Bỏ bộ lọc Hard Filter để tìm trên toàn DB)...")
+                                retry_step.add_log(f"Retry 2: Tìm kiếm lại không dùng Hard Filter với câu hỏi: {retry_query}")
+                                new_top_chunks_retry2 = self._step_hybrid_search(retry_query, None, step_name="Re-Retrieval")
+
+                                if new_top_chunks_retry2:
+                                    retry_step.add_log("Retry 2: Đang đánh giá tài liệu mới...")
+                                    is_sufficient_retry2 = self._step_grade_retrieval(question, new_top_chunks_retry2, step_name="Re-Retrieval")
+                                    top_chunks = new_top_chunks_retry2
+                                else:
+                                    retry_step.add_log("Retry 2: Không tìm thấy kết quả mới khi bỏ bộ lọc cứng.")
+                        else:
+                            # Nếu Retry 1 không tìm thấy gì, và có dùng Hard Filter -> chuyển sang Retry 2 ngay
+                            if not self.disable_hard_filter and candidate_indices is not None:
+                                retry_step.add_log("Retry 1 không trả về kết quả mới. Thực hiện Retry 2 (Bỏ bộ lọc Hard Filter)...")
+                                new_top_chunks_retry2 = self._step_hybrid_search(rephrased, None, step_name="Re-Retrieval")
+                                if new_top_chunks_retry2:
+                                    retry_step.add_log("Retry 2: Đang đánh giá tài liệu mới...")
+                                    is_sufficient_retry2 = self._step_grade_retrieval(question, new_top_chunks_retry2, step_name="Re-Retrieval")
+                                    top_chunks = new_top_chunks_retry2
+                                else:
+                                    retry_step.add_log("Retry 2: Không tìm thấy kết quả mới khi bỏ bộ lọc cứng.")
+                            else:
+                                retry_step.add_log("Retry 1 không ra kết quả mới và không có Hard Filter để bỏ. Giữ nguyên tài liệu cũ.")
+
+                        retry_step.status = "done"
+                    else:
+                        self._get_step("Re-Retrieval").status = "skipped"
+                        self._get_step("Re-Retrieval").add_log("Tài liệu đầy đủ. Không cần truy xuất lại.")
 
                 if not top_chunks:
                     self.result.error = "Không tìm thấy ngữ cảnh phù hợp"
@@ -254,14 +323,96 @@ class RAGPipeline:
         except Exception as e:
             logger.exception("Pipeline error")
             self.result.error = str(e)
-            self.result.steps[-1].status = "error"
-            self.result.steps[-1].error = str(e)
+            # Safe status update for the last step in case of generic failure
+            if self.result.steps:
+                self.result.steps[-1].status = "error"
+                self.result.steps[-1].error = str(e)
 
         return self.result
 
+    def _step_grade_retrieval(self, question: str, chunks: list[dict], step_name: str = "Self-RAG Grading") -> bool:
+        """Evaluate if retrieved chunks are sufficient to answer the question."""
+        step = self._get_step(step_name)
+        step.status = "running"
+        step.start_time = time.time()
+        
+        # Build context from chunks to pass to grader
+        chunks_to_grade = chunks[:10]
+        context = "\n\n".join([
+            f"[Chunk {i+1}] {c['content']}"
+            for i, c in enumerate(chunks_to_grade)
+        ])
+        
+        step.input_data = {"question": question, "chunks_count": len(chunks_to_grade)}
+        step.add_log(f"Đang đánh giá {len(chunks_to_grade)} tài liệu đầu tiên...")
+        
+        try:
+            prompt = EVALUATE_RETRIEVAL_PROMPT.format(
+                question=question,
+                context=context
+            )
+            
+            response, usage = self.llm.chat(
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,  # low temperature for grading consistency
+            )
+            
+            step.add_log(f"Tokens used: {usage.get('total_tokens', 'N/A')}")
+            step.add_log(f"Grader Response (raw):\n{response[:300]}...")
+            
+            result = parse_json_safely(response)
+            
+            if result:
+                is_sufficient_str = result.get("is_sufficient", "Yes")
+                reason = result.get("reason", "")
+                
+                is_sufficient = is_sufficient_str.strip().lower() == "yes"
+                
+                step.output_data = result
+                step.add_log(f"Kết quả đánh giá: {is_sufficient_str} | Lý do: {reason}")
+                
+                if is_sufficient:
+                    step.status = "done"
+                    return True
+                else:
+                    step.status = "done"
+                    return False
+            else:
+                step.add_log("Không thể parse JSON từ phản hồi của Grader. Mặc định: Đủ thông tin.")
+                step.output_data = {"is_sufficient": "Yes", "reason": "Parsing failed, fallback to Yes"}
+                step.status = "done"
+                return True
+                
+        except Exception as e:
+            step.add_log(f"Lỗi chấm điểm: {e}. Mặc định: Đủ thông tin.")
+            step.status = "error"
+            step.error = str(e)
+            return True
+        finally:
+            step.end_time = time.time()
+
+    def _step_retry_rephrase(self, question: str) -> str:
+        """Rephrase the question with synonyms for re-retrieval."""
+        step = self._get_step("Re-Retrieval")
+        step.add_log(f"Viết lại câu hỏi tìm kiếm...")
+        
+        try:
+            prompt = RETRY_REPHRASE_PROMPT.format(question=question)
+            response, usage = self.llm.chat(
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.4,
+            )
+            
+            rephrased = response.strip()
+            step.add_log(f"Câu hỏi viết lại: {rephrased}")
+            return rephrased
+        except Exception as e:
+            step.add_log(f"Lỗi rephrase retry: {e}. Sử dụng câu hỏi gốc.")
+            return question
+
     def _step_load_data(self):
         """Load chunks from embedded file."""
-        step = self.result.steps[0]
+        step = self._get_step("Load Data")
         step.status = "running"
         step.start_time = time.time()
         step.add_log("Bắt đầu load chunks...")
@@ -279,7 +430,7 @@ class RAGPipeline:
 
     def _step_rephrase(self, question: str) -> str | None:
         """Rephrase the question for better retrieval."""
-        step = self.result.steps[1]
+        step = self._get_step("Rephrase Question")
         step.status = "running"
         step.start_time = time.time()
         step.input_data = {"question": question}
@@ -309,7 +460,7 @@ class RAGPipeline:
 
     def _step_extract_json_a(self, rephrased: str, mode: str, options: dict | None) -> dict | None:
         """Extract structured information (JSON A)."""
-        step = self.result.steps[2]
+        step = self._get_step("Extract JSON A")
         step.status = "running"
         step.start_time = time.time()
         step.input_data = {"rephrased": rephrased, "mode": mode}
@@ -360,7 +511,7 @@ class RAGPipeline:
 
     def _step_hard_filter(self, json_a: dict) -> list[int]:
         """Apply hard filters based on JSON A."""
-        step = self.result.steps[3]
+        step = self._get_step("Hard Filter")
         step.status = "running"
         step.start_time = time.time()
 
@@ -369,7 +520,7 @@ class RAGPipeline:
         major = json_a.get("major", "")
 
         # Extract keywords from question for content filtering
-        rephrased = self.result.steps[1].output_data.get("rephrased", "")
+        rephrased = self._get_step("Rephrase Question").output_data.get("rephrased", "")
         keywords = self._extract_keywords(rephrased, category)
 
         step.add_log(f"Category: {category}")
@@ -436,9 +587,9 @@ class RAGPipeline:
         
         return found if found else None
 
-    def _step_hybrid_search(self, query: str, candidate_indices: list[int]) -> list[dict]:
+    def _step_hybrid_search(self, query: str, candidate_indices: list[int], step_name: str = "Hybrid Search") -> list[dict]:
         """Hybrid search combining embedding + BM25 + reranking."""
-        step = self.result.steps[4]
+        step = self._get_step(step_name)
         step.status = "running"
         step.start_time = time.time()
         cand_count = len(candidate_indices) if candidate_indices is not None else len(self.db.chunks)
@@ -527,6 +678,15 @@ class RAGPipeline:
                 "bm25_results": len(bm25_results),
                 "fused_results": len(fused_results),
                 "final_results": len(reranked),
+                "chunks": [
+                    {
+                        "chunk_id": chunk.get("chunk_id"),
+                        "category": chunk.get("category"),
+                        "year": chunk.get("year"),
+                        "major": chunk.get("major"),
+                        "content": chunk.get("content")
+                    } for chunk, _ in reranked
+                ]
             }
             step.status = "done"
 
@@ -549,7 +709,7 @@ class RAGPipeline:
         json_a: dict | None = None,
     ) -> dict | None:
         """Generate the final answer from chunks."""
-        step = self.result.steps[5]
+        step = self._get_step("Generate Answer")
         step.status = "running"
         step.start_time = time.time()
 
@@ -667,7 +827,7 @@ class RAGPipeline:
         json_a: dict | None = None,
     ) -> dict | None:
         """Generate answer directly from LLM without any RAG context."""
-        step = self.result.steps[5]
+        step = self._get_step("Generate Answer")
         step.status = "running"
         step.start_time = time.time()
         step.input_data = {"question": question}

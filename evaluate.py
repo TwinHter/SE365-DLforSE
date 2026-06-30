@@ -66,13 +66,13 @@ class EvaluationResult:
 class RAGEvaluator:
     """Đánh giá RAG pipeline với testset."""
     
-    def __init__(self, testset_path: str, output_dir: str = "results"):
+    def __init__(self, testset_path: str, output_dir: str = "results", disable_hard_filter: bool = False, no_rag: bool = False):
         self.testset_path = Path(testset_path)
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         self.testset = self._load_testset()
-        self.pipeline = RAGPipeline()
+        self.pipeline = RAGPipeline(disable_hard_filter=disable_hard_filter, no_rag=no_rag)
         
         # Stats
         self.total_llm_calls = 0
@@ -503,13 +503,19 @@ def main():
                         help="Output directory for reports")
     parser.add_argument("--n-runs", type=int, default=3,
                         help="Number of runs for mode voting (default: 3)")
+    parser.add_argument("--disable-hard-filter", action="store_true",
+                        help="Disable hard filtering step (Ablation Study)")
+    parser.add_argument("--no-rag", action="store_true",
+                        help="Disable RAG completely (Only use DeepSeek)")
 
     args = parser.parse_args()
 
     # Initialize evaluator
     evaluator = RAGEvaluator(
         testset_path=args.testset,
-        output_dir=args.output_dir
+        output_dir=args.output_dir,
+        disable_hard_filter=args.disable_hard_filter,
+        no_rag=args.no_rag
     )
 
     # Run evaluation

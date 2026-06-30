@@ -286,3 +286,33 @@ Ví dụ câu trả lời XẤU:
 - "Theo [Chunk 5]" khi CHỈ có 3 chunks trong ngữ cảnh
 - "Dựa trên ngữ cảnh" (không ghi rõ chunk nào)"""
 
+
+EVALUATE_RETRIEVAL_PROMPT = """Bạn là một chuyên gia đánh giá chất lượng tài liệu tìm kiếm cho hệ thống RAG của Trường Đại học Công nghệ Thông tin (UIT).
+Hãy đánh giá xem danh sách các đoạn tài liệu (context) dưới đây có chứa thông tin đủ để trả lời câu hỏi của người dùng hay không.
+
+Câu hỏi: {question}
+
+Các đoạn tài liệu được truy xuất:
+---
+{context}
+---
+
+Yêu cầu:
+1. Đánh giá khách quan: Các đoạn tài liệu trên có chứa thông tin trực tiếp hoặc gián tiếp để trả lời đầy đủ cho câu hỏi không?
+2. Trả lời theo định dạng JSON sau (chỉ trả JSON, không thêm văn bản giải thích ngoài JSON):
+{{
+    "is_sufficient": "Yes" hoặc "No",
+    "reason": "giải thích ngắn gọn lý do tại sao đủ hoặc thiếu thông tin"
+}}
+"""
+
+
+RETRY_REPHRASE_PROMPT = """Hãy diễn đạt lại câu hỏi sau thành một câu hỏi tìm kiếm khác, sử dụng các từ đồng nghĩa hoặc khía cạnh bổ sung để tìm kiếm được nhiều tài liệu liên quan hơn trong cơ sở dữ liệu của Trường Đại học Công nghệ Thông tin (UIT).
+
+QUAN TRỌNG: Giữ nguyên phạm vi câu hỏi gốc, không tự ý bịa thêm thông tin.
+
+Câu hỏi gốc: {question}
+
+Câu hỏi diễn đạt lại tối ưu cho tìm kiếm lần hai (chỉ trả về câu hỏi đã viết lại):"""
+
+
