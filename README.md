@@ -1,228 +1,218 @@
-# UIT RAG System
+# UIT RAG System - Hệ thống Tra cứu Nội quy & Quy chế UIT 🎓🤖
 
-Hệ thống **Retrieval-Augmented Generation** chuyên tra cứu Nội quy & Quy chế UIT (tuyển sinh, học phí, chương trình đào tạo, danh mục môn học, hoạt động sinh viên, nhóm nghiên cứu). Giải quyết hiện tượng LLM hallucination khi trả lời các quy chế chuyên sâu, thay đổi theo năm.
+Hệ thống **Retrieval-Augmented Generation (RAG)** nâng cao chuyên tra cứu Nội quy & Quy chế của Trường Đại học Công nghệ Thông tin (UIT) (bao gồm tuyển sinh, học phí, chương trình đào tạo, danh mục môn học, hoạt động sinh viên, và nhóm nghiên cứu). 
+
+Dự án áp dụng các kỹ thuật RAG tiên tiến (Advanced RAG) nhằm giải quyết triệt để hiện tượng ảo giác (hallucination) của Mô hình ngôn ngữ lớn (LLM) đối với các văn bản quy chế phức tạp, chuyên sâu và thường xuyên thay đổi theo khóa học/năm học (từ 2024 đến 2026).
 
 ---
 
-## Cấu trúc Project
+## 🚀 5 Chiến thuật RAG Nâng cao Đang Áp Dụng
 
-```
+1. **Table-to-Text Transformation**: Bảng biểu (Markdown/HTML) được chuyển đổi tự động thành các đoạn văn xuôi giàu ngữ cảnh, giúp mô hình embedding nắm bắt chính xác mối quan hệ giữa các hàng/cột thay vì chỉ embed bảng thô.
+2. **Hierarchical Chunking & Context Preservation**: Phân đoạn tài liệu theo cấu trúc **Chương > Điều > Khoản** và tự động đính kèm thông tin bối cảnh cấp cao vào từng chunk nhỏ để tránh hiện tượng "mất bối cảnh".
+3. **Adaptive RAG (Hard Filtering qua LLM Router)**: LLM đóng vai trò phân tích truy vấn của người dùng, xác định nhãn phẳng (`category`), năm (`year`) và ngành học (`major`) để lọc cứng (hard filter) không gian tìm kiếm trước khi thực hiện truy xuất, giảm tối đa nhiễu thông tin chéo năm/ngành.
+4. **Hybrid Search & Cross-Encoder Reranking**: Kết hợp tìm kiếm ngữ nghĩa Dense (Vector Search trên Milvus) và tìm kiếm từ khóa Sparse (BM25 Search) qua thuật toán **Reciprocal Rank Fusion (RRF)**, sau đó dùng **Cross-Encoder Reranker** để tái xếp hạng độ tương quan sâu giữa câu hỏi và các ứng viên.
+5. **Self-RAG (Vòng lặp tự đánh giá - Critique)**: Kiểm tra nghiêm ngặt câu trả lời nháp từ LLM dựa trên hai tiêu chí: **Faithfulness** (độ trung thực - câu trả lời có được hỗ trợ 100% bởi context không) và **Relevance** (độ liên quan - câu trả lời có đúng trọng tâm câu hỏi không). Nếu không đạt, hệ thống sẽ tự động điều chỉnh và thử lại (Retry).
+
+### 📊 Số lượng chunk qua từng giai đoạn của Pipeline
+
+Luồng truy xuất và lọc dữ liệu (Retrieval Pipeline) được tối ưu hóa số lượng chunk qua từng giai đoạn để đạt hiệu quả cao nhất:
+
+| Giai đoạn | Hành động | Số lượng chunk còn lại | Mô tả / Vai trò |
+| :--- | :--- | :---: | :--- |
+| **0. Toàn bộ CSDL** | Khởi tạo | **~1,500+** | Toàn bộ dữ liệu chunk từ tất cả các danh mục trong hệ thống. |
+| **1. Hard Filter** | LLM Router + Metadata | **Biến thiên (n)** | Chỉ giữ lại các chunk khớp nhãn (`category`), năm (`year`), hoặc mã ngành (`major`). Loại bỏ hoàn toàn nhiễu từ các năm hoặc ngành khác. |
+| **2. Song song Search** | Dense & Sparse Search | **Top 50 mỗi luồng** | Thực hiện song song: tìm kiếm vector (Dense Search) chọn ra **Top 50** và tìm kiếm từ khóa BM25 (Sparse Search) chọn ra **Top 50** từ tập đã lọc cứng. |
+| **3. RRF Fusion** | Reciprocal Rank Fusion | **Tối đa Top 60** | Ghép và chuẩn hóa độ ưu tiên từ 2 luồng kết quả trên bằng thuật toán RRF (có trọng số), loại bỏ trùng lặp và lấy ra **Top 60** chunk ứng viên. |
+| **4. Reranker** | Cross-Encoder Reranking | **Top 15** | Sử dụng mô hình Cross-Encoder chuyên dụng để chấm điểm tương quan sâu giữa câu hỏi và Top 60 ứng viên, chỉ giữ lại **Top 15** chunk chất lượng nhất. |
+| **5. Generator** | Sinh câu trả lời | **Top 10** | Đưa Top 10 chunk này vào Prompt Context của LLM để tổng hợp câu trả lời chính xác, kèm theo trích dẫn nguồn (`chunk_id`). |
+
+---
+
+## 📂 Cấu trúc Project
+
+```text
 uit_rag_system/
-├── chunk/                          # ← Dữ liệu chính dùng cho RAG
-│   ├── tuyen_sinh/chunks_tuyensinh.jsonl
-│   ├── chuong_trinh_dao_tao/chunks_ctdt.jsonl
-│   ├── danh_muc_mon_hoc/chunk_final_daa_courses.jsonl
-│   ├── cong_tac_sinh_vien/chunk_final_uit_*.jsonl
-│   └── nhom_nghien_cuu/chunk_final_*.jsonl
-├── src/
-│   ├── config.py                   # Đường dẫn, embedding model
-│   └── setup.py                    # Pipeline load → embed → save
-├── testset/uit_rag_testset_80_balanced_userstyle.json
-├── volumes/                        # Bind-mount cho Docker
-├── docker-compose.yml              # Milvus standalone
-├── requirements.txt
-└── README.md
+├── chunk/                          # Dữ liệu chính dùng cho RAG (đã được chunk)
+│   ├── tuyen_sinh/                 # Chunks tuyển sinh (.jsonl)
+│   ├── chuong_trinh_dao_tao/       # Chunks chương trình đào tạo (.jsonl)
+│   ├── danh_muc_mon_hoc/           # Chunks danh mục môn học (.jsonl)
+│   ├── cong_tac_sinh_vien/         # Chunks công tác sinh viên (.jsonl)
+│   └── nhom_nghien_cuu/            # Chunks nhóm nghiên cứu (.jsonl)
+├── src/                            # Mã nguồn hệ thống RAG
+│   ├── app.py                      # Giao diện Streamlit chi tiết
+│   ├── config.py                   # Cấu hình đường dẫn, embedding model, Milvus
+│   ├── llm_utils.py                # Client LLM (DeepSeek, OpenAI), Prompts, parse JSON
+│   ├── pipeline.py                 # Điều phối toàn bộ luồng RAG (Step 1-8)
+│   └── rag_utils.py                # Database chunk, Hard Filter, BM25, RRF, Reranker
+├── testset/                        # Bộ dữ liệu đánh giá hệ thống (JSON)
+│   ├── uit_rag_testset_50.json     # Bộ 50 câu hỏi trắc nghiệm
+│   └── uit_rag_testset_100.json    # Bộ 100 câu hỏi trắc nghiệm
+├── volumes/                        # Thư mục lưu trữ dữ liệu Docker (Milvus, MinIO, etcd)
+├── app.py                          # Streamlit entry point chính
+├── create_embeddings.py            # Script sinh vector embedding từ chunks
+├── load_to_milvus.py               # Script nạp chunks & vectors vào Milvus DB
+├── reload_milvus.bat               # Batch script tự động chạy Re-embed & Load Milvus (Windows)
+├── run.bat                         # Batch script khởi động Streamlit nhanh (Windows)
+├── docker-compose.yml              # Cấu hình Milvus Standalone Docker
+├── requirements.txt                # Danh sách thư viện Python cần thiết
+├── evaluate.py                     # Script đánh giá hiệu năng hệ thống trên bộ testset
+├── calculate_metrics.py            # Script tính toán chỉ số F1, Precision, Recall, Accuracy
+├── compare_ablation.py             # Script so sánh ablation study (Có/Không Hard Filter)
+└── README.md                       # Tài liệu hướng dẫn sử dụng (File này)
 ```
 
 ---
 
-## 1. Dữ liệu `chunk/*.jsonl`
+## 🛠️ Hướng dẫn Khởi chạy Project (Step-by-Step)
 
-Mỗi dòng JSONL là 1 chunk đã qua Table-to-Text + Context Preservation, sẵn sàng để embed.
+Dưới đây là hướng dẫn chi tiết cách cài đặt và vận hành hệ thống trên máy tính của bạn.
 
-### 1.1 Mapping folder → nhãn phẳng
+### Bước 1: Chuẩn bị Môi trường Python
 
-| Folder | Label | Schema field đặc trưng |
-|---|---|---|
-| `tuyen_sinh/` | `tuyensinh` | `chunk_id`, `parent_document`, `hierarchical_path`, `content`, `category=tuyensinh`, `major=null`, `cohort`, `year` |
-| `chuong_trinh_dao_tao/` | `chuongtrinhdaotao` | `chunk_id`, `parent_document`, `hierarchical_path`, `content`, `category=chuong_trinh_dao_tao`, `major=[tên đầy đủ]`, `cohort`, `year`, `url` |
-| `danh_muc_mon_hoc/` | `danhmucmonhoc` | `id`, `content`, `metadata{majors,category,year}`, `chunk_id`, `chunk_content` (đã enrich ngữ cảnh phân cấp + từ khoá) |
-| `cong_tac_sinh_vien/` | `hoatdong` | `id`, `content`, `metadata{category,major,year}`, `chunk_id`, `chunk_content` |
-| `nhom_nghien_cuu/` | `nghiencuu` | `id`, `content`, `metadata{category,major,year,status}`, `chunk_id`, `chunk_content` |
-| `chung/` (chưa có) | `chung` | Áp dụng cho mọi ngành / null |
+1. Đảm bảo bạn đã cài đặt Python (phiên bản khuyến nghị: `>= 3.10`).
+2. Mở Terminal (CMD / PowerShell trên Windows) tại thư mục dự án và tạo môi trường ảo:
+   ```bash
+   python -m venv venv
+   ```
+3. Kích hoạt môi trường ảo:
+   * **Trên Windows (PowerShell):**
+     ```powershell
+     .\venv\Scripts\Activate.ps1
+     ```
+   * **Trên Windows (CMD):**
+     ```cmd
+     .\venv\Scripts\activate.bat
+     ```
+   * **Trên macOS / Linux:**
+     ```bash
+     source venv/bin/activate
+     ```
+4. Cài đặt các thư viện phụ thuộc:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 1.2 Xét logic chunk theo domain
+### Bước 2: Cấu hình Biến môi trường (`.env`)
 
-**`tuyen_sinh` + `chuong_trinh_dao_tao`** (chunk schema A — top-level fields)
+Tạo file `.env` tại thư mục gốc của dự án (hoặc chỉnh sửa file `.env` đã có) và nhập thông tin API Key của LLM Provider mà bạn sử dụng:
 
-- Văn bản gốc lấy từ `tuyensinh.uit.edu.vn` / `student.uit.edu.vn`, đã parse thủ công / semi-auto.
-- Mỗi chunk = một đoạn văn xuôi đã qua **Table-to-Text**: ví dụ bảng "Mã ngành | Học phí" được chuyển thành câu "Đối với ngành … định mức học phí là …".
-- Giữ **`hierarchical_path`** để bảo toàn ngữ cảnh cấp cao khi embed (Chiến thuật 2 — Context Preservation).
-- `chunk_id` có dạng `<domain>_<slug>_<year>_<index>` (VD: `ctdt_cntt_2024_0001`).
-- `major` để dạng list cho phép filter theo ngành; `null` ở `tuyensinh` (áp dụng chung).
+```env
+# LLM Provider: deepseek, openai, anthropic
+LLM_PROVIDER=deepseek
+LLM_MODEL=deepseek-v4-flash
 
-**`danh_muc_mon_hoc` + `cong_tac_sinh_vien` + `nhom_nghien_cuu`** (chunk schema B — wrapper `metadata`)
+# DeepSeek API (Hoặc sử dụng OpenRouter / OpenAI)
+DEEPSEEK_API_URL=https://api.xah.io/v1/chat/completions
+DEEPSEEK_API_KEY=sk-xxxx... # Thay bằng API Key thật của bạn
 
-- Crawl HTML bằng các script trong `raw/<domain>/crawl/`, sau đó parse sang JSONL.
-- Mỗi record chứa **`content`** (gốc) và **`chunk_content`** (đã enrich).
-- Cấu trúc `chunk_content` chuẩn hoá 4 lớp ngữ cảnh (xem `crawl_daa_courses.py::build_content`):
+# OpenAI API (Phương án dự phòng)
+OPENAI_API_KEY=your_openai_key_here
+OPENAI_API_URL=https://api.openai.com/v1/chat/completions
+
+# Anthropic API (Phương án dự phòng)
+ANTHROPIC_API_KEY=your_anthropic_key_here
+```
+
+### Bước 3: Khởi chạy Database Vector (Milvus)
+
+Hệ thống RAG sử dụng **Milvus Standalone** làm cơ sở dữ liệu vector. Bạn cần khởi động nó thông qua Docker:
+
+1. Đảm bảo máy của bạn đã chạy **Docker Desktop** (hoặc Docker Daemon).
+2. Chạy lệnh sau tại thư mục gốc để khởi động các container (Milvus, MinIO, etcd) ở chế độ chạy ngầm (`-d`):
+   ```bash
+   docker compose up -d
+   ```
+3. Kiểm tra xem các container đã khởi động thành công chưa:
+   ```bash
+   docker compose ps
+   ```
+   *Bạn sẽ thấy các dịch vụ `milvus-standalone`, `milvus-minio`, và `milvus-etcd` ở trạng thái `Up`.*
+
+### Bước 4: Tạo Embeddings và Nạp Dữ liệu vào Milvus
+
+Để hệ thống có dữ liệu quy chế tra cứu, bạn cần chạy bước nhúng vector (embedding) dữ liệu từ các file trong thư mục `chunk/` và nạp vào Milvus:
+
+* **Cách 1: Sử dụng Script tự động (Khuyên dùng cho Windows)**
+  Double-click vào file `reload_milvus.bat` hoặc chạy lệnh:
+  ```cmd
+  .\reload_milvus.bat
   ```
-  Tài liệu: <parent_document>
-  Phân cấp: <hierarchical_path>
-  Loại dữ liệu: <category>; năm dữ liệu: <year>; chương trình: <program>
-  Ngữ cảnh truy xuất: <mô tả>
-  Nội dung gốc: <content>
-  Từ khoá hỗ trợ tìm kiếm: <keyword1>; <keyword2>; …
+  *Script này sẽ thực thi tuần tự: sinh vector embeddings → xoá collection cũ trong Milvus (nếu có) → tạo collection mới → nạp toàn bộ chunks kèm vector vào Milvus.*
+
+* **Cách 2: Chạy thủ công các lệnh Python**
+  Nếu bạn dùng macOS/Linux hoặc muốn chạy từng phần:
+  1. Sinh vector embeddings từ dữ liệu chunks thô:
+     ```bash
+     python create_embeddings.py
+     ```
+     *(Kết quả được lưu tại thư mục `embedded/embedded_chunks.jsonl`)*
+  2. Nạp dữ liệu embeddings vừa sinh vào Milvus:
+     ```bash
+     python load_to_milvus.py
+     ```
+
+### Bước 5: Khởi động Ứng dụng Streamlit (Web UI)
+
+Sau khi dữ liệu đã được nạp thành công vào Milvus, bạn có thể khởi chạy ứng dụng chatbot:
+
+* **Trên Windows:** Chạy trực tiếp file batch:
+  ```cmd
+  .\run.bat
   ```
-- `metadata.majors` ở `danh_mucmonhoc` được lưu dạng `"Tên đầy đủ (CODE)"` (VD: `"Hệ thống thông tin (HTTT)"`). Giữ nguyên không cần normalize.
-- `chunk_id` có dạng `<label>_<slug>_<year>_<index>` (VD: `danhmucmonhoc_httt_2026_0001`).
+* **Chạy thủ công qua câu lệnh:**
+  ```bash
+  streamlit run app.py
+  ```
 
-### 1.3 Chuẩn hoá category
-
-Được chuẩn hoá trong `src/setup.py::_FOLDER_TO_LABEL` / `_CATEGORY_NORMALIZE`:
-
-```
-tuyen_sinh               → tuyensinh
-chuong_trinh_dao_tao     → chuongtrinhdaotao
-danh_muc_mon_hoc         → danhmucmonhoc
-cong_tac_sinh_vien       → hoatdong
-cau_lac_bo / sinh_vien   → hoatdong
-nhom_nghien_cuu          → nghiencuu
-null / không xác định    → chung
-```
-
-### 1.4 Ví dụ một chunk `danh_muc_mon_hoc`
-
-```json
-{
-  "id": 1,
-  "link": "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc",
-  "parent_document": "Danh mục môn học đại học UIT",
-  "content": "Môn học Hệ thống thông tin kế toán (ACCT3603) có tên tiếng Anh là Accounting Information Systems. Môn học này hiện đang mở lớp. Môn học thuộc đơn vị quản lý chuyên môn Hệ thống thông tin (HTTT). Loại môn học là CN. Số tín chỉ lý thuyết là 3, số tín chỉ thực hành là 0.",
-  "metadata": {
-    "category": "danhmucmonhoc",
-    "majors": ["Hệ thống thông tin (HTTT)"],
-    "subcategory": "Chuyên ngành (CN)",
-    "year": 2026,
-    "program": null
-  },
-  "chunk_id": "danhmucmonhoc_httt_2026_0001",
-  "chunk_content": "Tài liệu: Danh mục môn học đại học UIT.\nPhân cấp: Danh mục môn học đại học UIT > Hệ thống thông tin (HTTT) > Chuyên ngành (CN) > Hệ thống thông tin kế toán (ACCT3603).\nLoại dữ liệu: danhmucmonhoc; năm dữ liệu: 2026; chương trình: Không xác định.\nNgữ cảnh truy xuất: …\nNội dung gốc: …\nTừ khoá hỗ trợ tìm kiếm: ACCT3603; Hệ thống thông tin kế toán; HTTT; …"
-}
-```
-
-### 1.5 Ví dụ một chunk `chuong_trinh_dao_tao`
-
-```json
-{
-  "chunk_id": "ctdt_cntt_2024_0001",
-  "parent_document": "Chương trình đào tạo Cử nhân ngành Công nghệ Thông tin Khóa 19 - 2024",
-  "hierarchical_path": "CTĐT UIT / Cử nhân ngành Công nghệ Thông tin / Giới thiệu chung",
-  "content": "Chương trình đào tạo Cử nhân chính quy ngành Công nghệ Thông tin áp dụng từ Khóa 19 năm 2024 tại Trường Đại học Công nghệ Thông tin (UIT) đặt ra mục tiêu đào tạo …",
-  "category": "chuong_trinh_dao_tao",
-  "sub_category": "chi_tiet_nganh",
-  "major": ["Công nghệ Thông tin"],
-  "cohort": 19,
-  "year": 2024,
-  "url": "https://student.uit.edu.vn/content/cu-nhan-nganh-cong-nghe-thong-tin-ap-dung-tu-khoa-19-2024"
-}
-```
+Sau khi chạy thành công, giao diện Web UI sẽ tự động mở trên trình duyệt của bạn (thường tại địa chỉ `http://localhost:8501`). Tại đây bạn có thể chọn chế độ chat thông thường (**Normal**) hoặc làm bài thi trắc nghiệm quy chế (**MCQ**).
 
 ---
 
-## 2. Pipeline Embedding (`src/setup.py`)
+## 📊 Hướng dẫn Đánh giá & So sánh (Evaluation & Ablation Studies)
 
-```
-chunk/<category>/*.jsonl
-        │
-        │ load_chunks()         → chuẩn hoá category, rút major/year
-        ▼
-list[dict]  (chunk_id, content, category, year, major, parent_document)
-        │
-        │ load_embedding_model() → keepitreal/vietnamese-sbert (768d, CPU)
-        │ embed_chunks(batch=32) → list[list[float]]
-        ▼
-embedded/embedded_chunks.jsonl  (chunk + dense_vector)
-```
+Hệ thống cung cấp sẵn các công cụ để tự động đánh giá chất lượng câu trả lời RAG trên bộ câu hỏi chuẩn (testset).
 
-### Chạy
-
+### 1. Chạy đánh giá hệ thống (Evaluation)
+Để chạy thử nghiệm đánh giá câu trả lời (sử dụng phương pháp Mode Voting - chạy 3 lần lấy số đông):
 ```bash
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
+# Đánh giá mặc định trên bộ testset 50 câu
+python evaluate.py --testset testset/uit_rag_testset_50.json
 
-python -m src.setup
-# → embedded/embedded_chunks.jsonl
+# Hoặc chạy trên bộ 100 câu
+python evaluate.py --testset testset/uit_rag_testset_100.json
+
+# Chỉ chạy thử nghiệm 5 câu đầu tiên để test tốc độ
+python evaluate.py --limit 5
 ```
+*Kết quả báo cáo chi tiết sẽ được xuất ra một file JSON nằm trong thư mục `results/`.*
 
-Cấu hình tại `src/config.py`:
-
-```python
-CHUNK_DIR        = PROJECT_ROOT / "chunk"
-OUTPUT_DIR       = PROJECT_ROOT / "embedded"
-EMBEDDING_MODEL  = "keepitreal/vietnamese-sbert"
-EMBEDDING_DEVICE = "cpu"             # đổi sang "cuda" nếu có GPU
-EMBEDDING_DIMENSION = 768
-```
-
----
-
-## 3. Khởi tạo Docker (Milvus)
-
-Stack `docker-compose.yml`: **etcd** (metadata) + **minio** (object storage) + **milvus-standalone** (gRPC :19530, metrics :9091).
-
+### 2. Tính toán các chỉ số chi tiết (Calculate Metrics)
+Sau khi có file JSON kết quả đánh giá (ví dụ: `results/evaluation_report_20260630_014236.json`), bạn có thể tính các chỉ số F1, Precision, Recall, Accuracy cho cả câu hỏi Single-choice và Multiple-choice:
 ```bash
-# 1. Tạo volume (chỉ cần làm lần đầu)
-mkdir -p volumes/etcd volumes/milvus volumes/minio
-
-# 2. Khởi tạo stack
-docker compose up -d
-docker compose ps
-
-# 3. Tuỳ chọn: trỏ volume ra thư mục khác
-#    PowerShell:  $env:DOCKER_VOLUME_DIR = "$PWD\volumes"
-#    Bash:        export DOCKER_VOLUME_DIR=$PWD/volumes
-
-# 4. Kết nối từ Python
-python -c "from pymilvus import MilvusClient; print(MilvusClient(uri='http://localhost:19530').list_collections())"
+python calculate_metrics.py results/evaluation_report_xxxxxx_xxxxxx.json
 ```
 
-Thao tác thường dùng:
-
-```bash
-docker compose logs -f milvus-standalone   # xem log
-docker compose stop                        # dừng (giữ data)
-docker compose down                        # tắt container (giữ volume)
-docker compose down -v                     # xoá toàn bộ data
-```
+### 3. Đánh giá kiểm chứng thành phần (Ablation Study)
+Để so sánh trực tiếp hiệu quả của việc **Có Hard Filter** vs **Không có Hard Filter** (để chứng minh giá trị của chiến thuật Adaptive RAG):
+1. Chạy đánh giá không có Hard Filter:
+   ```bash
+   python evaluate.py --testset testset/uit_rag_testset_50.json --disable-hard-filter --output results/ablation_report.json
+   ```
+2. Chạy so sánh chênh lệch hiệu năng giữa 2 báo cáo:
+   ```bash
+   python compare_ablation.py results/evaluation_report_baseline.json results/ablation_report.json --output results/compare_result.md
+   ```
 
 ---
 
-## 4. 6 Nhãn phẳng
+## 🏷️ 6 Nhãn Phẳng phân loại dữ liệu (Flat Labels)
 
-| Label | Mô tả |
-|---|---|
-| `tuyensinh` | Tuyển sinh, học phí, phương thức xét tuyển |
-| `chuongtrinhdaotao` | Khung CTĐT, lộ trình học |
-| `danhmucmonhoc` | Mã môn, tín chỉ, môn tiên quyết |
-| `hoatdong` | CLB, tình nguyện, handbook SV |
-| `nghiencuu` | Nhóm NC, giảng viên hướng dẫn |
-| `chung` | Quy chế chung / null |
-
----
-
-## 5. Hướng dẫn chạy nhanh
-
-```bash
-# Cài môi trường
-python -m venv venv && .\venv\Scripts\activate
-pip install -r requirements.txt
-
-# Khởi tạo Milvus
-docker compose up -d
-
-# Sinh embedding từ chunk/*.jsonl
-python -m src.setup
-# → embedded/embedded_chunks.jsonl
-
-# Nạp vào Milvus + chạy retrieval (router → hybrid search → reranker)
-# (sẽ bổ sung app.py / script nạp collection)
-```
-
----
-
-## 6. Đánh giá
-
-- Bộ test: `testset/uit_rag_testset_80_balanced_userstyle.json` (80 câu hỏi).
-- Metrics: Recall@k, Citation Accuracy, Answer Correctness, Faithfulness Rate, Major Match Rate.
+| Nhãn phẳng | Mô tả | Nguồn thư mục tương ứng |
+|:---|:---|:---|
+| `tuyensinh` | Thông tin tuyển sinh, học phí, phương thức xét tuyển đầu vào. | `chunk/tuyen_sinh/` |
+| `chuongtrinhdaotao` | Khung chương trình đào tạo, lộ trình học, môn định hướng của các ngành. | `chunk/chuong_trinh_dao_tao/` |
+| `danhmucmonhoc` | Chi tiết mã môn học, số tín chỉ lý thuyết/thực hành, môn tiên quyết/môn học trước. | `chunk/danh_muc_mon_hoc/` |
+| `hoatdong` | Phong trào Đoàn - Hội, chiến dịch tình nguyện, câu lạc bộ, cẩm nang sinh viên. | `chunk/cong_tac_sinh_vien/` |
+| `nghiencuu` | Nhóm nghiên cứu khoa học, thông tin giảng viên hướng dẫn, bài báo khoa học. | `chunk/nhom_nghien_cuu/` |
+| `chung` | Chào hỏi thông thường, quy chế chung áp dụng cho mọi khóa/ngành, hoặc không xác định. | (Tất cả nguồn hoặc fallback) |
