@@ -17,6 +17,7 @@ from src.config import (
 from src.llm_utils import (
     EXTRACT_JSON_A_PROMPT,
     GENERATE_ANSWER_PROMPT,
+    GENERATE_ANSWER_NORMAL_PROMPT,
     REPHRASE_PROMPT,
     get_llm_client,
     parse_json_safely,
@@ -114,9 +115,11 @@ class PipelineResult:
 class RAGPipeline:
     """Full RAG pipeline with step-by-step execution."""
 
-    def __init__(self):
+    def __init__(self, disable_hard_filter: bool = False, no_rag: bool = False):
         self.llm = get_llm_client()
         self.db = get_chunk_database()
+        self.disable_hard_filter = disable_hard_filter
+        self.no_rag = no_rag
         self.result = PipelineResult(success=False)
 
     @staticmethod
@@ -164,13 +167,22 @@ class RAGPipeline:
 
         try:
             # Step 1: Load Data
-            self._step_load_data()
+            if self.no_rag:
+                self.result.steps[0].status = "skipped"
+                self.result.steps[0].add_log("Load Data skipped in No RAG mode")
+            else:
+                self._step_load_data()
 
             # Step 2: Rephrase Question
-            rephrased = self._step_rephrase(question)
-            if not rephrased:
-                self.result.error = "Failed to rephrase question"
-                return self.result
+            if self.no_rag:
+                rephrased = question
+                self.result.steps[1].status = "skipped"
+                self.result.steps[1].add_log("Rephrase skipped in No RAG mode")
+            else:
+                rephrased = self._step_rephrase(question)
+                if not rephrased:
+                    self.result.error = "Failed to rephrase question"
+                    return self.result
 
             # Step 3: Extract JSON A
             json_a = self._step_extract_json_a(rephrased, mode, options)
@@ -202,18 +214,33 @@ class RAGPipeline:
                 self.result.success = True
                 return self.result
 
-            # Step 4: Hard Filter
-            candidate_indices = self._step_hard_filter(json_a)
+            if self.no_rag:
+                self.result.steps[3].status = "skipped"
+                self.result.steps[3].add_log("Hard Filter skipped in No RAG mode")
+                self.result.steps[4].status = "skipped"
+                self.result.steps[4].add_log("Hybrid Search skipped in No RAG mode")
+                
+                # Step 6: Generate Answer (No RAG)
+                answer_data = self._step_generate_answer_no_rag(question, mode, options, json_a)
+            else:
+                # Step 4: Hard Filter
+                if self.disable_hard_filter:
+                    candidate_indices = None
+                    self.result.steps[3].status = "done"
+                    self.result.steps[3].add_log("Hard filter disabled by configuration (Ablation Study)")
+                else:
+                    candidate_indices = self._step_hard_filter(json_a)
 
-            # Step 5: Hybrid Search
-            top_chunks = self._step_hybrid_search(rephrased, candidate_indices)
+                # Step 5: Hybrid Search
+                top_chunks = self._step_hybrid_search(rephrased, candidate_indices)
 
-            if not top_chunks:
-                self.result.error = "Không tìm thấy ngữ cảnh phù hợp"
-                return self.result
+                if not top_chunks:
+                    self.result.error = "Không tìm thấy ngữ cảnh phù hợp"
+                    return self.result
 
-            # Step 6: Generate Answer
-            answer_data = self._step_generate_answer(question, top_chunks, mode, options, json_a)
+                # Step 6: Generate Answer
+                answer_data = self._step_generate_answer(question, top_chunks, mode, options, json_a)
+
             if not answer_data:
                 self.result.error = "Failed to generate answer"
                 return self.result
@@ -414,9 +441,10 @@ class RAGPipeline:
         step = self.result.steps[4]
         step.status = "running"
         step.start_time = time.time()
-        step.input_data = {"query": query, "candidates": len(candidate_indices)}
+        cand_count = len(candidate_indices) if candidate_indices is not None else len(self.db.chunks)
+        step.input_data = {"query": query, "candidates": cand_count}
 
-        step.add_log(f"Hybrid searching in {len(candidate_indices)} candidates...")
+        step.add_log(f"Hybrid searching in {cand_count} candidates...")
 
         try:
             # 1. Embedding search - Top 50 (semantic coverage)
@@ -539,39 +567,46 @@ class RAGPipeline:
         step.add_log(f"Building context from {len(chunks_for_context)} chunks (top {max_context_chunks} of {len(chunks)} retrieved)...")
         step.add_log(f"Context preview: {context[:300]}...")
 
-        # Check if multiple answers expected
-        is_multi = False
-        if json_a:
-            is_multi = json_a.get("isMultiAnswer", False)
-        step.add_log(f"isMultiAnswer: {is_multi}")
-
-        # Build multi-answer context for prompt
-        if is_multi:
-            is_multi_context = (
-                "**CHẾ ĐỘ MULTIPLE CHOICE**: Câu hỏi này cho phép CHỌN NHIỀU đáp án đúng.\n"
-                "Hãy chọn TẤT CẢ các đáp án đúng và liệt kê chúng, ví dụ: 'A, B, C'"
-            )
-            answer_format = "A, B, C (danh sách các đáp án đúng, phân cách bằng dấu phẩy)"
-        else:
-            is_multi_context = (
-                "**CHẾ ĐỘ SINGLE CHOICE**: Câu hỏi này chỉ có MỘT đáp án đúng.\n"
-                "Hãy chọn duy nhất một đáp án đúng."
-            )
-            answer_format = "X (chỉ một đáp án đúng, ví dụ: B)"
-
         try:
-            prompt = GENERATE_ANSWER_PROMPT.format(
-                question=question,
-                is_multi_context=is_multi_context,
-                answer_format=answer_format,
-                context=context,
-            )
+            if mode == "mcq":
+                # Check if multiple answers expected
+                is_multi = False
+                if json_a:
+                    is_multi = json_a.get("isMultiAnswer", False)
+                step.add_log(f"isMultiAnswer: {is_multi}")
 
-            if mode == "mcq" and options:
-                options_text = "\n".join([f"- {k}: {v}" for k, v in options.items()])
-                # KHÔNG bắt buộc chọn E khi câu hỏi thuộc UIT
-                # Chỉ chọn E khi câu hỏi KHÔNG thuộc UIT (đã xử lý ở hàm run)
-                prompt += f"\n\n**QUAN TRỌNG - MCQ Mode**: Đáp án phải là MỘT TRONG các lựa chọn sau:\n{options_text}"
+                # Build multi-answer context for prompt
+                if is_multi:
+                    is_multi_context = (
+                        "**CHẾ ĐỘ MULTIPLE CHOICE**: Câu hỏi này cho phép CHỌN NHIỀU đáp án đúng.\n"
+                        "Hãy chọn TẤT CẢ các đáp án đúng và liệt kê chúng, ví dụ: 'A, B, C'"
+                    )
+                    answer_format = "A, B, C (danh sách các đáp án đúng, phân cách bằng dấu phẩy)"
+                else:
+                    is_multi_context = (
+                        "**CHẾ ĐỘ SINGLE CHOICE**: Câu hỏi này chỉ có MỘT đáp án đúng.\n"
+                        "Hãy chọn duy nhất một đáp án đúng."
+                    )
+                    answer_format = "X (chỉ một đáp án đúng, ví dụ: B)"
+
+                prompt = GENERATE_ANSWER_PROMPT.format(
+                    question=question,
+                    is_multi_context=is_multi_context,
+                    answer_format=answer_format,
+                    context=context,
+                )
+
+                if options:
+                    options_text = "\n".join([f"- {k}: {v}" for k, v in options.items()])
+                    # KHÔNG bắt buộc chọn E khi câu hỏi thuộc UIT
+                    # Chỉ chọn E khi câu hỏi KHÔNG thuộc UIT (đã xử lý ở hàm run)
+                    prompt += f"\n\n**QUAN TRỌNG - MCQ Mode**: Đáp án phải là MỘT TRONG các lựa chọn sau:\n{options_text}"
+            else:
+                prompt = GENERATE_ANSWER_NORMAL_PROMPT.format(
+                    question=question,
+                    context=context,
+                )
+                answer_format = "Free-text"
 
             step.add_log(f"Calling LLM to generate answer...")
             step.add_log(f"Answer format: {answer_format}")
@@ -590,8 +625,8 @@ class RAGPipeline:
                 step.add_log(f"Parsed Answer: {answer_data.get('Answer', '')}")
 
                 # CRITICAL: Nếu LLM xác định câu hỏi THUỘC UIT (isAboutUIT=Yes)
-                # thì KHÔNG ĐƯỢC chọn E - force chọn đáp án khác
-                if json_a and json_a.get("isAboutUIT", "No") == "Yes":
+                # thì KHÔNG ĐƯỢC chọn E - force chọn đáp án khác (chỉ áp dụng trong MCQ mode)
+                if mode == "mcq" and options and json_a and json_a.get("isAboutUIT", "No") == "Yes":
                     selected = answer_data.get("Answer", "").strip().upper()
                     if selected == "E":
                         step.add_log("WARNING: LLM chọn E cho câu hỏi thuộc UIT! Force chọn đáp án khác...")
@@ -610,6 +645,120 @@ class RAGPipeline:
                     "Answer": response[:500],
                     "Explanation": "",
                     "SupportContext": "",
+                }
+                step.output_data = answer_data
+
+            step.status = "done"
+            return answer_data
+
+        except Exception as e:
+            step.add_log(f"Lỗi: {e}")
+            step.status = "error"
+            step.error = str(e)
+            return None
+        finally:
+            step.end_time = time.time()
+
+    def _step_generate_answer_no_rag(
+        self,
+        question: str,
+        mode: str,
+        options: dict | None,
+        json_a: dict | None = None,
+    ) -> dict | None:
+        """Generate answer directly from LLM without any RAG context."""
+        step = self.result.steps[5]
+        step.status = "running"
+        step.start_time = time.time()
+        step.input_data = {"question": question}
+        step.add_log("No RAG mode enabled - generating answer directly from LLM...")
+
+        try:
+            if mode == "mcq":
+                is_multi = False
+                if json_a:
+                    is_multi = json_a.get("isMultiAnswer", False)
+                step.add_log(f"isMultiAnswer: {is_multi}")
+
+                if is_multi:
+                    is_multi_context = (
+                        "**CHẾ ĐỘ MULTIPLE CHOICE**: Câu hỏi này cho phép CHỌN NHIỀU đáp án đúng.\n"
+                        "Hãy chọn TẤT CẢ các đáp án đúng và liệt kê chúng, ví dụ: 'A, B, C'"
+                    )
+                    answer_format = "A, B, C (danh sách các đáp án đúng, phân cách bằng dấu phẩy)"
+                else:
+                    is_multi_context = (
+                        "**CHẾ ĐỘ SINGLE CHOICE**: Câu hỏi này chỉ có MỘT đáp án đúng.\n"
+                        "Hãy chọn duy nhất một đáp án đúng."
+                    )
+                    answer_format = "X (chỉ một đáp án đúng, ví dụ: B)"
+
+                prompt = f"""Bạn là trợ lý AI thân thiện của Trường Đại học Công nghệ Thông tin (UIT).
+Hãy trả lời câu hỏi trắc nghiệm dưới đây dựa trên kiến thức của bạn.
+
+Câu hỏi: {question}
+{is_multi_context}
+
+Yêu cầu:
+1. Trả lời bằng ngôn ngữ tự nhiên, thân thiện.
+2. Trả lời theo định dạng JSON sau (chỉ trả JSON, không thêm văn bản giải thích ngoài JSON):
+{{
+    "Answer": "{answer_format}",
+    "Explanation": "giải thích ngắn gọn lý do chọn đáp án này"
+}}
+"""
+
+                if options:
+                    options_text = "\n".join([f"- {k}: {v}" for k, v in options.items()])
+                    prompt += f"\n\n**QUAN TRỌNG - MCQ Mode**: Đáp án phải là MỘT TRONG các lựa chọn sau:\n{options_text}"
+            else:
+                prompt = f"""Bạn là trợ lý AI thân thiện của Trường Đại học Công nghệ Thông tin (UIT).
+Hãy trả lời câu hỏi dưới đây dựa trên kiến thức của bạn một cách TỰ NHIÊN, THÂN THIỆN như đang trò chuyện với sinh viên.
+
+Câu hỏi: {question}
+
+Yêu cầu:
+1. Trả lời bằng ngôn ngữ tự nhiên, thân thiện.
+2. Trả lời theo định dạng JSON sau (chỉ trả JSON, không thêm văn bản giải thích ngoài JSON):
+{{
+    "Answer": "câu trả lời chi tiết và đầy đủ trực tiếp cho câu hỏi của người dùng",
+    "Explanation": "giải thích chi tiết hoặc thêm thông tin bổ ích (2-3 câu, viết tự nhiên như đang trò chuyện)"
+}}
+"""
+
+            step.add_log(f"Calling LLM (No RAG) to generate answer...")
+            response, usage = self.llm.chat(
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.3,
+                max_tokens=2000,
+            )
+
+            step.add_log(f"Tokens used: {usage.get('total_tokens', 'N/A')}")
+            step.add_log(f"Raw LLM Response:\n{response}")
+
+            answer_data = parse_json_safely(response)
+
+            if answer_data:
+                step.add_log(f"Parsed Answer: {answer_data.get('Answer', '')}")
+
+                # Force check E logic (same as standard, only for MCQ mode)
+                if mode == "mcq" and options and json_a and json_a.get("isAboutUIT", "No") == "Yes":
+                    selected = answer_data.get("Answer", "").strip().upper()
+                    if selected == "E":
+                        step.add_log("WARNING: LLM chọn E cho câu hỏi thuộc UIT! Force chọn đáp án khác...")
+                        for key in options.keys():
+                            if key.upper() != "E":
+                                answer_data["Answer"] = key
+                                answer_data["Explanation"] = "(Hệ thống tự động sửa: không chọn E cho câu hỏi thuộc UIT)"
+                                step.add_log(f"Force chọn đáp án: {key}")
+                                break
+
+                step.output_data = answer_data
+            else:
+                step.add_log("Failed to parse JSON, using raw response")
+                answer_data = {
+                    "Answer": response[:500],
+                    "Explanation": "",
                 }
                 step.output_data = answer_data
 

@@ -127,8 +127,8 @@ def load_chunks_sidebar():
 
         st.markdown("---")
         st.markdown("### ⚙️ Configuration")
-        st.info(f"Model: w3leee/claude-sonnet-4.6")
-        st.info("Provider: Claude via xah.io")
+        st.info(f"Model: DeepSeek V4 Flash")
+        st.info("Provider: DeepSeek via xah.io")
 
 
 def render_step_indicator(step, step_index):
@@ -186,15 +186,12 @@ def render_answer(result):
     # Answer card
     st.markdown('<div class="answer-box">', unsafe_allow_html=True)
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
-        st.metric("Hỗ trợ", "✅ Có" if result.is_supported else "⚠️ Không", result.support_confidence)
-
-    with col2:
         st.metric("UIT Related", "✅ Có" if result.is_about_uit else "❌ Không")
 
-    with col3:
+    with col2:
         total_time = sum(s.duration_ms() for s in result.steps)
         st.metric("Total Time", f"{total_time:.0f}ms")
 
@@ -204,10 +201,6 @@ def render_answer(result):
     if result.explanation:
         st.markdown("### Giải thích:")
         st.info(result.explanation)
-
-    if result.support_context:
-        st.markdown("### Ngữ cảnh hỗ trợ:")
-        st.markdown(f"> {result.support_context}")
 
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -242,69 +235,48 @@ def main():
     load_chunks_sidebar()
 
     # Main content
-    col1, col2 = st.columns([1, 1])
+    st.markdown("### 💬 Đặt câu hỏi")
 
-    with col1:
-        st.markdown("### 💬 Đặt câu hỏi")
+    mode = st.radio(
+        "Chế độ:",
+        ["normal", "mcq"],
+        format_func=lambda x: "💬 Normal" if x == "normal" else "📝 MCQ (Trắc nghiệm)",
+        horizontal=True,
+    )
 
-        mode = st.radio(
-            "Chế độ:",
-            ["normal", "mcq"],
-            format_func=lambda x: "💬 Normal" if x == "normal" else "📝 MCQ (Trắc nghiệm)",
-            horizontal=True,
-        )
+    question = st.text_area(
+        "Câu hỏi:",
+        placeholder="VD: Học phí ngành Khoa học Máy tính năm 2026 là bao nhiêu?",
+        height=100,
+    )
 
-        question = st.text_area(
-            "Câu hỏi:",
-            placeholder="VD: Học phí ngành Khoa học Máy tính năm 2026 là bao nhiêu?",
-            height=100,
-        )
+    # MCQ options
+    options = None
+    if mode == "mcq":
+        st.markdown("**Đáp án (MCQ - 5 đáp án):**")
+        sub_col1, sub_col2, sub_col3 = st.columns(3)
+        with sub_col1:
+            opt_a = st.text_input("A:", key="opt_a")
+            opt_b = st.text_input("B:", key="opt_b")
+        with sub_col2:
+            opt_c = st.text_input("C:", key="opt_c")
+            opt_d = st.text_input("D:", key="opt_d")
+        with sub_col3:
+            opt_e = st.text_input("E:", key="opt_e")
 
-        # MCQ options
-        options = None
-        if mode == "mcq":
-            st.markdown("**Đáp án (MCQ - 5 đáp án):**")
-            sub_col1, sub_col2, sub_col3 = st.columns(3)
-            with sub_col1:
-                opt_a = st.text_input("A:", key="opt_a")
-                opt_b = st.text_input("B:", key="opt_b")
-            with sub_col2:
-                opt_c = st.text_input("C:", key="opt_c")
-                opt_d = st.text_input("D:", key="opt_d")
-            with sub_col3:
-                opt_e = st.text_input("E:", key="opt_e")
+        options = {}
+        if opt_a:
+            options["A"] = opt_a
+        if opt_b:
+            options["B"] = opt_b
+        if opt_c:
+            options["C"] = opt_c
+        if opt_d:
+            options["D"] = opt_d
+        if opt_e:
+            options["E"] = opt_e
 
-            options = {}
-            if opt_a:
-                options["A"] = opt_a
-            if opt_b:
-                options["B"] = opt_b
-            if opt_c:
-                options["C"] = opt_c
-            if opt_d:
-                options["D"] = opt_d
-            if opt_e:
-                options["E"] = opt_e
-
-        submitted = st.button("🚀 Tra cứu", type="primary", use_container_width=True)
-
-    with col2:
-        st.markdown("### 📊 Pipeline Status")
-
-        if st.session_state.current_result:
-            result = st.session_state.current_result
-
-            # Progress bar
-            completed_steps = sum(1 for s in result.steps if s.status == "done")
-            total_steps = len(result.steps)
-            progress = completed_steps / total_steps
-            st.progress(progress, text=f"Progress: {completed_steps}/{total_steps} steps completed")
-
-            # Render all steps
-            for i, step in enumerate(result.steps):
-                render_step_indicator(step, i)
-        else:
-            st.info("👆 Nhập câu hỏi và nhấn 'Tra cứu' để bắt đầu")
+    submitted = st.button("🚀 Tra cứu", type="primary", use_container_width=True)
 
     # Run pipeline
     if submitted and question:
@@ -319,6 +291,13 @@ def main():
                     st.warning("⚠️ Câu hỏi không liên quan đến UIT")
                 else:
                     st.success("✅ Xử lý hoàn tất!")
+                
+                # Append to history
+                st.session_state.history.append({
+                    "question": question,
+                    "mode": mode,
+                    "answer": result.answer,
+                })
             else:
                 st.error(f"❌ Có lỗi xảy ra: {result.error}")
 
@@ -330,9 +309,25 @@ def main():
         render_answer(result)
 
         # Tabs for detailed view
-        tab1, tab2, tab3 = st.tabs(["📋 All Logs", "📄 Context", "📜 History"])
+        tab_progress, tab_context, tab_history = st.tabs([
+            "⚙️ Quá trình & Logs", 
+            "📄 Context", 
+            "📜 Lịch sử"
+        ])
 
-        with tab1:
+        with tab_progress:
+            st.markdown("### 📊 Pipeline Status")
+            # Progress bar
+            completed_steps = sum(1 for s in result.steps if s.status == "done")
+            total_steps = len(result.steps)
+            progress = completed_steps / total_steps
+            st.progress(progress, text=f"Progress: {completed_steps}/{total_steps} steps completed")
+
+            # Render all steps
+            for i, step in enumerate(result.steps):
+                render_step_indicator(step, i)
+
+            st.markdown("---")
             st.markdown("### 📋 Chi tiết Logs từng bước")
             for step_name, logs in result.get_all_logs():
                 if logs.startswith("==="):
@@ -345,10 +340,10 @@ def main():
                     else:
                         st.text(f"  {logs}")
 
-        with tab2:
+        with tab_context:
             render_context_viewer(result)
 
-        with tab3:
+        with tab_history:
             st.markdown("### 📜 Lịch sử tra cứu")
 
             if st.session_state.history:
