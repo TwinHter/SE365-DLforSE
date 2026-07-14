@@ -1,0 +1,502 @@
+[
+  {
+    "id": "uit_q001",
+    "choices": "B",
+    "explanation": "Dữ liệu phòng đào tạo xác nhận SE356 có môn tiên quyết là SE104 và SE100."
+  },
+  {
+    "id": "uit_q002",
+    "choices": "A",
+    "explanation": "Tra cứu danh mục môn học, SE356 (Kiến trúc phần mềm) thỏa mãn các điều kiện đăng ký ngay."
+  },
+  {
+    "id": "uit_q003",
+    "choices": "A",
+    "explanation": "Học phần SE361 có tên gọi chính thức là Phát triển phần mềm theo kiến trúc Microservices."
+  },
+  {
+    "id": "uit_q004",
+    "choices": "A",
+    "explanation": "Khung chương trình đào tạo quy định SE361 yêu cầu kiến thức từ IT002 và IT004."
+  },
+  {
+    "id": "uit_q005",
+    "choices": "C",
+    "explanation": "Mã môn SE364 tương ứng học phần Thiết kế giao diện và trải nghiệm người dùng."
+  },
+  {
+    "id": "uit_q006",
+    "choices": "B",
+    "explanation": "Môn MM106 đòi hỏi sinh viên phải hoàn thành Nhập môn lập trình IT001 trước."
+  },
+  {
+    "id": "uit_q007",
+    "choices": "A",
+    "explanation": "Cặp môn tự chọn SE355 (Máy học) và SE365 (Học sâu ứng dụng) thể hiện mối liên hệ AI rõ nhất."
+  },
+  {
+    "id": "uit_q008",
+    "choices": "A",
+    "explanation": "Môn SE360 có nội dung cốt lõi về Điện toán đám mây và phát triển ứng dụng hướng dịch vụ."
+  },
+  {
+    "id": "uit_q009",
+    "choices": "A",
+    "explanation": "Học phần SE362 có nội dung chuyên sâu về An toàn phần mềm và hệ thống."
+  },
+  {
+    "id": "uit_q010",
+    "choices": "A",
+    "explanation": "Cổng thông tin đào tạo công bố SE358 (Quản lý dự án) yêu cầu điều kiện tiên quyết SE104."
+  },
+  {
+    "id": "uit_q011",
+    "choices": "B",
+    "explanation": "Học phần SE400 cần tích lũy cả hai môn cơ sở ngành là SE100 và SE104."
+  },
+  {
+    "id": "uit_q012",
+    "choices": "A",
+    "explanation": "Môn SE401 (Mẫu thiết kế) cung cấp kiến thức tổng quát trước khi đi vào hướng đối tượng."
+  },
+  {
+    "id": "uit_q013",
+    "choices": "A",
+    "explanation": "Môn SE405 là học phần tiếp nối chuyên sâu về mảng Mobile/Pervasive sau SE114."
+  },
+  {
+    "id": "uit_q014",
+    "choices": "B",
+    "explanation": "Môn MM203 chính là Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện."
+  },
+  {
+    "id": "uit_q015",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không trùng khớp với bất kỳ học phần nào tại hệ thống UIT."
+  },
+  {
+    "id": "uit_q016",
+    "choices": "C",
+    "explanation": "Môn nâng cao mảng multimedia này yêu cầu hoàn thành môn nền tảng MM104."
+  },
+  {
+    "id": "uit_q017",
+    "choices": "B",
+    "explanation": "Tra cứu cây môn học Khoa MMT&TT, môn MM209 có điều kiện học trước là MM104."
+  },
+  {
+    "id": "uit_q018",
+    "choices": "E",
+    "explanation": "Chủ đề xã hội nằm ngoài khung chương trình đào tạo của UIT."
+  },
+  {
+    "id": "uit_q019",
+    "choices": "E",
+    "explanation": "Không tìm thấy mã học phần hay nội dung tương đương trong cổng tra cứu UIT."
+  },
+  {
+    "id": "uit_q020",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi hoàn toàn nằm ngoài danh mục đào tạo của trường."
+  },
+  {
+    "id": "uit_q021",
+    "choices": "E",
+    "explanation": "Không có thông tin liên quan đến môn học này trong hệ thống đào tạo của UIT."
+  },
+  {
+    "id": "uit_q022",
+    "choices": "E",
+    "explanation": "Câu hỏi khảo sát về chủ đề không thuộc phạm vi học thuật UIT."
+  },
+  {
+    "id": "uit_q023",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi nằm ngoài danh mục học phần tại UIT."
+  },
+  {
+    "id": "uit_q024",
+    "choices": "B",
+    "explanation": "Học phần SE406 (Mẫu thiết kế hướng đối tượng) đóng vai trò môn thiên thiết kế giai đoạn cuối."
+  },
+  {
+    "id": "uit_q025",
+    "choices": "A",
+    "explanation": "Học phần SE363 được thiết kế chuyên biệt cho mảng ứng dụng dữ liệu lớn."
+  },
+  {
+    "id": "uit_q026",
+    "choices": "E",
+    "explanation": "Hệ thống thông tin đào tạo UIT không ghi nhận nội dung môn học này."
+  },
+  {
+    "id": "uit_q027",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi hoàn toàn không liên quan đến trường UIT."
+  },
+  {
+    "id": "uit_q028",
+    "choices": "E",
+    "explanation": "Chủ đề nằm ngoài danh mục học phần và đề cương chi tiết tại UIT."
+  },
+  {
+    "id": "uit_q029",
+    "choices": "E",
+    "explanation": "Không liên quan đến bất kỳ học phần hay quy định nào tại UIT."
+  },
+  {
+    "id": "uit_q030",
+    "choices": "E",
+    "explanation": "Học phần này không tồn tại trong danh mục đào tạo của UIT."
+  },
+  {
+    "id": "uit_q031",
+    "choices": "A",
+    "explanation": "Website tuyển sinh UIT xác nhận ngành An toàn thông tin chuyên sâu về bảo mật mạng và hệ thống."
+  },
+  {
+    "id": "uit_q032",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không thuộc phạm vi đào tạo hướng nghiệp của UIT."
+  },
+  {
+    "id": "uit_q033",
+    "choices": "E",
+    "explanation": "Thông tin tuyển sinh ngành học này nằm ngoài hệ thống ngành của trường."
+  },
+  {
+    "id": "uit_q034",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi hoàn toàn không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q035",
+    "choices": "E",
+    "explanation": "Chủ đề câu hỏi không liên quan đến định hướng giáo dục tại UIT."
+  },
+  {
+    "id": "uit_q036",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q037",
+    "choices": "E",
+    "explanation": "Mức học phí này không áp dụng cho các khóa học chính quy tại UIT."
+  },
+  {
+    "id": "uit_q038",
+    "choices": "E",
+    "explanation": "Quy chế tài chính của trường không chứa thông tin định giá học phí này."
+  },
+  {
+    "id": "uit_q039",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q040",
+    "choices": "E",
+    "explanation": "Thông tin học phí này thuộc về một đơn vị giáo dục khác ngoài UIT."
+  },
+  {
+    "id": "uit_q041",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q042",
+    "choices": "E",
+    "explanation": "Chủ đề nằm ngoài danh sách đề án tuyển sinh và học phí của trường."
+  },
+  {
+    "id": "uit_q043",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q044",
+    "choices": "A",
+    "explanation": "Ngành Khoa học máy tính tại UIT chú trọng đào tạo chuyên sâu, toàn diện về thuật toán và AI nâng cao."
+  },
+  {
+    "id": "uit_q045",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi hoàn toàn không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q046",
+    "choices": "E",
+    "explanation": "Ngành học và mô tả hướng đi này không thuộc danh mục đào tạo của trường."
+  },
+  {
+    "id": "uit_q047",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q048",
+    "choices": "E",
+    "explanation": "Mô tả mục tiêu nghề nghiệp không tương thích với các ngành học hiện tại của trường."
+  },
+  {
+    "id": "uit_q049",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q050",
+    "choices": "E",
+    "explanation": "Chủ đề định hướng nghề nghiệp ngoài không thuộc phạm vi đào tạo UIT."
+  },
+  {
+    "id": "uit_q051",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q052",
+    "choices": "E",
+    "explanation": "Ngành học đề cập nằm ngoài danh sách tuyển sinh chính thức của trường."
+  },
+  {
+    "id": "uit_q053",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q054",
+    "choices": "E",
+    "explanation": "Lĩnh vực chuyên môn này không nằm trong khung chương trình đào tạo tại trường."
+  },
+  {
+    "id": "uit_q055",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q056",
+    "choices": "E",
+    "explanation": "Mô tả chương trình học không khớp với bất kỳ ngành nào của UIT."
+  },
+  {
+    "id": "uit_q057",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q058",
+    "choices": "E",
+    "explanation": "Không tìm thấy sự liên quan giữa câu hỏi với các ngành đào tạo hiện có tại UIT."
+  },
+  {
+    "id": "uit_q059",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q060",
+    "choices": "E",
+    "explanation": "Chủ đề này không xuất hiện trong cẩm nang sinh viên hay đề án của trường."
+  },
+  {
+    "id": "uit_q061",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q062",
+    "choices": "E",
+    "explanation": "Lĩnh vực nghiên cứu này hoàn toàn nằm ngoài các lab nghiên cứu tại UIT."
+  },
+  {
+    "id": "uit_q063",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q064",
+    "choices": "E",
+    "explanation": "Thông tin nghiên cứu khoa học đề cập không thuộc thẩm quyền quản lý của trường."
+  },
+  {
+    "id": "uit_q065",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q066",
+    "choices": "E",
+    "explanation": "Không có dữ liệu về hướng nghiên cứu hay giảng viên này tại các khoa của UIT."
+  },
+  {
+    "id": "uit_q067",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q068",
+    "choices": "E",
+    "explanation": "Chủ đề nghiên cứu chuyên biệt này không nằm trong các nhóm học thuật của trường."
+  },
+  {
+    "id": "uit_q069",
+    "choices": "E",
+    "explanation": "Nội dung câu hỏi không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q070",
+    "choices": "E",
+    "explanation": "Thông tin khảo sát nằm ngoài danh mục đề tài nghiên cứu khoa học tại UIT."
+  },
+  {
+    "id": "uit_q071",
+    "choices": "C",
+    "explanation": "Trang thông tin Khoa KH&KTTT xác nhận ThS. Phạm Nhật Duy thuộc nhóm eSecurity."
+  },
+  {
+    "id": "uit_q072",
+    "choices": "A",
+    "explanation": "Website Khoa Khoa học và Kỹ thuật thông tin ghi nhận ThS. Võ Tấn Khoa dẫn dắt nhóm Data Chain."
+  },
+  {
+    "id": "uit_q073",
+    "choices": "A",
+    "explanation": "Cổng thông tin nghiên cứu FIT-UIT định vị Data Chain tập trung vào Data Science và AI."
+  },
+  {
+    "id": "uit_q074",
+    "choices": "C",
+    "explanation": "Hồ sơ năng lực nhóm eSecurity tại UIT tập trung vào phát hiện, phân loại mã độc."
+  },
+  {
+    "id": "uit_q075",
+    "choices": "C",
+    "explanation": "Cẩm nang Tân sinh viên hướng dẫn khôi phục mật khẩu qua trang chungthuc.uit.edu.vn."
+  },
+  {
+    "id": "uit_q076",
+    "choices": "C",
+    "explanation": "Hệ thống xác thực của trường phân quyền quản lý cấp lại mật khẩu cho chungthuc.uit.edu.vn."
+  },
+  {
+    "id": "uit_q077",
+    "choices": "C",
+    "explanation": "Trang chungthuc.uit.edu.vn là địa chỉ phân giải tài khoản chứng thực chính thức của trường."
+  },
+  {
+    "id": "uit_q078",
+    "choices": "C",
+    "explanation": "Phòng Dữ liệu & Công nghệ thông tin UIT chỉ định chungthuc.uit.edu.vn giải quyết sự cố tài khoản."
+  },
+  {
+    "id": "uit_q079",
+    "choices": "A",
+    "explanation": "Open English Club (OEC) là CLB học thuật tiếng Anh chính thức trực thuộc UIT."
+  },
+  {
+    "id": "uit_q080",
+    "choices": "A",
+    "explanation": "Fanpage và thông tin Đoàn - Hội ghi nhận OEC tổ chức nhiều workshop kết nối bằng tiếng Anh."
+  },
+  {
+    "id": "uit_q081",
+    "choices": "E",
+    "explanation": "Nghị định 100/2019/NĐ-CP về xử phạt giao thông công cộng không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q082",
+    "choices": "E",
+    "explanation": "Kết quả giải vô địch thế giới Liên Minh Huyền Thoại (CKTG) không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q083",
+    "choices": "E",
+    "explanation": "Quy trình đổi GPLX trên Cổng dịch vụ công quốc gia không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q084",
+    "choices": "E",
+    "explanation": "Thông số kỹ thuật render video 4K trên các hệ điều hành thương mại không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q085",
+    "choices": "E",
+    "explanation": "Biến động giá vàng SJC và thị trường tài chính tự do không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q086",
+    "choices": "E",
+    "explanation": "Quy định xử phạt lỗi không xi nhan theo Luật giao thông đường bộ không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q087",
+    "choices": "E",
+    "explanation": "Phương pháp và lộ trình luyện thi chứng chỉ IELTS quốc tế không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q088",
+    "choices": "E",
+    "explanation": "Cách tính Thuế thu nhập cá nhân theo biểu thuế lũy tiến từng phần không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q089",
+    "choices": "E",
+    "explanation": "Kiến thức nén và tối ưu hóa định dạng video MP4/MKV không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q090",
+    "choices": "E",
+    "explanation": "Thuật toán gợi ý của ứng dụng giải trí bên thứ ba (TikTok) không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q091",
+    "choices": "E",
+    "explanation": "Quy trình vệ sinh phần cứng máy tính và bôi keo tản nhiệt không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q092",
+    "choices": "E",
+    "explanation": "Cẩm nang kinh nghiệm chuẩn bị hành lý du lịch tự túc không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q093",
+    "choices": "E",
+    "explanation": "Công thức chế biến và định lượng nguyên liệu ẩm thực không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q094",
+    "choices": "E",
+    "explanation": "Thủ tục hành chính làm lại thẻ Căn cước công dân gắn chíp bị mất không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q095",
+    "choices": "E",
+    "explanation": "Chế độ ăn kiêng Keto và tính toán lượng calo tiêu thụ hàng ngày không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q096",
+    "choices": "E",
+    "explanation": "Tư vấn cấu hình phần cứng tối ưu cho việc train model Stable Diffusion không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q097",
+    "choices": "E",
+    "explanation": "Chu kỳ đăng kiểm ô tô cơ giới theo quy định của Bộ Giao thông vận tải không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q098",
+    "choices": "E",
+    "explanation": "Các bước đăng ký gian hàng kinh doanh trên TikTok Shop không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q099",
+    "choices": "E",
+    "explanation": "Địa điểm tổ chức các giải đấu thể thao quốc tế Euro hoặc World Cup không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q100",
+    "choices": "E",
+    "explanation": "Các giải pháp và mẹo phần mềm nhằm kéo dài thời lượng pin điện thoại không liên quan đến UIT."
+  }
+]

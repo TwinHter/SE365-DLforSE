@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "uit_q001",
+    "question": "Kỳ tới mình muốn học môn Kiến trúc phần mềm ở CNPM. Theo danh mục môn học của UIT thì mình cần hoàn thành gì trước?",
+    "options": {
+      "A": "Chỉ cần SE104",
+      "B": "SE104 và SE100",
+      "C": "IT001 và IT003",
+      "D": "SE114",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q002",
+    "question": "Mình đã xong SE100 và SE104 nhưng chưa có IT002, IT004. Nếu kỳ tới muốn ưu tiên các môn nền CNPM theo hướng phân tích yêu cầu - kiến trúc - quản lý dự án mà vẫn đăng ký được ngay, nên chọn những môn nào?",
+    "options": {
+      "A": "SE356 - Kiến trúc phần mềm",
+      "B": "SE357 - Kỹ thuật phân tích yêu cầu",
+      "C": "SE358 - Quản lý dự án phát triển phần mềm",
+      "D": "SE361 - Phát triển phần mềm theo kiến trúc Microservices",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q003",
+    "question": "Mình định đi theo hướng microservices ở CNPM. Nếu muốn chọn đúng môn sát nhất với mục tiêu đó thì nên ưu tiên môn nào?",
+    "options": {
+      "A": "SE361 - Phát triển phần mềm theo kiến trúc Microservices",
+      "B": "SE364 - Thiết kế giao diện và trải nghiệm người dùng",
+      "C": "SE358 - Quản lý dự án phát triển phần mềm",
+      "D": "SE400 - Seminar các vấn đề hiện đại của CNPM",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q004",
+    "question": "Nếu mình muốn học SE361 ở kỳ tới thì phải có những môn nền nào trước đó?",
+    "options": {
+      "A": "IT002 và IT004",
+      "B": "IT001 và IT003",
+      "C": "SE104 và SE100",
+      "D": "IT007 và IT008",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q005",
+    "question": "Mình thích học phần mềm nhưng muốn nghiêng về UI/UX hơn là big data hay cloud. Trong các môn tự chọn sau, môn nào hợp nhất?",
+    "options": {
+      "A": "SE363 - Phát triển ứng dụng trên nền tảng dữ liệu lớn",
+      "B": "SE360 - Điện toán đám mây và phát triển ứng dụng hướng dịch vụ",
+      "C": "SE364 - Thiết kế giao diện và trải nghiệm người dùng",
+      "D": "SE355 - Máy học và các công cụ",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q006",
+    "question": "Mình chưa học IT001. Nếu phải tránh đăng ký các môn chắc chắn có yêu cầu IT001 trong danh sách dưới đây thì nên loại môn nào?",
+    "options": {
+      "A": "SE364",
+      "B": "MM106",
+      "C": "SE357",
+      "D": "MM209",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q007",
+    "question": "Mình đang cân nhắc học thêm các môn AI ứng dụng cho phần mềm. Nếu muốn đi từ nền học máy sang hướng này, môn nào ở CNPM cho thấy có liên hệ gần nhất?",
+    "options": {
+      "A": "SE355 rồi đến SE365",
+      "B": "SE400 rồi đến SE401",
+      "C": "SE358 rồi đến SE364",
+      "D": "SE356 rồi đến SE357",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q008",
+    "question": "Mình chỉ muốn chọn những môn có liên quan rõ đến cloud-native hoặc cloud computing trong CNPM. Chọn phương án phù hợp nhất.",
+    "options": {
+      "A": "SE360",
+      "B": "SE361",
+      "C": "SE364",
+      "D": "SE358",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q009",
+    "question": "Mình muốn học môn thiên về security trong CNPM, không phải network security. Trong số các môn sau, môn nào hợp nhất?",
+    "options": {
+      "A": "SE362 - An toàn phần mềm và hệ thống",
+      "B": "NT101 - An toàn mạng máy tính",
+      "C": "SE364 - Thiết kế giao diện và trải nghiệm người dùng",
+      "D": "SE358 - Quản lý dự án phát triển phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q010",
+    "question": "Nếu mình muốn học môn chuyên về quản lý dự án phát triển phần mềm, theo danh mục môn học thì cần có gì trước?",
+    "options": {
+      "A": "SE104",
+      "B": "SE100",
+      "C": "IT003",
+      "D": "SE114",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q011",
+    "question": "Mình quan tâm tới môn seminar/cập nhật xu hướng mới của CNPM ở giai đoạn cuối. Nếu nhìn vào điều kiện học trước, môn nào dưới đây cần đồng thời SE100 và SE104?",
+    "options": {
+      "A": "SE357",
+      "B": "SE400",
+      "C": "SE405",
+      "D": "SE417",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q012",
+    "question": "Nếu mục tiêu là học về design patterns theo nghĩa tổng quát trước, chứ chưa đi thẳng vào biến thể hướng đối tượng, thì trong các môn dưới đây nên ưu tiên môn nào hơn?",
+    "options": {
+      "A": "SE401 - Mẫu thiết kế",
+      "B": "SE406 - Mẫu thiết kế hướng đối tượng",
+      "C": "SE358 - Quản lý dự án phát triển phần mềm",
+      "D": "SE365 - Học sâu ứng dụng trong phát triển phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q013",
+    "question": "Mình đi theo hướng mobile/pervasive trong CNPM. Trong các môn sau, đâu là nhóm môn nên ưu tiên nếu đã có nền từ SE114?",
+    "options": {
+      "A": "SE405",
+      "B": "SE407",
+      "C": "SE356",
+      "D": "SE357",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q014",
+    "question": "Mình đang học mảng multimedia và muốn môn nào dạy NLP cho truyền thông đa phương tiện. Nên chọn môn nào?",
+    "options": {
+      "A": "MM202 - Học sâu ứng dụng trong truyền thông đa phương tiện",
+      "B": "MM203 - Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện",
+      "C": "MM204 - Xử lý ảnh số và video trong truyền thông đa phương tiện",
+      "D": "MM220 - Phân tích dữ liệu truyền thông số",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q015",
+    "question": "Mình muốn tìm các môn multimedia đang cùng có điều kiện IT001 để lên kế hoạch học trước cho gọn. Chọn phương án đúng.",
+    "options": {
+      "A": "MM106",
+      "B": "MM107",
+      "C": "MM209",
+      "D": "MM222",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q016",
+    "question": "Trong mảng multimedia, mình muốn gom những môn cùng đòi hỏi IT007 để học nền trước. Cặp nào đúng?",
+    "options": {
+      "A": "MM206",
+      "B": "MM222",
+      "C": "MM202",
+      "D": "MM203",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q017",
+    "question": "Mình viết content và muốn học môn báo chí/truyền thông nhưng thấy có một môn yêu cầu phải học Viết nội dung đa phương tiện (MM104) trước. Đó là môn nào?",
+    "options": {
+      "A": "MM208",
+      "B": "MM209",
+      "C": "MM216",
+      "D": "MM223",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q018",
+    "question": "Nếu mình muốn làm đồ án môn học mã nguồn mở ở CNPM, theo danh mục môn học thì phải qua môn nào trước?",
+    "options": {
+      "A": "SE104",
+      "B": "SE111",
+      "C": "SE122",
+      "D": "IT001",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q019",
+    "question": "Mình đang nhắm giai đoạn tốt nghiệp. Những môn nào dưới đây đang cùng phụ thuộc SE122 trong danh mục môn học?",
+    "options": {
+      "A": "SE505",
+      "B": "SE506",
+      "C": "SE507",
+      "D": "SE400",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q020",
+    "question": "Nếu mình mới quan tâm đến các quy trình phát triển phần mềm hiện đại và kiến trúc phần mềm, cặp môn nào đúng nhất với mô tả đó?",
+    "options": {
+      "A": "SE354 và SE356",
+      "B": "SE358 và SE364",
+      "C": "SE400 và SE417",
+      "D": "SE351 và SE365",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q021",
+    "question": "Mình muốn tránh các môn game/VR để tập trung hoàn toàn vào software engineering cho doanh nghiệp. Cặp nào dưới đây là cặp mình nên ưu tiên hơn?",
+    "options": {
+      "A": "SE352 và SE403",
+      "B": "SE315 và SE316",
+      "C": "SE356 và SE358",
+      "D": "SE221 và SE344",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q022",
+    "question": "Mình chưa xong IT002 và IT004 nhưng lại muốn đăng ký một môn thật sát kiến trúc microservices. Theo danh mục môn học thì nên làm gì?",
+    "options": {
+      "A": "Đăng ký SE361 luôn vì không có tiên quyết",
+      "B": "Hoãn SE361 vì môn này cần IT002 và IT004",
+      "C": "Đổi sang SE401 vì cũng cùng chủ đề microservices",
+      "D": "Đổi sang MM205 vì học thay thế được",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q023",
+    "question": "Mình muốn biết ở CNPM môn nào nghiêng về big data platform hơn là cloud hay UI. Nên chọn gì?",
+    "options": {
+      "A": "SE360",
+      "B": "SE363",
+      "C": "SE364",
+      "D": "SE356",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q024",
+    "question": "Nếu muốn gom các môn 'thiên thiết kế' ở giai đoạn cuối của CNPM, những môn nào phù hợp nhất?",
+    "options": {
+      "A": "SE401",
+      "B": "SE406",
+      "C": "SE358",
+      "D": "SE365",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q025",
+    "question": "Nếu chỉ có thể ưu tiên hoàn thành 2 môn nền trong năm nay để mở đường cho nhiều môn chuyên sâu CNPM nhất ở các học kỳ sau, cặp nào đáng ưu tiên nhất?",
+    "options": {
+      "A": "SE100 và SE104",
+      "B": "IT001 và IT003",
+      "C": "SE114 và MM104",
+      "D": "IS402 và IT008",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q026",
+    "question": "Mình đang tìm một môn để hiểu 'requirements engineering' chứ không phải software architecture hay project management. Môn nào là đúng nhất?",
+    "options": {
+      "A": "SE356",
+      "B": "SE357",
+      "C": "SE358",
+      "D": "SE401",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q027",
+    "question": "Em không hứng thú với web/app doanh nghiệp hay phân tích dữ liệu, mà muốn đụng vào VLSI, FPGA, ASIC và thiết kế phần cứng máy tính. Nếu loại dần các lựa chọn ít liên quan, cuối cùng nên giữ lại ngành nào?",
+    "options": {
+      "A": "Khoa học dữ liệu",
+      "B": "Kỹ thuật phần mềm",
+      "C": "Kỹ thuật máy tính",
+      "D": "Hệ thống thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q028",
+    "question": "Nếu em muốn học một ngành vừa làm truyền thông vừa ứng dụng AI, NLP và xử lý hình ảnh thì nên ưu tiên ngành nào ở UIT?",
+    "options": {
+      "A": "Truyền thông đa phương tiện",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Hệ thống thông tin",
+      "D": "Công nghệ thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q029",
+    "question": "Em đang thiên về hướng học có cả ứng dụng lẫn nghiên cứu, được học từ cấu trúc dữ liệu - thuật toán đến ML, neural networks và cả VR/AR. Ngành nào hợp nhất?",
+    "options": {
+      "A": "Khoa học dữ liệu",
+      "B": "Khoa học máy tính",
+      "C": "Kỹ thuật phần mềm",
+      "D": "An toàn thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q030",
+    "question": "Nếu em đang phân vân giữa Khoa học máy tính và AI, và muốn một ngành được mô tả là xây trên nền Khoa học máy tính nhưng tăng cường chiều sâu AI ngay trong chương trình, thì nên nghiêng về lựa chọn nào hơn?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Trí tuệ nhân tạo",
+      "C": "Khoa học dữ liệu",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q031",
+    "question": "Phụ huynh hỏi: 'Con muốn học ngành vừa có hướng ứng dụng truyền thông xã hội/web, vừa có hướng CNTT quản lý giám sát hoạt động doanh nghiệp thì nên xem ngành nào?'",
+    "options": {
+      "A": "Công nghệ thông tin",
+      "B": "Hệ thống thông tin",
+      "C": "Khoa học dữ liệu",
+      "D": "Kỹ thuật máy tính",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q032",
+    "question": "Nếu em thích kiểu công việc phân tích, thiết kế, tổ chức và vận hành hệ thống thông tin cho doanh nghiệp/cơ quan hơn là đi sâu mạng hay phần cứng, nên ưu tiên ngành nào?",
+    "options": {
+      "A": "Hệ thống thông tin",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Kỹ thuật máy tính",
+      "D": "An toàn thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q033",
+    "question": "Nếu em muốn một ngành mà đầu ra có thể đi từ quản trị/thiết kế mạng đến phát triển phần mềm mạng và các ứng dụng truyền thông thời gian thực như VoIP, hội nghị truyền hình, thì nên chọn ngành nào thay vì An toàn thông tin thuần?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Khoa học máy tính",
+      "D": "Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q034",
+    "question": "Nếu em thích cơ chế bảo mật, mã hóa/giải mã, xây dựng mạng an toàn và xử lý tấn công mạng thì nên nhắm ngành nào?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Kỹ thuật phần mềm",
+      "C": "Công nghệ thông tin",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q035",
+    "question": "Em thích làm software product cho doanh nghiệp nhưng vẫn thấy hứng thú với game/virtual environment. Ở UIT, ngành nào có sẵn 2 hướng đào tạo chuyên sâu kiểu này?",
+    "options": {
+      "A": "Kỹ thuật phần mềm",
+      "B": "Khoa học máy tính",
+      "C": "Truyền thông đa phương tiện",
+      "D": "Công nghệ thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q036",
+    "question": "Em muốn chương trình có bằng quốc tế do Birmingham City University cấp và có thể chuyển tiếp sang Anh năm cuối. Nên xem chương trình nào ở UIT?",
+    "options": {
+      "A": "Khoa học máy tính - chương trình liên kết quốc tế",
+      "B": "Mạng máy tính & An toàn thông tin - chương trình liên kết quốc tế",
+      "C": "Kỹ thuật máy tính - chương trình liên kết quốc tế",
+      "D": "Chương trình giảng dạy bằng tiếng Anh ngành Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q037",
+    "question": "Nếu em muốn đi theo mô hình 2+2 với Đại học Newcastle, học 2 năm đầu ở UIT rồi chuyển tiếp 2 năm sau, thì nên xem chương trình nào?",
+    "options": {
+      "A": "Kỹ thuật máy tính - chương trình liên kết quốc tế",
+      "B": "Mạng máy tính & An toàn thông tin - chương trình liên kết quốc tế",
+      "C": "Khoa học máy tính - chương trình liên kết quốc tế",
+      "D": "Chương trình tiên tiến Hệ thống thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q038",
+    "question": "Gia đình đặt ngân sách khoảng 40 triệu đồng mỗi năm và chưa tính các chương trình tiên tiến hay liên kết quốc tế. Theo bảng học phí tuyển sinh 2025-2026, mức nào khớp nhất để em nhắm đúng loại chương trình phù hợp?",
+    "options": {
+      "A": "37 triệu đồng/năm",
+      "B": "42 triệu đồng/năm",
+      "C": "55 triệu đồng/năm",
+      "D": "80 triệu đồng/năm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q039",
+    "question": "Nếu em cân nhắc chương trình liên kết Newcastle của UIT, mức học phí dự kiến năm 2025-2026 được nêu là bao nhiêu?",
+    "options": {
+      "A": "55 triệu",
+      "B": "80 triệu",
+      "C": "90 triệu",
+      "D": "140 triệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q040",
+    "question": "Nếu hỏi riêng chương trình liên kết với Birmingham City University, nhóm đối tượng tuyển sinh 1 có mức học phí 2025-2026 là bao nhiêu?",
+    "options": {
+      "A": "37 triệu",
+      "B": "55 triệu",
+      "C": "80 triệu",
+      "D": "140 triệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q041",
+    "question": "Nếu em muốn học chương trình dạy và học bằng tiếng Anh ở UIT nhưng không tính các chương trình liên kết quốc tế, trong các lựa chọn sau nên giữ lại những ngành nào?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Khoa học dữ liệu",
+      "C": "Kỹ thuật phần mềm",
+      "D": "Hệ thống thông tin chương trình tiên tiến",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q042",
+    "question": "Em muốn vừa có bằng quốc tế, vừa tăng cường tiếng Anh chuyên ngành, lại học theo nội dung chuẩn Anh và có thể chuyển tiếp năm cuối tại Anh. Chương trình nào khớp nhất?",
+    "options": {
+      "A": "Kỹ thuật máy tính - liên kết Newcastle",
+      "B": "Mạng máy tính & An toàn thông tin - liên kết quốc tế với BCU",
+      "C": "Khoa học máy tính chính quy",
+      "D": "An toàn thông tin chương trình tiếng Anh",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q043",
+    "question": "Nếu em thích hướng data-driven decision making, ví dụ phân tích bệnh án điện tử, mô phỏng xả lũ hay dự đoán nhu cầu thị trường, thì ngành nào ở UIT mô tả gần nhất kiểu đó?",
+    "options": {
+      "A": "Khoa học dữ liệu",
+      "B": "Mạng máy tính và truyền thông dữ liệu",
+      "C": "Kỹ thuật phần mềm",
+      "D": "An toàn thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q044",
+    "question": "Nếu em muốn sau này làm AI nhưng vẫn muốn chương trình được mô tả là đào tạo kỹ sư AI toàn diện, đủ nền để phân tích độc lập và còn có khả năng học tiếp sau đại học, thì nên xem ngành nào trước?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Truyền thông đa phương tiện",
+      "C": "Trí tuệ nhân tạo",
+      "D": "Công nghệ thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q045",
+    "question": "Nếu em muốn sau này đi theo hướng social listening, phân tích dữ liệu mạng xã hội, NLP/hình ảnh cho truyền thông và cả AI trong marketing, nên nghiêng về ngành nào hơn?",
+    "options": {
+      "A": "Truyền thông đa phương tiện",
+      "B": "Khoa học máy tính",
+      "C": "Mạng máy tính và truyền thông dữ liệu",
+      "D": "Hệ thống thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q046",
+    "question": "Nếu em muốn tận dụng phòng lab và định hướng thi các chứng chỉ như CCNA, CCNP Security, Security+ ngay từ khi học đại học, ngành nào ở UIT đáng xem nhất?",
+    "options": {
+      "A": "Mạng máy tính và truyền thông dữ liệu",
+      "B": "An toàn thông tin",
+      "C": "Khoa học dữ liệu",
+      "D": "Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q047",
+    "question": "Nếu chỉ nhìn vào cơ hội nghề nghiệp trên trang tuyển sinh, ngành nào được nêu rõ có thể làm ở ISP, trung tâm dữ liệu, ngân hàng hoặc phát triển VoIP/hội nghị truyền hình?",
+    "options": {
+      "A": "Mạng máy tính và truyền thông dữ liệu",
+      "B": "Công nghệ thông tin",
+      "C": "Hệ thống thông tin",
+      "D": "Khoa học máy tính",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q048",
+    "question": "Nếu em muốn làm các hệ thống phần mềm thực tiễn cho doanh nghiệp, biết từ phân tích yêu cầu, thiết kế UI, kiến trúc, lập trình, kiểm thử tới triển khai, ngành nào mô tả đúng nhất?",
+    "options": {
+      "A": "Kỹ thuật phần mềm",
+      "B": "An toàn thông tin",
+      "C": "Kỹ thuật máy tính",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q049",
+    "question": "Em thấy UIT có vừa chương trình chuẩn, vừa chương trình tiếng Anh, vừa liên kết quốc tế. Nếu muốn chương trình liên kết quốc tế nhưng nhắm networking/security chứ không phải computer engineering thì nên chọn gì?",
+    "options": {
+      "A": "Kỹ thuật máy tính - liên kết Newcastle",
+      "B": "Mạng máy tính & An toàn thông tin - liên kết BCU",
+      "C": "Khoa học máy tính chính quy",
+      "D": "An toàn thông tin tiếng Anh",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q050",
+    "question": "Nếu một học sinh muốn học ngành có thể mở rộng sang nghiên cứu tiếp và được mô tả là 'định hướng ứng dụng và nghiên cứu' rõ ràng trên trang ngành, nên xem ngành nào đầu tiên?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "Công nghệ thông tin",
+      "C": "Kỹ thuật máy tính",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q051",
+    "question": "Nếu em muốn ưu tiên những lựa chọn có quy mô tuyển sinh nhỏ dưới 100 chỉ tiêu để cân nhắc kỹ hơn, trong bốn lựa chọn sau những ngành/chương trình nào của UIT thuộc nhóm đó?",
+    "options": {
+      "A": "Trí tuệ nhân tạo",
+      "B": "Khoa học dữ liệu",
+      "C": "Hệ thống thông tin chương trình tiên tiến",
+      "D": "Kỹ thuật phần mềm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q052",
+    "question": "Tương lai mình muốn nghiên cứu về malware, web vulnerability và cả bảo mật cho mô hình AI. Trong các nhóm/giảng viên ở FIT, đâu là nơi nên ưu tiên tìm hiểu?",
+    "options": {
+      "A": "Nhóm eSecurity của ThS. Phạm Nhật Duy",
+      "B": "Nhóm của ThS. Tô Quốc Huy",
+      "C": "Nhóm NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "D": "Nhóm của ThS. Phạm Nguyễn Phúc Toàn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q053",
+    "question": "Nếu mình quan tâm an toàn thông tin nhưng cũng thích giao thoa với AI đa phương thức và phát hiện bất thường bằng deep learning, nên tìm ai trước?",
+    "options": {
+      "A": "PGS.TS. Nguyễn Tấn Cầm",
+      "B": "ThS. Huỳnh Văn Tín",
+      "C": "ThS. Tạ Thu Thủy",
+      "D": "CN. Trần Quốc Khánh",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q054",
+    "question": "Mình muốn đi sâu vào blockchain, zero-knowledge proof, Web3 và xác thực văn bằng số. Nhóm nào ở FIT đang hợp nhất với hướng đó?",
+    "options": {
+      "A": "NLP@UIT",
+      "B": "eSecurity của ThS. Phạm Nhật Duy",
+      "C": "Data Chain của ThS. Võ Tấn Khoa",
+      "D": "Nhóm của ThS. Lưu Thanh Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q055",
+    "question": "Nếu mình muốn làm đề tài về LLM ứng dụng, xử lý dữ liệu mạng xã hội và truy vấn thông tin có yếu tố thời gian thì ở UIT nên tìm ai trước?",
+    "options": {
+      "A": "TS. Lưu Thanh Sơn",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "ThS. Phạm Thế Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q056",
+    "question": "Mình thích NLP nhưng muốn làm ra web app có ứng dụng mô hình học máy, không thiên về blockchain hay security. Ở UIT nên tìm ai?",
+    "options": {
+      "A": "ThS. Tô Quốc Huy",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "TS. Hà Minh Tân",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q057",
+    "question": "Nếu mình muốn nghiên cứu hiểu và sinh tiếng Việt, suy luận ngôn ngữ tự nhiên, rồi đánh giá hoặc căn chỉnh LLM cho bài toán low-resource thì nên tìm ai ở UIT?",
+    "options": {
+      "A": "ThS. Huỳnh Văn Tín",
+      "B": "ThS. Phạm Nhật Duy",
+      "C": "ThS. Phạm Thế Sơn",
+      "D": "TS. Nguyễn Tấn Trần Minh Khang",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q058",
+    "question": "Mình muốn theo hướng NLP có thêm trích xuất thông tin và một chút máy học ứng dụng, thay vì blockchain hay an toàn thông tin. Ai phù hợp hơn ở UIT?",
+    "options": {
+      "A": "CN. Trần Quốc Khánh",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "PGS.TS. Nguyễn Tấn Cầm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q059",
+    "question": "Nếu mình thích computational linguistics, language modeling và speech representation hơn là data analytics hay blockchain thì nên tìm ai ở UIT?",
+    "options": {
+      "A": "ThS. Nguyễn Hiếu Nghĩa",
+      "B": "ThS. Phạm Thế Sơn",
+      "C": "ThS. Võ Tấn Khoa",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q060",
+    "question": "Nếu mình muốn đọc thêm về parsing và sentiment analysis trên website nhóm NLP của UIT thì nên tìm nhóm nào?",
+    "options": {
+      "A": "Nhóm NLP của UIT / NLPQUIT",
+      "B": "Nhóm Data Chain",
+      "C": "Nhóm eSecurity",
+      "D": "Nhóm iTwin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q061",
+    "question": "Nếu mình muốn shortlist tối đa 2 người theo hướng computer vision hoặc document AI, thay vì NLP hay security, thì nên ưu tiên ai trước?",
+    "options": {
+      "A": "ThS. Phạm Nguyễn Phúc Toàn",
+      "B": "TS. Nguyễn Tấn Trần Minh Khang",
+      "C": "ThS. Huỳnh Văn Tín",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q062",
+    "question": "Nếu mình muốn shortlist tối đa 3 người ở UIT cho hướng NLP hiện đại nhưng thiên về social media text, Vietnamese understanding/generation, temporal retrieval hoặc language modeling thay vì security/computer vision, nên cân nhắc ai?",
+    "options": {
+      "A": "TS. Nguyễn Văn Kiệt",
+      "B": "ThS. Huỳnh Văn Tín",
+      "C": "TS. Lưu Thanh Sơn",
+      "D": "PGS.TS. Nguyễn Tấn Cầm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q063",
+    "question": "Nếu mình muốn bỏ qua NLP thuần để chỉ giữ các lựa chọn thiên security, privacy hoặc blockchain/Web3 ở UIT, bộ nào dưới đây hợp lý nhất?",
+    "options": {
+      "A": "PGS.TS. Nguyễn Tấn Cầm",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Phạm Nhật Duy",
+      "D": "ThS. Tô Quốc Huy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q064",
+    "question": "Nếu mình muốn chọn 3 lựa chọn thiên NLP ứng dụng để làm đề tài kiểu RAG/IE/text mining ở UIT, trong đó ưu tiên người có web dùng ML, trích xuất thông tin hoặc NLP + học máy thống kê, thì nên chọn ai?",
+    "options": {
+      "A": "ThS. Tô Quốc Huy",
+      "B": "CN. Trần Quốc Khánh",
+      "C": "CN. Nguyễn Hiếu Nghĩa",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q065",
+    "question": "Nếu mình thích blockchain nhưng không muốn đi quá xa khỏi data-driven systems và vẫn muốn có yếu tố bảo mật/quyền riêng tư, nhóm nào nên ưu tiên hơn NLP thuần?",
+    "options": {
+      "A": "Data Chain của ThS. Võ Tấn Khoa",
+      "B": "NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "C": "Nhóm của ThS. Tô Quốc Huy",
+      "D": "Nhóm của ThS. Lưu Thanh Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q066",
+    "question": "Nếu mình là sinh viên năm 2-3 và muốn vào sớm một nhóm security có ghi rõ 'chủ động liên hệ sớm từ năm 2, 3', nên tìm nhóm nào?",
+    "options": {
+      "A": "eSecurity của ThS. Phạm Nhật Duy",
+      "B": "Nhóm của ThS. Tô Quốc Huy",
+      "C": "NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "D": "Data Chain của ThS. Tạ Thu Thủy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q067",
+    "question": "Nếu mình thích data analytics, intelligent systems và MLOps hơn là NLP hay blockchain thì nên tìm ai ở UIT?",
+    "options": {
+      "A": "ThS. Phạm Thế Sơn",
+      "B": "ThS. Huỳnh Văn Tín",
+      "C": "ThS. Võ Tấn Khoa",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q068",
+    "question": "Nếu mình muốn một nhóm nghiên cứu có nhắc đến MLOps, Intelligent System và Data Analytics thì nên tìm ai?",
+    "options": {
+      "A": "ThS. Phạm Thế Sơn",
+      "B": "ThS. Võ Tấn Khoa",
+      "C": "ThS. Lưu Thanh Sơn",
+      "D": "CN. Nguyễn Hiếu Nghĩa",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q069",
+    "question": "Nếu mình ưu tiên một nhóm có website riêng datachain.uit.edu.vn và định hướng cả khóa luận/công bố bài báo, thì nhóm nào đang được mô tả như vậy?",
+    "options": {
+      "A": "Data Chain của ThS. Võ Tấn Khoa",
+      "B": "NLP@UIT của PGS.TS. Nguyễn Lưu Thuỳ Ngân",
+      "C": "eSecurity của PGS.TS. Nguyễn Tấn Cầm",
+      "D": "Nhóm của ThS. Lưu Thanh Sơn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q070",
+    "question": "Nếu mình muốn tìm một giảng viên ngoài Khoa được giới thiệu là làm Data Science và AI, đồng thời yêu cầu có mặt ở trường 8 giờ mỗi ngày để học tập và nghiên cứu, thì nên tìm ai?",
+    "options": {
+      "A": "TS. Nguyễn Tấn Trần Minh Khang",
+      "B": "ThS. Tô Quốc Huy",
+      "C": "TS. Lưu Thanh Sơn",
+      "D": "ThS. Phạm Nhật Duy",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q071",
+    "question": "Mình muốn tìm một kênh để vừa xem thông báo không thuộc công tác đào tạo, vừa tải biểu mẫu và đăng ký giấy xác nhận sinh viên. Trong các lựa chọn sau nên ưu tiên website nào?",
+    "options": {
+      "A": "daa.uit.edu.vn",
+      "B": "ctsv.uit.edu.vn",
+      "C": "drl.uit.edu.vn",
+      "D": "courses.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q072",
+    "question": "Trước khi phản hồi hoặc khiếu nại điểm rèn luyện, nếu mình muốn tự rà lại các hoạt động đã được cộng trong HK1 năm học 2025-2026 thì phải đăng nhập hệ thống nào trước?",
+    "options": {
+      "A": "drl.uit.edu.vn",
+      "B": "courses.uit.edu.vn",
+      "C": "alumni.uit.edu.vn",
+      "D": "dkxt.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q073",
+    "question": "Nếu sinh viên bị xếp loại rèn luyện kém cả năm lần thứ hai thì theo sổ tay UIT có thể bị xử lý ở mức nào?",
+    "options": {
+      "A": "Chỉ bị nhắc nhở nội bộ",
+      "B": "Bị trừ điểm học tập",
+      "C": "Có thể bị buộc thôi học",
+      "D": "Bị khóa email sinh viên",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 4
+  },
+  {
+    "id": "uit_q074",
+    "question": "Mình không ở KTX và đã có BHYT theo hộ gia đình nên không muốn mua trùng. Theo sổ tay sinh viên UIT, cách xử lý nào đúng hơn?",
+    "options": {
+      "A": "Không cần mua lại ở trường; nộp hình ảnh thẻ BHYT còn hiệu lực lên hệ thống xác nhận để trường đối chiếu",
+      "B": "Vẫn phải mua lại BHYT tại UIT dù đã có thẻ hợp lệ ở nơi khác",
+      "C": "Bắt buộc mua BHYT tại KTX rồi mới được công nhận",
+      "D": "Chỉ cần báo miệng với cố vấn học tập là đủ",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q075",
+    "question": "Nếu so giữa BHYT và bảo hiểm tai nạn được trường hỗ trợ, khoản '20 triệu đồng/vụ' đang nói tới loại nào?",
+    "options": {
+      "A": "Mức bồi thường tối đa của bảo hiểm tai nạn",
+      "B": "Mức đóng BHYT năm 2026",
+      "C": "Mức học phí chương trình chuẩn",
+      "D": "Mức hỗ trợ học bổng khuyến khích học tập",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q076",
+    "question": "Nếu mình muốn tham gia một lực lượng hoạt động cộng đồng dài hạn, được tập huấn kỹ năng và có cơ hội tham gia nhiều chương trình xã hội khác nhau, thì nên ưu tiên đội nào hơn các CLB thiên về sở thích?",
+    "options": {
+      "A": "Đội Công tác Xã hội",
+      "B": "CLB Bóng chuyền UIT",
+      "C": "CLB Cờ UIT",
+      "D": "CLB WebDev Studios",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q077",
+    "question": "Nếu mình muốn tham gia hoạt động môi trường, sống xanh và bảo vệ cảnh quan ở UIT thì nên theo dõi hoạt động nào nhiều nhất?",
+    "options": {
+      "A": "Ngày Chủ nhật xanh",
+      "B": "UIT Job Fair",
+      "C": "Kỳ thi đánh giá năng lực",
+      "D": "Khóa luận tốt nghiệp",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q078",
+    "question": "Mình muốn vừa có môi trường luyện tiếng Anh, vừa tham gia hoạt động công nghệ vì cộng đồng theo kiểu sửa chữa - tái sử dụng máy tính. Nếu chọn một cặp phù hợp nhất ở UIT thì nên chọn gì?",
+    "options": {
+      "A": "OEC và Đội Máy tính cũ - Tri thức mới",
+      "B": "Wakame và Đội Event",
+      "C": "UVC và Lossless",
+      "D": "CLB Cờ UIT và Futsal UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 5
+  },
+  {
+    "id": "uit_q079",
+    "question": "Nếu mình muốn có một sân chơi học thuật để luyện tiếng Anh, tham gia trò chơi, workshop và kết nối bạn bè trong trường thì nên tìm CLB nào ở UIT?",
+    "options": {
+      "A": "Open English Club - OEC",
+      "B": "CLB Tiếng Nhật Wakame",
+      "C": "CLB WebDev Studios",
+      "D": "CLB Bóng chuyền UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q080",
+    "question": "Nếu mình quên mật khẩu tài khoản chứng thực dùng để vào các hệ thống của trường thì có thể đổi mật khẩu ở đâu?",
+    "options": {
+      "A": "chungthuc.uit.edu.vn",
+      "B": "auth.uit.edu.vn",
+      "C": "drl.uit.edu.vn",
+      "D": "ctsv.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "uit_q081",
+    "question": "Tôi đi xe máy 125cc nhưng quên mang giấy phép lái xe. Theo luật giao thông hiện hành tôi bị phạt bao nhiêu?",
+    "options": {
+      "A": "37 triệu đồng/năm",
+      "B": "631.800 đồng",
+      "C": "drl.uit.edu.vn",
+      "D": "Mạng máy tính & An toàn thông tin - liên kết BCU",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q082",
+    "question": "Đội nào vô địch Chung kết Thế giới Liên Minh Huyền Thoại gần nhất?",
+    "options": {
+      "A": "Khoa học máy tính",
+      "B": "SE361",
+      "C": "UIT Job Fair",
+      "D": "BCU",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q083",
+    "question": "Tôi đang tìm cách đổi giấy phép lái xe online thì phải vào cổng nào của Nhà nước?",
+    "options": {
+      "A": "daa.uit.edu.vn",
+      "B": "student.uit.edu.vn",
+      "C": "drl.uit.edu.vn",
+      "D": "courses.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q084",
+    "question": "Nên mua MacBook hay laptop Windows để dựng video 4K chuyên nghiệp?",
+    "options": {
+      "A": "Truyền thông đa phương tiện",
+      "B": "Thư viện UIT",
+      "C": "SE364",
+      "D": "Hệ thống thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q085",
+    "question": "Giá vàng SJC hôm nay là bao nhiêu?",
+    "options": {
+      "A": "37 triệu",
+      "B": "55 triệu",
+      "C": "80 triệu",
+      "D": "90 triệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q086",
+    "question": "Luật nào quy định tuổi tối thiểu để điều khiển xe gắn máy trên đường?",
+    "options": {
+      "A": "Quy định điểm rèn luyện UIT",
+      "B": "Thông báo BHYT 2026",
+      "C": "SE358",
+      "D": "Data Chain",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q087",
+    "question": "Tôi muốn học IELTS từ 5.5 lên 7.0 trong 3 tháng thì nên theo lộ trình nào?",
+    "options": {
+      "A": "Ngành Trí tuệ nhân tạo",
+      "B": "UIT Career Day",
+      "C": "SE355",
+      "D": "Thư viện",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q088",
+    "question": "Thuế thu nhập cá nhân cho freelancer được tính thế nào?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Khoa học dữ liệu",
+      "C": "SE400",
+      "D": "drl.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q089",
+    "question": "Top 3 quán phở ngon ở Hà Nội là quán nào?",
+    "options": {
+      "A": "Thư viện UIT",
+      "B": "E-Learning UIT",
+      "C": "Ngày Chủ nhật xanh",
+      "D": "SE401",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q090",
+    "question": "Tôi cần chọn card đồ họa nào để chơi Cyberpunk 2077 ở 2K Ultra?",
+    "options": {
+      "A": "Kỹ thuật máy tính",
+      "B": "SE351",
+      "C": "MM204",
+      "D": "Đội Máy tính cũ - Tri thức mới",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q091",
+    "question": "Cách đăng ký SIM chính chủ trên app của nhà mạng là gì?",
+    "options": {
+      "A": "BHYT UIT 2026",
+      "B": "Trang tra cứu điểm rèn luyện",
+      "C": "Mạng máy tính và truyền thông dữ liệu",
+      "D": "SE365",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q092",
+    "question": "Mức phạt nồng độ cồn ô tô mới nhất hiện nay ra sao?",
+    "options": {
+      "A": "Thư viện UIT",
+      "B": "Student tracker UIT",
+      "C": "Kỹ thuật phần mềm",
+      "D": "Data Chain",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q093",
+    "question": "Tôi muốn tìm game nhập vai co-op hay trên Steam mùa hè này, gợi ý nào ổn?",
+    "options": {
+      "A": "SE405",
+      "B": "Ngày Chủ nhật xanh",
+      "C": "Phòng E10.2 Khoa FIT",
+      "D": "Sinh viên 5 tốt",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q094",
+    "question": "Thủ tục cấp lại căn cước công dân bị mất cần làm gì?",
+    "options": {
+      "A": "BHYT UIT",
+      "B": "Kế hoạch xét tốt nghiệp UIT",
+      "C": "NLP@UIT",
+      "D": "Mạng máy tính & truyền thông dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q095",
+    "question": "Lãi suất gửi tiết kiệm kỳ hạn 12 tháng ở các ngân hàng hiện khoảng bao nhiêu?",
+    "options": {
+      "A": "37 triệu/năm",
+      "B": "42 triệu/năm",
+      "C": "55 triệu/năm",
+      "D": "90 triệu/năm",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q096",
+    "question": "Tôi muốn build PC để train Stable Diffusion thì nên chọn CPU/GPU thế nào?",
+    "options": {
+      "A": "Kỹ thuật máy tính - liên kết Newcastle",
+      "B": "SE365",
+      "C": "Phạm Nhật Duy",
+      "D": "Job Fair UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q097",
+    "question": "Thời hạn đăng kiểm ô tô cá nhân mới mua là bao lâu?",
+    "options": {
+      "A": "ctsv@uit.edu.vn",
+      "B": "SE507",
+      "C": "courses.uit.edu.vn",
+      "D": "Ngày Chủ nhật xanh",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "uit_q098",
+    "question": "Muốn mở shop trên TikTok thì cần chuẩn bị những bước gì?",
+    "options": {
+      "A": "MM209",
+      "B": "Truyền thông đa phương tiện UIT",
+      "C": "Hệ thống thông tin UIT",
+      "D": "SE360",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q099",
+    "question": "Năm nay Euro hoặc World Cup diễn ra ở nước nào?",
+    "options": {
+      "A": "UIT Linh Xuân",
+      "B": "Birmingham City University",
+      "C": "Newcastle",
+      "D": "Thư viện UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "uit_q100",
+    "question": "Cách làm hộ chiếu online cho người chưa từng cấp hộ chiếu là gì?",
+    "options": {
+      "A": "drl.uit.edu.vn",
+      "B": "daa.uit.edu.vn",
+      "C": "student.uit.edu.vn",
+      "D": "tuyensinh.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "difficulty": 2
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "uit_q001",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q002",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q003",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q004",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q005",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q006",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q007",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q008",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q009",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q010",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q011",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q012",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q013",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q014",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q015",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q016",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q017",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q018",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q019",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q020",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q021",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q022",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q023",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q024",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q025",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q026",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q027",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q028",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q029",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q030",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q031",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q032",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q033",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q034",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q035",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q036",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q037",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q038",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q039",
+    "choices": "D",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q040",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q041",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q042",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q043",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q044",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q045",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q046",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q047",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q048",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q049",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q050",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q051",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q052",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q053",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q054",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q055",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q056",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q057",
+    "choices": "D",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q058",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q059",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q060",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q061",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q062",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q063",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q064",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q065",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q066",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q067",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q068",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q069",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q070",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q071",
+    "choices": "B",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q072",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q073",
+    "choices": "C",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q074",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q075",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q076",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q077",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q078",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q079",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q080",
+    "choices": "A",
+    "explanation": "Theo thông tin chính thức UIT"
+  },
+  {
+    "id": "uit_q081",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q082",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q083",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q084",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q085",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q086",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q087",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q088",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q089",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q090",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q091",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q092",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q093",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q094",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q095",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q096",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q097",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q098",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q099",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  },
+  {
+    "id": "uit_q100",
+    "choices": "E",
+    "explanation": "Không thuộc UIT"
+  }
+]

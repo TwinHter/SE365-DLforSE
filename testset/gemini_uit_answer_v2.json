@@ -1,0 +1,502 @@
+[
+  {
+    "id": "uit_extra_q001",
+    "choices": ["A", "B", "C"],
+    "explanation": "Các ngành An toàn thông tin, Khoa học dữ liệu, và Kỹ thuật phần mềm đều có chương trình dạy bằng tiếng Anh tại UIT."
+  },
+  {
+    "id": "uit_extra_q002",
+    "choices": ["A", "B", "C"],
+    "explanation": "Chương trình liên kết BCU ngành KHMT do Đại học Birmingham City cấp bằng, có lộ trình học toàn bộ 3,5 năm tại VN hoặc chuyển tiếp Anh năm cuối."
+  },
+  {
+    "id": "uit_extra_q003",
+    "choices": ["A", "B", "C"],
+    "explanation": "Sinh viên cần học xong 2 năm tại UIT, đạt IELTS >= 6.0 (không kỹ năng dưới 6.0) hoặc hoàn thành khóa ELICOS tại UON để chuyển tiếp."
+  },
+  {
+    "id": "uit_extra_q004",
+    "choices": ["A", "B", "C"],
+    "explanation": "UIT Job Fair hỗ trợ sinh viên kết nối doanh nghiệp, tìm kiếm cơ hội thực tập, và sửa CV 1:1 cùng nhà tuyển dụng."
+  },
+  {
+    "id": "uit_extra_q005",
+    "choices": ["A", "B", "C"],
+    "explanation": "Thư viện mở cửa Thứ 2-6 (7:30-18:00), Thứ 7 (8:00-16:00), đóng cửa các ngày Chủ nhật, lễ, Tết theo quy định."
+  },
+  {
+    "id": "uit_extra_q006",
+    "choices": ["A", "B", "C"],
+    "explanation": "Sinh viên cần rà soát thông tin đóng tiền/đăng ký bệnh viện, gửi mail phản hồi cho CTSV nếu sai sót hoặc bổ sung nếu chưa đăng ký."
+  },
+  {
+    "id": "uit_extra_q007",
+    "choices": ["A", "B", "C"],
+    "explanation": "Thông báo nhắc đến học bổng khuyến khích học tập, học bổng Chương trình Tiên tiến, và học bổng ngoài ngân sách."
+  },
+  {
+    "id": "uit_extra_q008",
+    "choices": ["A", "B", "C"],
+    "explanation": "Các nghiên cứu về Web Application Honeypots ứng dụng LLM, MPPO-GEM, và Event Retrieval của sinh viên UIT đều được chấp nhận tại SOICT 2025."
+  },
+  {
+    "id": "uit_extra_q009",
+    "choices": ["A", "B", "C"],
+    "explanation": "HackTheon Sejong 2026 là cuộc thi an ninh mạng quốc tế chia làm các bảng Advanced/Beginner, giới hạn tối đa 4 thành viên mỗi đội."
+  },
+  {
+    "id": "uit_extra_q010",
+    "choices": ["A", "B", "C"],
+    "explanation": "Vòng chung kết HCMUS-CTF 2026 diễn ra trực tiếp ngày 14/06/2026 trong 8 giờ, ghi nhận đội UIT-CrownStorm đạt giải Nhất bảng Tài năng."
+  },
+  {
+    "id": "uit_extra_q011",
+    "choices": ["A", "B", "C"],
+    "explanation": "Bóng đá, bóng rổ và cờ vua là những giải đấu thể thao phong trào thường niên quen thuộc tại UIT."
+  },
+  {
+    "id": "uit_extra_q012",
+    "choices": ["A", "B", "C"],
+    "explanation": "Lễ tốt nghiệp đợt 1 năm 2026 diễn ra từ ngày 09/6 đến 11/6/2026 tại Hội trường A UIT, thời gian phát lễ phục từ ngày 27/5 đến 29/5/2026."
+  },
+  {
+    "id": "uit_extra_q013",
+    "choices": ["B"],
+    "explanation": "Yêu cầu ngoại ngữ đầu vào tối thiểu của chương trình liên kết BCU là IELTS 5.5 hoặc tương đương."
+  },
+  {
+    "id": "uit_extra_q014",
+    "choices": ["C"],
+    "explanation": "Chương trình liên kết Newcastle tại UIT được đào tạo theo mô hình chuyển tiếp 2+2."
+  },
+  {
+    "id": "uit_extra_q015",
+    "choices": ["A"],
+    "explanation": "Chương trình liên kết BCU do đối tác Đại học Birmingham City (Birmingham City University) cấp bằng."
+  },
+  {
+    "id": "uit_extra_q016",
+    "choices": ["D"],
+    "explanation": "Thư viện UIT nghỉ phục vụ vào các ngày Chủ nhật, ngày lễ và ngày Tết theo quy định nhà nước."
+  },
+  {
+    "id": "uit_extra_q017",
+    "choices": ["A"],
+    "explanation": "Hệ thống tra cứu và quản lý điểm rèn luyện của sinh viên UIT nằm tại địa chỉ drl.uit.edu.vn."
+  },
+  {
+    "id": "uit_extra_q018",
+    "choices": ["A"],
+    "explanation": "Sinh viên cần kiểm tra danh sách BHYT 2026 và thực hiện phản hồi sai sót trước 11 giờ ngày 24/12/2025."
+  },
+  {
+    "id": "uit_extra_q019",
+    "choices": ["B"],
+    "explanation": "Quy định học bổng KKHT mới (số 58/QĐ-ĐHCNTT) bắt đầu có hiệu lực và áp dụng kể từ đợt xét HK1 năm học 2026-2027."
+  },
+  {
+    "id": "uit_extra_q020",
+    "choices": ["B"],
+    "explanation": "Đợt xét học bổng HK2 năm học 2025-2026 vẫn áp dụng theo quy định cũ số 254/QĐ-ĐHCNTT năm 2022."
+  },
+  {
+    "id": "uit_extra_q021",
+    "choices": ["A"],
+    "explanation": "Sự kiện Ngày hội việc làm UIT Job Fair 2026 được tổ chức vào ngày 15/05/2026."
+  },
+  {
+    "id": "uit_extra_q022",
+    "choices": ["C"],
+    "explanation": "UIT Job Fair 2026 quy tụ hàng chục doanh nghiệp lớn mang đến hơn 2.800 cơ hội việc làm và thực tập cho sinh viên."
+  },
+  {
+    "id": "uit_extra_q023",
+    "choices": ["D"],
+    "explanation": "Vòng thi ICPC Quốc gia năm 2025 diễn ra trong hai ngày 08/11 và 09/11/2025."
+  },
+  {
+    "id": "uit_extra_q024",
+    "choices": ["B"],
+    "explanation": "Vòng thi ICPC miền Nam năm 2025 được tổ chức online vào ngày 19/10/2025 (chuỗi sự kiện tập huấn/mở rộng kéo dài từ 18-19/10)."
+  },
+  {
+    "id": "uit_extra_q025",
+    "choices": ["B"],
+    "explanation": "Chung kết Kỳ thi Olympic Tin học Sinh viên Việt Nam lần thứ 34 (OlpAI'25) được tổ chức đồng thời cùng ngày hội Olympic."
+  },
+  {
+    "id": "uit_extra_q026",
+    "choices": ["B"],
+    "explanation": "Vòng chung kết cuộc thi an ninh mạng quốc tế HackTheon Sejong 2026 diễn ra vào ngày 15/05/2026."
+  },
+  {
+    "id": "uit_extra_q027",
+    "choices": ["C"],
+    "explanation": "Quy định của cuộc thi HackTheon Sejong yêu cầu mỗi đội thi tham gia tối đa 4 thành viên."
+  },
+  {
+    "id": "uit_extra_q028",
+    "choices": ["A"],
+    "explanation": "Cuộc thi NET Challenge 2026 tổ chức vòng sơ khảo vào ngày 09/5/2026 và vòng chung kết vào ngày 16/5/2026."
+  },
+  {
+    "id": "uit_extra_q029",
+    "choices": ["C"],
+    "explanation": "NET Challenge 2026 ghi nhận số lượng đăng ký ấn tượng với tổng cộng 89 đội thi tham gia."
+  },
+  {
+    "id": "uit_extra_q030",
+    "choices": ["A"],
+    "explanation": "Bài báo nghiên cứu ứng dụng LLM trong Web Application Honeypots thuộc về hai sinh viên Phan Bá Cường và Phạm Đô Thành."
+  },
+  {
+    "id": "uit_extra_q031",
+    "choices": ["B"],
+    "explanation": "Huỳnh Minh Hiển và Ngô Trung Hiếu là đồng tác giả nghiên cứu MPPO-GEM công bố tại hội nghị SOICT 2025."
+  },
+  {
+    "id": "uit_extra_q032",
+    "choices": ["A"],
+    "explanation": "Nghiên cứu MPPO-GEM đề xuất phương pháp ứng dụng Học tăng cường (Reinforcement Learning) để tạo mã độc vượt qua hệ thống phát hiện."
+  },
+  {
+    "id": "uit_extra_q033",
+    "choices": ["A"],
+    "explanation": "Bài báo về GenAI tập trung vào việc tạo và đánh giá độ mạnh của mật khẩu dùng trong các hệ thống điều khiển xác thực."
+  },
+  {
+    "id": "uit_extra_q034",
+    "choices": ["A"],
+    "explanation": "Lễ tốt nghiệp đợt 1 năm 2026 của trường được long trọng tổ chức tại Hội trường A - Trường ĐH Công nghệ Thông tin."
+  },
+  {
+    "id": "uit_extra_q035",
+    "choices": ["A"],
+    "explanation": "Phòng CTSV thông báo thời gian nhận lễ phục tốt nghiệp đợt 1 năm 2026 diễn ra từ ngày 27/5 đến ngày 29/5/2026."
+  },
+  {
+    "id": "uit_extra_q036",
+    "choices": ["A"],
+    "explanation": "Kết quả xét miễn các học phần Anh văn được cập nhật và lưu vết chính thức trong phần kết quả học tập HK1 của sinh viên."
+  },
+  {
+    "id": "uit_extra_q037",
+    "choices": ["A"],
+    "explanation": "Học bổng khuyến khích năng lực ngoại ngữ UIT Global chỉ xét cấp dựa trên chứng chỉ được nộp trong 6 học kỳ đầu khóa học."
+  },
+  {
+    "id": "uit_extra_q038",
+    "choices": ["A"],
+    "explanation": "Trang tracker của UIT đang hiển thị các tiến độ xử lý học vụ, bao gồm kết quả ĐKHP và TKB học kỳ hè 2025-2026."
+  },
+  {
+    "id": "uit_extra_q039",
+    "choices": ["E"],
+    "explanation": "Câu hỏi hỏi về luật giao thông đường bộ Việt Nam và mức xử phạt hành chính, không thuộc phạm vi thông tin trường UIT."
+  },
+  {
+    "id": "uit_extra_q040",
+    "choices": ["E"],
+    "explanation": "Câu hỏi thuộc lĩnh vực bóng đá quốc tế (World Cup), không liên quan đến các hoạt động hay đào tạo tại UIT."
+  },
+  {
+    "id": "uit_extra_q041",
+    "choices": ["E"],
+    "explanation": "Câu hỏi về thị trường tài chính và giá vàng SJC trong ngày, hoàn toàn không liên quan đến trường UIT."
+  },
+  {
+    "id": "uit_extra_q042",
+    "choices": ["E"],
+    "explanation": "Yêu cầu tư vấn lộ trình học ôn thi IELTS cá nhân, không nằm trong các thông tin quy chế hay chương trình học tại UIT."
+  },
+  {
+    "id": "uit_extra_q043",
+    "choices": ["E"],
+    "explanation": "Câu hỏi hỏi về tư vấn cấu hình phần cứng PC để chơi game giải trí, không liên quan đến thông tin chính thức của UIT."
+  },
+  {
+    "id": "uit_extra_q044",
+    "choices": ["E"],
+    "explanation": "Câu hỏi thuộc lĩnh vực Luật Thuế và chính sách thuế TNCN của Nhà nước, không liên quan đến hoạt động sinh viên UIT."
+  },
+  {
+    "id": "uit_extra_q045",
+    "choices": ["E"],
+    "explanation": "Câu hỏi thuộc cẩm nang ẩm thực và du lịch tại Hà Nội, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q046",
+    "choices": ["E"],
+    "explanation": "Câu hỏi về Cổng dịch vụ công trực tuyến của Bộ Giao thông Vận tải / Cục Đường bộ, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q047",
+    "choices": ["E"],
+    "explanation": "Câu hỏi về quy trình viễn thông cá nhân đổi SIM của các nhà mạng viễn thông di động, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q048",
+    "choices": ["E"],
+    "explanation": "Câu hỏi về địa điểm đăng cai tổ chức giải vô địch thể thao quốc tế Euro/World Cup, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q049",
+    "choices": ["E"],
+    "explanation": "Câu hỏi liên quan đến thủ tục hành chính công làm hộ chiếu trực tuyến của Cục Quản lý xuất nhập cảnh, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q050",
+    "choices": ["E"],
+    "explanation": "Câu hỏi so sánh thiết bị công nghệ tiêu dùng phục vụ công việc dựng phim, không liên quan đến trường UIT."
+  },
+  {
+    "id": "uit_mcq_ne_001",
+    "choices": ["B"],
+    "explanation": "Theo đề án tuyển sinh trên trang OEP, chỉ tiêu dự kiến dành cho chương trình tiếng Anh ngành An toàn thông tin là 30 sinh viên."
+  },
+  {
+    "id": "uit_mcq_ne_002",
+    "choices": ["A"],
+    "explanation": "Chương trình dạy và học bằng tiếng Anh của UIT yêu cầu trình độ tiếng Anh đầu vào tối thiểu tương đương IELTS 5.0 trở lên."
+  },
+  {
+    "id": "uit_mcq_ne_003",
+    "choices": ["B"],
+    "explanation": "Thời gian thiết kế tiêu chuẩn cho chương trình đào tạo đại học chính quy giảng dạy bằng tiếng Anh tại UIT là 8 học kỳ chính."
+  },
+  {
+    "id": "uit_mcq_ne_004",
+    "choices": ["A"],
+    "explanation": "Chương trình tiếng Anh ngành Kỹ thuật phần mềm là lựa chọn phù hợp nhất, tích hợp sâu các xu hướng công nghệ mới như Cloud và DevOps."
+  },
+  {
+    "id": "uit_mcq_ne_005",
+    "choices": ["A"],
+    "explanation": "UIT có chương trình Tiên tiến thuộc ngành Hệ thống thông tin, được giảng dạy hoàn toàn bằng tiếng Anh."
+  },
+  {
+    "id": "uit_mcq_ne_006",
+    "choices": ["A"],
+    "explanation": "Do là chương trình liên kết quốc tế trọn gói, việc xét tốt nghiệp và cấp bằng thuộc thẩm quyền độc quyền của Đại học Birmingham City (Anh)."
+  },
+  {
+    "id": "uit_mcq_ne_007",
+    "choices": ["A"],
+    "explanation": "Đối tác liên kết đào tạo chương trình cử nhân Công nghệ thông tin của UIT là Đại học Newcastle đến từ nước Úc (Australia)."
+  },
+  {
+    "id": "uit_mcq_ne_008",
+    "choices": ["A"],
+    "explanation": "Thời gian thí sinh thực hiện đăng ký, điều chỉnh nguyện vọng xét tuyển chính thức trên Hệ thống của Bộ GD&ĐT từ 02/7 đến 17h00 ngày 14/7/2026."
+  },
+  {
+    "id": "uit_mcq_ne_009",
+    "choices": ["A"],
+    "explanation": "Khung giờ mở cửa phục vụ bạn đọc của Thư viện UIT từ thứ Hai đến thứ Sáu hằng tuần là từ 7:30 đến 18:00."
+  },
+  {
+    "id": "uit_mcq_ne_010",
+    "choices": ["A"],
+    "explanation": "Vào ngày thứ Bảy, Thư viện UIT duy trì thời gian phục vụ liên tục từ 8:00 sáng đến 16:00 chiều."
+  },
+  {
+    "id": "uit_mcq_ne_011",
+    "choices": ["A"],
+    "explanation": "Hòm thư điện tử tiếp nhận thông tin hỗ trợ và phản hồi chính thức của thư viện trường là thuvien@uit.edu.vn."
+  },
+  {
+    "id": "uit_mcq_ne_012",
+    "choices": ["A"],
+    "explanation": "Hệ thống tra cứu mục lục trực tuyến OPAC được xếp trong nhóm chức năng 'Tra cứu tài liệu' trên trang chủ thư viện."
+  },
+  {
+    "id": "uit_mcq_ne_013",
+    "choices": ["A"],
+    "explanation": "Danh mục CSDL môn học của thư viện cung cấp tài liệu phân loại theo ngành, bao gồm ngành An toàn Thông tin chương trình tiếng Anh (ENG)."
+  },
+  {
+    "id": "uit_mcq_ne_014",
+    "choices": ["B"],
+    "explanation": "Các bài viết điểm sách mới và tài liệu học tập được sắp xếp trong thư mục 'Giới thiệu nguồn học liệu'."
+  },
+  {
+    "id": "uit_mcq_ne_015",
+    "choices": ["B"],
+    "explanation": "Trang thông tin Thư viện UIT tích hợp sẵn các liên kết nhanh kết nối đến Website môn học và hệ thống dùng chung của ĐHQG-HCM."
+  },
+  {
+    "id": "uit_mcq_ne_016",
+    "choices": ["C"],
+    "explanation": "Theo sơ đồ cây môn học ngành CNPM, để đăng ký môn Kiến trúc phần mềm (SE356), sinh viên phải tích lũy trước cặp môn IT002 và IT004."
+  },
+  {
+    "id": "uit_mcq_ne_017",
+    "choices": ["B"],
+    "explanation": "Môn Phát triển phần mềm theo kiến trúc Microservices (SE361) yêu cầu điều kiện tiên quyết/học trước là hai môn cơ sở IT002 và IT004."
+  },
+  {
+    "id": "uit_mcq_ne_018",
+    "choices": ["B"],
+    "explanation": "Môn học trước bắt buộc cần hoàn thành để được đăng ký môn Quản lý dự án phần mềm (SE358) là môn Nhập môn Công nghệ phần mềm (SE104)."
+  },
+  {
+    "id": "uit_mcq_ne_019",
+    "choices": ["B"],
+    "explanation": "Môn SE401 mang tên Mẫu thiết kế (Design Patterns) tập trung trực tiếp vào các giải pháp thiết kế kiến trúc phần mềm chuẩn hóa."
+  },
+  {
+    "id": "uit_mcq_ne_020",
+    "choices": ["D"],
+    "explanation": "Mã môn học chuyên ngành Xử lý ngôn ngữ tự nhiên ứng dụng cho khối ngành Truyền thông đa phương tiện là MM220."
+  },
+  {
+    "id": "uit_mcq_ne_021",
+    "choices": ["B"],
+    "explanation": "Sinh viên đăng ký môn Nghiệp vụ truyền thông và báo chí cần học trước môn Cơ sở truyền thông đa phương tiện có mã MM104."
+  },
+  {
+    "id": "uit_mcq_ne_022",
+    "choices": ["A"],
+    "explanation": "Môn Đồ án mã nguồn mở (SE417) thuộc chuyên ngành phần mềm yêu cầu sinh viên phải hoàn thành môn học trước là SE104."
+  },
+  {
+    "id": "uit_mcq_ne_023",
+    "choices": ["B"],
+    "explanation": "Mọi dữ liệu phục vụ việc tra cứu, đối soát điểm rèn luyện định kỳ của sinh viên được quản lý tập trung tại website drl.uit.edu.vn."
+  },
+  {
+    "id": "uit_mcq_ne_024",
+    "choices": ["B"],
+    "explanation": "Minh chứng tham gia và đóng BHYT được ghi nhận và cộng điểm trực tiếp tại Mục 2.4 (Ý thức tham gia BHYT bắt buộc) trong biểu điểm."
+  },
+  {
+    "id": "uit_mcq_ne_025",
+    "choices": ["B"],
+    "explanation": "Đơn vị chủ quản giải quyết thủ tục BHYT sinh viên là Phòng Công tác Sinh viên (CTSV), tiếp nhận thông tin điều chỉnh qua email của phòng."
+  },
+  {
+    "id": "uit_mcq_ne_026",
+    "choices": ["B"],
+    "explanation": "Chính sách học bổng khuyến khích ngoại ngữ UIT Global được nhà trường chính thức áp dụng từ Học kỳ 1 năm học 2025-2026."
+  },
+  {
+    "id": "uit_mcq_ne_027",
+    "choices": ["C"],
+    "explanation": "Theo quy chế ưu khuyến tài, sinh viên hệ cử nhân tài năng đáp ứng đủ điều kiện có thể nhận song song cả học bổng KKHT và học bổng tài năng."
+  },
+  {
+    "id": "uit_mcq_ne_028",
+    "choices": ["C"],
+    "explanation": "Cổng thông tin student.uit.edu.vn/tracker là nơi tổng hợp tiến độ thời gian thực của các thông báo học vụ quan trọng."
+  },
+  {
+    "id": "uit_mcq_ne_029",
+    "choices": ["C"],
+    "explanation": "Khi đến nhận bằng tốt nghiệp chính thức, sinh viên bắt buộc phải xuất trình Căn cước công dân bản gốc để nhân viên giáo vụ đối chiếu."
+  },
+  {
+    "id": "uit_mcq_ne_030",
+    "choices": ["C"],
+    "explanation": "Trang thông tin trực tuyến của Phòng Đào tạo Đại học (daa.uit.edu.vn) là nơi lưu trữ quy trình xử lý học vụ chính thức."
+  },
+  {
+    "id": "uit_mcq_ne_031",
+    "choices": ["C"],
+    "explanation": "HackTheon Sejong là đấu trường học thuật quốc tế chuyên sâu về lĩnh vực An toàn thông tin / An ninh mạng (Cybersecurity)."
+  },
+  {
+    "id": "uit_mcq_ne_032",
+    "choices": ["C"],
+    "explanation": "Vòng chung kết tập trung của cuộc thi HackTheon Sejong 2026 được tổ chức tại Trung tâm Hội nghị Chính phủ Sejong ở Hàn Quốc."
+  },
+  {
+    "id": "uit_mcq_ne_033",
+    "choices": ["C"],
+    "explanation": "Đại diện UIT-TuyCoNhungK đã xuất sắc vượt qua vòng sơ loại gồm 548 đội thi quốc tế để tiến vào vòng chung kết."
+  },
+  {
+    "id": "uit_mcq_ne_034",
+    "choices": ["A"],
+    "explanation": "Vòng thi ICPC miền Nam năm 2025 được ấn định tổ chức vào ngày Chủ nhật, 19/10/2025."
+  },
+  {
+    "id": "uit_mcq_ne_035",
+    "choices": ["C"],
+    "explanation": "Hội đồng cuộc thi thông báo Vòng thi ICPC Quốc gia năm 2025 diễn ra tập trung trong hai ngày 8 và 9 tháng 11 năm 2025."
+  },
+  {
+    "id": "uit_mcq_ne_036",
+    "choices": ["C"],
+    "explanation": "Ngày hội việc làm thiết lập cầu nối trực tiếp giữa sinh viên trường với các doanh nghiệp, tập đoàn công nghệ hàng đầu."
+  },
+  {
+    "id": "uit_mcq_ne_037",
+    "choices": ["C"],
+    "explanation": "Bản tin thể thao UIT SPORT ghi nhận loạt trận chung kết và bế mạc giải đấu bộ môn Bóng chuyền nam sinh viên vào tháng 4/2025."
+  },
+  {
+    "id": "uit_mcq_ne_038",
+    "choices": ["C"],
+    "explanation": "Hoạt động thể thao học đường năm 2025 chào đón ngày hội thi đấu tranh tài ở hai bộ môn Bóng bàn và Cầu lông."
+  },
+  {
+    "id": "uit_mcq_ne_039",
+    "choices": ["D"],
+    "explanation": "Sinh viên Nguyễn Đức Hiếu đã xuất sắc lọt vào danh sách thành viên tuyển đại diện khu vực - Team ASEAN tham dự đấu trường quốc tế."
+  },
+  {
+    "id": "uit_mcq_ne_040",
+    "choices": ["A"],
+    "explanation": "Sự kiện chung kết International Cybersecurity Challenge 2025 có địa điểm đăng cai tổ chức tại thành phố Sejong."
+  },
+  {
+    "id": "uit_mcq_ne_041",
+    "choices": ["D"],
+    "explanation": "Lab nghiên cứu Xử lý ngôn ngữ tự nhiên (NLP@UIT) do TS. Nguyễn Văn Kiệt phụ trách trực thuộc quản lý của Bộ môn Khoa học dữ liệu."
+  },
+  {
+    "id": "uit_mcq_ne_042",
+    "choices": ["D"],
+    "explanation": "Các hướng nghiên cứu chuyên sâu về hội thoại, nhận diện ngôn ngữ và LLM đều là các mũi nhọn cốt lõi của nhóm nghiên cứu NLP@UIT."
+  },
+  {
+    "id": "uit_mcq_ne_043",
+    "choices": ["A"],
+    "explanation": "Nhóm nghiên cứu Data Chain (chuyên sâu về chuỗi dữ liệu và mạng) gắn liền với cấu trúc học thuật của Khoa Mạng máy tính và Truyền thông."
+  },
+  {
+    "id": "uit_mcq_ne_044",
+    "choices": ["D"],
+    "explanation": "Data Chain tập trung mũi nhọn nghiên cứu vào các bài toán Trí tuệ nhân tạo, Khoa học dữ liệu và Học máy ứng dụng."
+  },
+  {
+    "id": "uit_mcq_ne_045",
+    "choices": ["D"],
+    "explanation": "Hai sinh viên nghiên cứu khoa học của trường đã bảo vệ thành công và trình bày báo cáo trực tiếp tại hội nghị quốc tế SOICT 2025."
+  },
+  {
+    "id": "uit_mcq_ne_046",
+    "choices": ["D"],
+    "explanation": "Công trình của hai bạn tập trung phát triển mô hình ứng dụng Trí tuệ nhân tạo tạo sinh (GenAI) vào việc phân tích bảo mật hệ thống mật khẩu."
+  },
+  {
+    "id": "uit_mcq_ne_047",
+    "choices": ["D"],
+    "explanation": "Nghiên cứu xuất sắc từ phòng thí nghiệm an toàn thông tin InSecLab hướng đến việc nhận diện dòng mã độc tống tiền (Ransomware) bằng mạng học sâu."
+  },
+  {
+    "id": "uit_mcq_ne_048",
+    "choices": ["D"],
+    "explanation": "Tên tiếng Anh chính thức của công bố khoa học này là 'Multimodal Fusion of Behavior Graphs and API Sequences for Ransomware Detection'."
+  },
+  {
+    "id": "uit_mcq_ne_049",
+    "choices": ["A"],
+    "explanation": "Tại cuộc thi Data for Life 2025, UIT vinh dự có 2 đại diện xuất sắc vượt qua các vòng sơ loại để góp mặt tại Vòng Triển lãm quốc gia."
+  },
+  {
+    "id": "uit_mcq_ne_050",
+    "choices": ["D"],
+    "explanation": "Tại đêm chung kết Data for Life – Hack for Growth 2025, giải pháp sáng tạo của đội ANTformer (UIT) đã xuất sắc giành giải Triển vọng."
+  }
+]

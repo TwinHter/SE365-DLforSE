@@ -1,0 +1,502 @@
+[
+  {
+    "id": "uit_q001",
+    "choices": "A",
+    "explanation": "Theo danh mục môn học, SE356 cần hoàn thành SE104 và SE100."
+  },
+  {
+    "id": "uit_q002",
+    "choices": "A",
+    "explanation": "SE361 yêu cầu IT002 và IT004 nên chưa đăng ký được. SE356, SE357, SE358 chỉ cần SE100/SE104, vì vậy ưu tiên 3 môn này."
+  },
+  {
+    "id": "uit_q003",
+    "choices": "B",
+    "explanation": "SE361 là môn Phát triển phần mềm theo kiến trúc Microservices, sát nhất với mục tiêu."
+  },
+  {
+    "id": "uit_q004",
+    "choices": "B",
+    "explanation": "Theo thông tin từ danh mục môn học, SE361 có môn tiên quyết là IT002 và IT004."
+  },
+  {
+    "id": "uit_q005",
+    "choices": "A",
+    "explanation": "SE364 - Thiết kế giao diện và trải nghiệm người dùng chính là môn về UI/UX."
+  },
+  {
+    "id": "uit_q006",
+    "choices": "B, D",
+    "explanation": "MM106 và MM209 yêu cầu IT001; SE357 yêu cầu IT003; SE364 cần IT002+IT004."
+  },
+  {
+    "id": "uit_q007",
+    "choices": "B",
+    "explanation": "Lộ trình từ SE355 (Máy học) đến SE365 (Học sâu ứng dụng) là gần nhất."
+  },
+  {
+    "id": "uit_q008",
+    "choices": "A",
+    "explanation": "SE360 - Điện toán đám mây và phát triển ứng dụng hướng dịch vụ, đúng với cloud-native."
+  },
+  {
+    "id": "uit_q009",
+    "choices": "B",
+    "explanation": "SE362 - An toàn phần mềm và hệ thống, tập trung vào security trong CNPM, không phải network security."
+  },
+  {
+    "id": "uit_q010",
+    "choices": "B",
+    "explanation": "Môn SE358 - Quản lý dự án phát triển phần mềm có tiên quyết là SE104."
+  },
+  {
+    "id": "uit_q011",
+    "choices": "A",
+    "explanation": "SE400 - Seminar các vấn đề hiện đại của CNPM yêu cầu SE100 và SE104."
+  },
+  {
+    "id": "uit_q012",
+    "choices": "B",
+    "explanation": "SE401 - Mẫu thiết kế mang tính tổng quát hơn SE406 (hướng đối tượng)."
+  },
+  {
+    "id": "uit_q013",
+    "choices": "A, B",
+    "explanation": "SE405 và SE407 nằm trong hướng mobile/pervasive, có điều kiện từ SE114."
+  },
+  {
+    "id": "uit_q014",
+    "choices": "B",
+    "explanation": "MM203 - Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện."
+  },
+  {
+    "id": "uit_q015",
+    "choices": "A, C",
+    "explanation": "MM106 và MM209 đều có điều kiện tiên quyết là IT001."
+  },
+  {
+    "id": "uit_q016",
+    "choices": "A, B",
+    "explanation": "MM206 và MM222 yêu cầu môn học trước là IT007."
+  },
+  {
+    "id": "uit_q017",
+    "choices": "B",
+    "explanation": "MM209 yêu cầu hoàn thành MM104 (Viết nội dung đa phương tiện) trước."
+  },
+  {
+    "id": "uit_q018",
+    "choices": "B",
+    "explanation": "Môn học về mã nguồn mở có điều kiện tiên quyết là SE111."
+  },
+  {
+    "id": "uit_q019",
+    "choices": "A, B, C",
+    "explanation": "SE505, SE506, SE507 đều phụ thuộc vào môn SE122."
+  },
+  {
+    "id": "uit_q020",
+    "choices": "A",
+    "explanation": "SE354 và SE356 là cặp môn về quy trình hiện đại và kiến trúc phần mềm."
+  },
+  {
+    "id": "uit_q021",
+    "choices": "C",
+    "explanation": "SE356 và SE358 hướng đến software engineering cho doanh nghiệp, không tập trung vào game/VR."
+  },
+  {
+    "id": "uit_q022",
+    "choices": "B",
+    "explanation": "SE361 cần IT002 và IT004 nên cần hoãn lại cho đến khi hoàn thành các môn này."
+  },
+  {
+    "id": "uit_q023",
+    "choices": "B",
+    "explanation": "SE363 là môn Phát triển ứng dụng trên nền tảng dữ liệu lớn (big data platform)."
+  },
+  {
+    "id": "uit_q024",
+    "choices": "A, B",
+    "explanation": "SE401 và SE406 đều là các môn chuyên sâu về thiết kế (design patterns)."
+  },
+  {
+    "id": "uit_q025",
+    "choices": "A",
+    "explanation": "SE100 và SE104 là những môn nền tảng cốt lõi, mở ra nhiều môn chuyên sâu CNPM khác."
+  },
+  {
+    "id": "uit_q026",
+    "choices": "B",
+    "explanation": "SE357 - Kỹ thuật phân tích yêu cầu chính là môn về 'requirements engineering'."
+  },
+  {
+    "id": "uit_q027",
+    "choices": "C",
+    "explanation": "Ngành Kỹ thuật máy tính có nội dung đào tạo liên quan đến VLSI, FPGA, ASIC và thiết kế phần cứng."
+  },
+  {
+    "id": "uit_q028",
+    "choices": "A",
+    "explanation": "Truyền thông đa phương tiện kết hợp giữa truyền thông và ứng dụng AI, NLP, xử lý ảnh."
+  },
+  {
+    "id": "uit_q029",
+    "choices": "B",
+    "explanation": "Khoa học máy tính bao gồm các mảng từ thuật toán, ML, neural networks đến VR/AR."
+  },
+  {
+    "id": "uit_q030",
+    "choices": "B",
+    "explanation": "Ngành Trí tuệ nhân tạo xây dựng trên nền tảng Khoa học máy tính và có chiều sâu về AI."
+  },
+  {
+    "id": "uit_q031",
+    "choices": "B",
+    "explanation": "Hệ thống thông tin phù hợp với ứng dụng web và quản lý giám sát hoạt động doanh nghiệp."
+  },
+  {
+    "id": "uit_q032",
+    "choices": "A",
+    "explanation": "Hệ thống thông tin tập trung vào phân tích, thiết kế và vận hành hệ thống thông tin cho tổ chức."
+  },
+  {
+    "id": "uit_q033",
+    "choices": "B",
+    "explanation": "Mạng máy tính và truyền thông dữ liệu đáp ứng các ứng dụng thời gian thực và phát triển phần mềm mạng."
+  },
+  {
+    "id": "uit_q034",
+    "choices": "A",
+    "explanation": "An toàn thông tin chuyên sâu về cơ chế bảo mật, mã hóa và xử lý tấn công mạng."
+  },
+  {
+    "id": "uit_q035",
+    "choices": "A",
+    "explanation": "Kỹ thuật phần mềm có hướng đào tạo về phần mềm doanh nghiệp và game/virtual environment."
+  },
+  {
+    "id": "uit_q036",
+    "choices": "A",
+    "explanation": "Thông tin từ Văn phòng Các Chương trình Đặc biệt cho biết có chương trình liên kết với Birmingham City University cho ngành Khoa học Máy tính [citation:4]."
+  },
+  {
+    "id": "uit_q037",
+    "choices": "C",
+    "explanation": "UIT có chương trình liên kết 2+2 với Đại học Newcastle cho ngành Khoa học Máy tính [citation:4][citation:5]."
+  },
+  {
+    "id": "uit_q038",
+    "choices": "B",
+    "explanation": "Học phí cho chương trình đào tạo chuẩn (không bao gồm các chương trình đặc biệt) năm 2025-2026 là 42,8 triệu đồng [citation:3]."
+  },
+  {
+    "id": "uit_q039",
+    "choices": "B",
+    "explanation": "Học phí cho các chương trình liên kết quốc tế như với Newcastle khoảng 80 triệu đồng [citation:3]."
+  },
+  {
+    "id": "uit_q040",
+    "choices": "C",
+    "explanation": "Học phí cho chương trình liên kết với Birmingham City University khoảng 80 triệu đồng/năm [citation:3]."
+  },
+  {
+    "id": "uit_q041",
+    "choices": "D",
+    "explanation": "Chương trình tiên tiến ngành Hệ thống thông tin được giảng dạy bằng tiếng Anh [citation:3]."
+  },
+  {
+    "id": "uit_q042",
+    "choices": "B",
+    "explanation": "Chương trình liên kết với BCU cấp bằng quốc tế, tăng cường tiếng Anh chuyên ngành và có thể chuyển tiếp năm cuối tại Anh [citation:4]. Ngành đào tạo bao gồm Mạng máy tính và An toàn thông tin."
+  },
+  {
+    "id": "uit_q043",
+    "choices": "A",
+    "explanation": "Khoa học dữ liệu chuyên về phân tích và ra quyết định dựa trên dữ liệu, phù hợp với các ứng dụng như phân tích bệnh án, dự báo thị trường."
+  },
+  {
+    "id": "uit_q044",
+    "choices": "C",
+    "explanation": "Ngành Trí tuệ nhân tạo được thiết kế để đào tạo kỹ sư AI toàn diện, có khả năng phân tích và nghiên cứu sau đại học."
+  },
+  {
+    "id": "uit_q045",
+    "choices": "A",
+    "explanation": "Truyền thông đa phương tiện kết hợp các mảng social listening, NLP, và AI trong truyền thông và marketing."
+  },
+  {
+    "id": "uit_q046",
+    "choices": "B",
+    "explanation": "Ngành An toàn thông tin có định hướng và hỗ trợ sinh viên thi các chứng chỉ như CCNA, CCNP Security, Security+."
+  },
+  {
+    "id": "uit_q047",
+    "choices": "A",
+    "explanation": "Ngành Mạng máy tính và truyền thông dữ liệu hướng đến cơ hội việc làm tại ISP, trung tâm dữ liệu và các vị trí liên quan đến VoIP."
+  },
+  {
+    "id": "uit_q048",
+    "choices": "A",
+    "explanation": "Kỹ thuật phần mềm bao quát toàn bộ quy trình từ phân tích yêu cầu, thiết kế, lập trình đến kiểm thử và triển khai."
+  },
+  {
+    "id": "uit_q049",
+    "choices": "B",
+    "explanation": "Chương trình liên kết với BCU có ngành Mạng máy tính & An toàn thông tin, đáp ứng yêu cầu về networking/security quốc tế [citation:4]."
+  },
+  {
+    "id": "uit_q050",
+    "choices": "A",
+    "explanation": "Khoa học máy tính là ngành có định hướng rõ ràng về cả ứng dụng và nghiên cứu."
+  },
+  {
+    "id": "uit_q051",
+    "choices": "A, C",
+    "explanation": "Thông tin tuyển sinh gần đây cho thấy các ngành như Trí tuệ nhân tạo và Hệ thống thông tin chương trình tiên tiến có chỉ tiêu nhỏ."
+  },
+  {
+    "id": "uit_q052",
+    "choices": "A",
+    "explanation": "Nhóm eSecurity của ThS. Phạm Nhật Duy chuyên về malware và bảo mật web [citation:8]."
+  },
+  {
+    "id": "uit_q053",
+    "choices": "A",
+    "explanation": "PGS.TS. Nguyễn Tấn Cầm, thuộc nhóm eSecurity, có hướng nghiên cứu về an toàn thông tin và AI đa phương thức [citation:8]."
+  },
+  {
+    "id": "uit_q054",
+    "choices": "C",
+    "explanation": "Nhóm Data Chain của ThS. Võ Tấn Khoa có các nghiên cứu liên quan đến blockchain, Web3 [citation:8]."
+  },
+  {
+    "id": "uit_q055",
+    "choices": "A",
+    "explanation": "TS. Lưu Thanh Sơn, thuộc nhóm NLPQUIT, có hướng nghiên cứu về LLM ứng dụng và xử lý dữ liệu mạng xã hội [citation:8]."
+  },
+  {
+    "id": "uit_q056",
+    "choices": "A",
+    "explanation": "ThS. Tô Quốc Huy, thuộc bộ môn Web và Di động, kết hợp NLP và ML vào ứng dụng web."
+  },
+  {
+    "id": "uit_q057",
+    "choices": "D",
+    "explanation": "TS. Nguyễn Tấn Trần Minh Khang thuộc nhóm NLPQUIT, chuyên sâu về NLP tiếng Việt, suy luận và đánh giá LLM [citation:8]."
+  },
+  {
+    "id": "uit_q058",
+    "choices": "A",
+    "explanation": "CN. Trần Quốc Khánh, thuộc nhóm NLPQUIT, có hướng nghiên cứu về NLP và trích xuất thông tin [citation:8]."
+  },
+  {
+    "id": "uit_q059",
+    "choices": "B",
+    "explanation": "ThS. Phạm Thế Sơn, thuộc nhóm NLPQUIT, chuyên về computational linguistics và mô hình hóa ngôn ngữ [citation:8]."
+  },
+  {
+    "id": "uit_q060",
+    "choices": "A",
+    "explanation": "Nhóm NLP@UIT / NLPQUIT là nhóm nghiên cứu chính về NLP tại trường, có các công trình về phân tích cú pháp và cảm xúc [citation:8]."
+  },
+  {
+    "id": "uit_q061",
+    "choices": "A, B",
+    "explanation": "ThS. Phạm Nguyễn Phúc Toàn và TS. Nguyễn Tấn Trần Minh Khang có các hướng nghiên cứu liên quan đến Computer Vision và Document AI [citation:8]."
+  },
+  {
+    "id": "uit_q062",
+    "choices": "B, C, D",
+    "explanation": "Dựa trên thông tin nhóm nghiên cứu, các giảng viên này (Huỳnh Văn Tín, Lưu Thanh Sơn, Nguyễn Tấn Cầm) đều có hướng NLP hiện đại [citation:8]."
+  },
+  {
+    "id": "uit_q063",
+    "choices": "B, C",
+    "explanation": "ThS. Võ Tấn Khoa (Data Chain - Blockchain) và ThS. Phạm Nhật Duy (eSecurity - Security) đáp ứng yêu cầu [citation:8]."
+  },
+  {
+    "id": "uit_q064",
+    "choices": "A, B, C",
+    "explanation": "Các giảng viên này (Tô Quốc Huy, Trần Quốc Khánh, Nguyễn Hiếu Nghĩa) đều thuộc các nhóm nghiên cứu về NLP ứng dụng [citation:8]."
+  },
+  {
+    "id": "uit_q065",
+    "choices": "A",
+    "explanation": "Nhóm Data Chain kết hợp blockchain với các hệ thống dữ liệu, đáp ứng yêu cầu [citation:8]."
+  },
+  {
+    "id": "uit_q066",
+    "choices": "A",
+    "explanation": "Nhóm eSecurity của ThS. Phạm Nhật Duy khuyến khích sinh viên năm 2, 3 liên hệ sớm để tham gia nghiên cứu."
+  },
+  {
+    "id": "uit_q067",
+    "choices": "A",
+    "explanation": "ThS. Phạm Thế Sơn, mặc dù thuộc nhóm NLP, có hướng nghiên cứu về MLOps và Data Analytics."
+  },
+  {
+    "id": "uit_q068",
+    "choices": "A",
+    "explanation": "ThS. Phạm Thế Sơn có các nghiên cứu liên quan đến MLOps, Intelligent System và Data Analytics."
+  },
+  {
+    "id": "uit_q069",
+    "choices": "A",
+    "explanation": "Nhóm Data Chain của ThS. Võ Tấn Khoa có website riêng và định hướng công bố bài báo, khóa luận [citation:8]."
+  },
+  {
+    "id": "uit_q070",
+    "choices": "A",
+    "explanation": "TS. Nguyễn Tấn Trần Minh Khang là một giảng viên trẻ có yêu cầu nghiêm ngặt về thời gian và tinh thần học tập [citation:8]."
+  },
+  {
+    "id": "uit_q071",
+    "choices": "B",
+    "explanation": "Website ctsv.uit.edu.vn (Phòng Công tác Sinh viên) là nơi đăng tải thông báo, biểu mẫu và hướng dẫn thủ tục cho sinh viên [citation:6]."
+  },
+  {
+    "id": "uit_q072",
+    "choices": "A",
+    "explanation": "Hệ thống drl.uit.edu.vn dùng để quản lý và tra cứu điểm rèn luyện [citation:6]."
+  },
+  {
+    "id": "uit_q073",
+    "choices": "C",
+    "explanation": "Theo quy định, sinh viên bị xếp loại rèn luyện yếu/kém hai học kỳ liên tiếp lần thứ hai sẽ bị buộc thôi học [citation:6]."
+  },
+  {
+    "id": "uit_q074",
+    "choices": "A",
+    "explanation": "Nếu đã có BHYT hợp lệ, sinh viên chỉ cần nộp hình ảnh thẻ lên hệ thống, không cần mua lại tại trường."
+  },
+  {
+    "id": "uit_q075",
+    "choices": "A",
+    "explanation": "Con số 20 triệu đồng thường là mức bồi thường tối đa cho một vụ tai nạn trong gói bảo hiểm của trường."
+  },
+  {
+    "id": "uit_q076",
+    "choices": "A",
+    "explanation": "Đội Công tác Xã hội là lực lượng nòng cốt cho các hoạt động cộng đồng dài hạn, được tập huấn bài bản."
+  },
+  {
+    "id": "uit_q077",
+    "choices": "A",
+    "explanation": "Ngày Chủ nhật xanh là hoạt động thường niên về bảo vệ môi trường và cảnh quan tại UIT."
+  },
+  {
+    "id": "uit_q078",
+    "choices": "A",
+    "explanation": "OEC giúp luyện tiếng Anh, trong khi Đội Máy tính cũ - Tri thức mới chuyên về sửa chữa và tái sử dụng máy tính vì cộng đồng."
+  },
+  {
+    "id": "uit_q079",
+    "choices": "A",
+    "explanation": "Open English Club (OEC) là CLB học thuật tiếng Anh với các hoạt động workshop, trò chơi và kết nối."
+  },
+  {
+    "id": "uit_q080",
+    "choices": "B",
+    "explanation": "Sinh viên thực hiện đổi mật khẩu tài khoản chứng thực tại trang auth.uit.edu.vn."
+  },
+  {
+    "id": "uit_q081",
+    "choices": "E",
+    "explanation": "Đây là câu hỏi về luật giao thông, không nằm trong phạm vi dữ liệu và kiến thức về UIT."
+  },
+  {
+    "id": "uit_q082",
+    "choices": "E",
+    "explanation": "Câu hỏi về thể thao điện tử (Liên Minh Huyền Thoại), không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q083",
+    "choices": "E",
+    "explanation": "Thủ tục đổi giấy phép lái xe trực tuyến là dịch vụ công của Nhà nước, không thuộc hệ thống UIT."
+  },
+  {
+    "id": "uit_q084",
+    "choices": "E",
+    "explanation": "Câu hỏi về lựa chọn thiết bị phần cứng, không phải là câu hỏi về chương trình đào tạo hoặc thông tin của UIT."
+  },
+  {
+    "id": "uit_q085",
+    "choices": "E",
+    "explanation": "Giá vàng là một chỉ số tài chính, không liên quan đến thông tin của UIT."
+  },
+  {
+    "id": "uit_q086",
+    "choices": "E",
+    "explanation": "Luật giao thông về độ tuổi lái xe là quy định pháp luật chung, không thuộc phạm vi thông tin của UIT."
+  },
+  {
+    "id": "uit_q087",
+    "choices": "E",
+    "explanation": "Lộ trình học IELTS là một chủ đề giáo dục chung, không nằm trong dữ liệu cụ thể về UIT trong ngữ cảnh này."
+  },
+  {
+    "id": "uit_q088",
+    "choices": "E",
+    "explanation": "Quy định về thuế dành cho freelancer là vấn đề pháp lý, không phải thông tin đào tạo của UIT."
+  },
+  {
+    "id": "uit_q089",
+    "choices": "E",
+    "explanation": "Việc giới thiệu quán ăn là một chủ đề ẩm thực, hoàn toàn không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q090",
+    "choices": "E",
+    "explanation": "Tư vấn cấu hình máy tính chơi game là một vấn đề kỹ thuật, không thuộc nội dung thông tin của UIT."
+  },
+  {
+    "id": "uit_q091",
+    "choices": "E",
+    "explanation": "Đăng ký SIM chính chủ là thủ tục hành chính với nhà mạng, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q092",
+    "choices": "E",
+    "explanation": "Mức phạt nồng độ cồn là quy định của pháp luật giao thông, không nằm trong dữ liệu về UIT."
+  },
+  {
+    "id": "uit_q093",
+    "choices": "E",
+    "explanation": "Việc gợi ý game trên Steam không liên quan đến bất kỳ thông tin chính thống nào của UIT."
+  },
+  {
+    "id": "uit_q094",
+    "choices": "E",
+    "explanation": "Thủ tục cấp lại căn cước công dân do cơ quan Công an quản lý, không phải là dịch vụ của UIT."
+  },
+  {
+    "id": "uit_q095",
+    "choices": "E",
+    "explanation": "Lãi suất ngân hàng là một vấn đề kinh tế, không thuộc phạm vi cung cấp thông tin của UIT."
+  },
+  {
+    "id": "uit_q096",
+    "choices": "E",
+    "explanation": "Việc build PC cho AI là một tư vấn kỹ thuật, không nằm trong thông tin đào tạo của UIT."
+  },
+  {
+    "id": "uit_q097",
+    "choices": "E",
+    "explanation": "Thời hạn đăng kiểm ô tô là quy định của ngành Giao thông Vận tải, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q098",
+    "choices": "E",
+    "explanation": "Hướng dẫn mở shop trên TikTok không phải là một phần của chương trình đào tạo hay dịch vụ của UIT."
+  },
+  {
+    "id": "uit_q099",
+    "choices": "E",
+    "explanation": "Địa điểm tổ chức Euro hay World Cup là tin tức thể thao, không liên quan đến UIT."
+  },
+  {
+    "id": "uit_q100",
+    "choices": "E",
+    "explanation": "Làm hộ chiếu là thủ tục hành chính với Cục Quản lý Xuất nhập cảnh, không liên quan đến UIT."
+  }
+]

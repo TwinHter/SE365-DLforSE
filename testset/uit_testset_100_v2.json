@@ -1,0 +1,2011 @@
+[
+  {
+    "id": "uit_extra_q001",
+    "question": "Theo thông tin chương trình tiếng Anh của UIT, trong các ngành dưới đây, ngành nào thuộc nhóm được nêu là dạy và học bằng tiếng Anh?",
+    "options": {
+      "A": "An toàn thông tin",
+      "B": "Khoa học dữ liệu",
+      "C": "Kỹ thuật phần mềm",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/"
+    ],
+    "gold_context": "Trang UIT nêu chương trình dạy và học bằng tiếng Anh gồm An toàn thông tin, Khoa học dữ liệu, Khoa học máy tính, Kỹ thuật phần mềm, Thiết kế vi mạch.",
+    "explanation": "Trang UIT nêu chương trình dạy và học bằng tiếng Anh gồm An toàn thông tin, Khoa học dữ liệu, Khoa học máy tính, Kỹ thuật phần mềm, Thiết kế vi mạch."
+  },
+  {
+    "id": "uit_extra_q002",
+    "question": "Nếu em đang xem chương trình BCU ngành Khoa học máy tính, các mô tả nào sau đây đúng theo trang OEP?",
+    "options": {
+      "A": "Chương trình do Birmingham City University cấp bằng",
+      "B": "Có thể học toàn bộ 3,5 năm tại Việt Nam",
+      "C": "Có thể chuyển sang Anh học năm cuối",
+      "D": "Bắt buộc học toàn bộ tại Anh",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/nganh-khoa-hoc-may-tinh-bcu"
+    ],
+    "gold_context": "Trang OEP nêu chương trình Khoa học máy tính BCU do BCU cấp bằng; sinh viên có thể học toàn bộ 3,5 năm tại Việt Nam hoặc chuyển sang Anh năm cuối.",
+    "explanation": "Trang OEP nêu chương trình Khoa học máy tính BCU do BCU cấp bằng; sinh viên có thể học toàn bộ 3,5 năm tại Việt Nam hoặc chuyển sang Anh năm cuối."
+  },
+  {
+    "id": "uit_extra_q003",
+    "question": "Với chương trình liên kết Newcastle, những điều kiện nào đúng cho giai đoạn học tại Newcastle?",
+    "options": {
+      "A": "Hoàn thành 2 năm đầu tại UIT",
+      "B": "Đạt IELTS từ 6.0 và không kỹ năng nào dưới 6.0",
+      "C": "Hoặc hoàn thành khóa ELICOS tại UON",
+      "D": "Chỉ cần tốt nghiệp THPT là chuyển tiếp ngay",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-lien-ket-dai-hoc-newcastle"
+    ],
+    "gold_context": "Trang OEP nêu giai đoạn 2 tại Newcastle yêu cầu hoàn thành 2 năm đầu tại UIT và đạt IELTS >= 6.0 không kỹ năng nào dưới 6.0 hoặc hoàn thành ELICOS.",
+    "explanation": "Trang OEP nêu giai đoạn 2 tại Newcastle yêu cầu hoàn thành 2 năm đầu tại UIT và đạt IELTS >= 6.0 không kỹ năng nào dưới 6.0 hoặc hoàn thành ELICOS."
+  },
+  {
+    "id": "uit_extra_q004",
+    "question": "UIT Job Fair 2026 được mô tả là hỗ trợ sinh viên ở những việc nào?",
+    "options": {
+      "A": "Tìm nơi thực tập phù hợp",
+      "B": "Kết nối với nhà tuyển dụng",
+      "C": "Chỉnh sửa CV 1:1 cùng recruiter",
+      "D": "Đăng ký học phần hè",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-job-fair-ngay-hoi-viec-lam-hot-nhat-thang-5-da-chinh-thuc-tro-lai"
+    ],
+    "gold_context": "Bài UIT Job Fair 2026 nêu sinh viên có thể tìm nơi thực tập, kết nối với nhà tuyển dụng và chỉnh sửa CV 1:1 cùng recruiter.",
+    "explanation": "Bài UIT Job Fair 2026 nêu sinh viên có thể tìm nơi thực tập, kết nối với nhà tuyển dụng và chỉnh sửa CV 1:1 cùng recruiter."
+  },
+  {
+    "id": "uit_extra_q005",
+    "question": "Về thời gian phục vụ của Thư viện UIT, các phát biểu nào sau đây đúng?",
+    "options": {
+      "A": "Thứ 2 đến thứ 6 phục vụ 7:30 - 18:00",
+      "B": "Thứ 7 phục vụ 8:00 - 16:00",
+      "C": "Không phục vụ vào Chủ nhật, ngày lễ, Tết theo quy định",
+      "D": "Phục vụ 24/7 tất cả các ngày",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT nêu thời gian phục vụ Thứ 2 - Thứ 6 7:30-18:00, Thứ 7 8:00-16:00 và không phục vụ Chủ nhật/ngày lễ/Tết.",
+    "explanation": "Trang Thư viện UIT nêu thời gian phục vụ Thứ 2 - Thứ 6 7:30-18:00, Thứ 7 8:00-16:00 và không phục vụ Chủ nhật/ngày lễ/Tết."
+  },
+  {
+    "id": "uit_extra_q006",
+    "question": "Khi kiểm tra danh sách sinh viên nộp tiền mua BHYT 2026 và đăng ký bệnh viện, sinh viên cần lưu ý những việc nào?",
+    "options": {
+      "A": "Kiểm tra danh sách đã đóng tiền và đăng ký bệnh viện",
+      "B": "Nếu sai sót về bệnh viện, MSSV, họ tên thì phản hồi qua email CTSV trước hạn thông báo",
+      "C": "Nếu ghi chú “SV không đăng ký BV” thì vào hệ thống để đăng ký bệnh viện",
+      "D": "Chỉ cần chờ thư viện cập nhật tự động",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/danh-sach-sinh-vien-nop-tien-mua-bhyt-2026-va-dang-ky-benh-vien"
+    ],
+    "gold_context": "Thông báo CTSV hướng dẫn sinh viên kiểm tra danh sách BHYT 2026, phản hồi sai sót qua email và đăng ký bệnh viện nếu có ghi chú chưa đăng ký.",
+    "explanation": "Thông báo CTSV hướng dẫn sinh viên kiểm tra danh sách BHYT 2026, phản hồi sai sót qua email và đăng ký bệnh viện nếu có ghi chú chưa đăng ký."
+  },
+  {
+    "id": "uit_extra_q007",
+    "question": "Trong thông báo đăng ký xét học bổng HK2 năm học 2025-2026, các loại học bổng nào được nhắc tới?",
+    "options": {
+      "A": "Học bổng khuyến khích học tập",
+      "B": "Học bổng sinh viên Chương trình Tiên tiến",
+      "C": "Học bổng ngoài ngân sách",
+      "D": "Học bổng đăng kiểm phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-dang-ky-xet-cap-cac-loai-hoc-bong-hoc-ky-2-nam-hoc-2025-2026"
+    ],
+    "gold_context": "Thông báo CTSV nêu HB KKHT, HB CTTT và HB ngoài ngân sách trong đợt xét HK2 năm học 2025-2026.",
+    "explanation": "Thông báo CTSV nêu HB KKHT, HB CTTT và HB ngoài ngân sách trong đợt xét HK2 năm học 2025-2026."
+  },
+  {
+    "id": "uit_extra_q008",
+    "question": "Trong các thông tin nghiên cứu/công bố tại SOICT 2025, những nội dung nào có nguồn UIT/UIT.NC xác minh?",
+    "options": {
+      "A": "Web Application Honeypots ứng dụng LLMs",
+      "B": "MPPO-GEM tạo evasive malware bằng reinforcement learning",
+      "C": "Event Retrieval tại SOICT 2025",
+      "D": "Luật giao thông đường bộ cho xe máy 125cc",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/chuc-mung-nhom-sinh-vien-nganh-an-toan-thong-tin-co-bai-bao-duoc-chap-nhan-dang-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html",
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-trinh-bay-nghien-cuu-ve-malware-tai-soict-2025.html",
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-trinh-bay-nghien-cuu-ve-event-retrieval-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html"
+    ],
+    "gold_context": "Các bài UIT.NC/UIT xác nhận các nghiên cứu về Web Application Honeypots với LLMs, MPPO-GEM và Event Retrieval tại SOICT 2025.",
+    "explanation": "Các bài UIT.NC/UIT xác nhận các nghiên cứu về Web Application Honeypots với LLMs, MPPO-GEM và Event Retrieval tại SOICT 2025."
+  },
+  {
+    "id": "uit_extra_q009",
+    "question": "HackTheon Sejong 2026 có những đặc điểm nào được bài UIT nêu?",
+    "options": {
+      "A": "Là cuộc thi an ninh mạng dành cho sinh viên đại học trong và ngoài Hàn Quốc",
+      "B": "Có các bảng Advanced, Beginner A và Beginner B",
+      "C": "Mỗi đội tối đa 4 thành viên",
+      "D": "Là cuộc thi bóng đá sinh viên UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-vao-chung-ket-hacktheon-sejong-2026"
+    ],
+    "gold_context": "Bài UIT nêu HackTheon Sejong 2026 là cuộc thi an ninh mạng, có ba bảng Advanced/Beginner A/Beginner B và mỗi đội tối đa 4 thành viên.",
+    "explanation": "Bài UIT nêu HackTheon Sejong 2026 là cuộc thi an ninh mạng, có ba bảng Advanced/Beginner A/Beginner B và mỗi đội tối đa 4 thành viên."
+  },
+  {
+    "id": "uit_extra_q010",
+    "question": "Về HCMUS-CTF 2026, những thông tin nào đúng theo UIT.NC?",
+    "options": {
+      "A": "Vòng chung kết tổ chức trực tiếp ngày 14/06/2026",
+      "B": "Thời gian thi liên tục 8 giờ",
+      "C": "Đội UIT-CrownStorm giành Giải Nhất bảng Tài Năng với 4.121 điểm",
+      "D": "Đây là cuộc thi tuyển sinh THPT của UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/tin-tuc/uit-5-nam-lien-tiep-giu-vung-vi-tri-dan-dau-hcmus-ctf.html"
+    ],
+    "gold_context": "UIT.NC nêu vòng chung kết HCMUS-CTF 2026 diễn ra trực tiếp 8 giờ ngày 14/06/2026 và UIT-CrownStorm đạt Giải Nhất bảng Tài Năng với 4.121 điểm.",
+    "explanation": "UIT.NC nêu vòng chung kết HCMUS-CTF 2026 diễn ra trực tiếp 8 giờ ngày 14/06/2026 và UIT-CrownStorm đạt Giải Nhất bảng Tài Năng với 4.121 điểm."
+  },
+  {
+    "id": "uit_extra_q011",
+    "question": "Theo bài viết giới thiệu hoạt động thể thao, văn hóa, nghệ thuật tại UIT, những môn nào thuộc nhóm giải đấu thể thao thường niên được nhắc tới?",
+    "options": {
+      "A": "Bóng đá",
+      "B": "Bóng rổ",
+      "C": "Cờ vua",
+      "D": "Đua xe công thức 1",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/hanh-trinh-hoc-tap-trai-nghiem-da-sac-mau-tai-uit-qua-cac-hoat-dong-thao-van-hoa-nghe-thuat"
+    ],
+    "gold_context": "Bài viết UIT nêu các bộ môn như Bóng đá, Bóng chuyền, Bóng rổ, Cờ vua, Cờ tướng, Cầu lông và Bóng bàn.",
+    "explanation": "Bài viết UIT nêu các bộ môn như Bóng đá, Bóng chuyền, Bóng rổ, Cờ vua, Cờ tướng, Cầu lông và Bóng bàn."
+  },
+  {
+    "id": "uit_extra_q012",
+    "question": "Về Lễ tốt nghiệp đợt 1 năm 2026, những thông tin nào được CTSV thông báo?",
+    "options": {
+      "A": "Thời gian tổ chức từ 09/6/2026 đến 11/6/2026",
+      "B": "Địa điểm là Hội trường A - Trường Đại học Công nghệ Thông tin",
+      "C": "Thời gian nhận lễ phục từ ngày 27/5 đến 29/5/2026",
+      "D": "Tổ chức tại Birmingham City University",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-thoi-gian-chuc-le-tot-nghiep-va-nhan-le-phuc-dot-1-nam-2026"
+    ],
+    "gold_context": "Thông báo CTSV nêu Lễ tốt nghiệp đợt 1 năm 2026 tổ chức 09/6-11/6/2026 tại Hội trường A và nhận lễ phục 27/5-29/5/2026.",
+    "explanation": "Thông báo CTSV nêu Lễ tốt nghiệp đợt 1 năm 2026 tổ chức 09/6-11/6/2026 tại Hội trường A và nhận lễ phục 27/5-29/5/2026."
+  },
+  {
+    "id": "uit_extra_q013",
+    "question": "Điều kiện ngoại ngữ đầu vào tối thiểu của chương trình liên kết BCU năm 2026 được OEP nêu là gì?",
+    "options": {
+      "A": "IELTS 4.5",
+      "B": "IELTS 5.5 hoặc tương đương/B2",
+      "C": "IELTS 7.0",
+      "D": "Không cần chứng chỉ tiếng Anh",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/2026-thong-bao-tuyen-sinh-trinh-do-dai-hoc-chuong-trinh-lien-ket-voi-truong-dai-hoc-birmingham-city"
+    ],
+    "gold_context": "Thông báo tuyển sinh BCU 2026 nêu điều kiện ngoại ngữ đầu vào tối thiểu IELTS 5.5 hoặc chứng chỉ tương đương/B2.",
+    "explanation": "Thông báo tuyển sinh BCU 2026 nêu điều kiện ngoại ngữ đầu vào tối thiểu IELTS 5.5 hoặc chứng chỉ tương đương/B2."
+  },
+  {
+    "id": "uit_extra_q014",
+    "question": "Chương trình liên kết Newcastle của UIT được mô tả theo mô hình nào?",
+    "options": {
+      "A": "1+3",
+      "B": "3+1",
+      "C": "2+2",
+      "D": "Học hoàn toàn online",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-lien-ket-dai-hoc-newcastle",
+      "https://www.uit.edu.vn/"
+    ],
+    "gold_context": "Trang OEP/UIT mô tả chương trình Newcastle theo mô hình 2+2: học 2 năm đầu tại UIT rồi chuyển tiếp.",
+    "explanation": "Trang OEP/UIT mô tả chương trình Newcastle theo mô hình 2+2: học 2 năm đầu tại UIT rồi chuyển tiếp."
+  },
+  {
+    "id": "uit_extra_q015",
+    "question": "Chương trình liên kết BCU ngành Khoa học máy tính cấp bằng bởi trường nào?",
+    "options": {
+      "A": "Birmingham City University",
+      "B": "Newcastle University",
+      "C": "Đại học Công nghệ Sydney",
+      "D": "Đại học Quốc gia Hà Nội",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/nganh-khoa-hoc-may-tinh-bcu"
+    ],
+    "gold_context": "Trang OEP nêu chương trình Khoa học máy tính do Birmingham City University cấp bằng.",
+    "explanation": "Trang OEP nêu chương trình Khoa học máy tính do Birmingham City University cấp bằng."
+  },
+  {
+    "id": "uit_extra_q016",
+    "question": "Theo trang Thư viện UIT, Thư viện không phục vụ vào thời điểm nào?",
+    "options": {
+      "A": "Sáng thứ Hai",
+      "B": "Chiều thứ Sáu",
+      "C": "Sáng thứ Bảy",
+      "D": "Chủ nhật, ngày lễ, Tết theo quy định",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT nêu không phục vụ vào Chủ nhật, ngày lễ, Tết theo quy định và các ngày nghỉ đột xuất khác.",
+    "explanation": "Trang Thư viện UIT nêu không phục vụ vào Chủ nhật, ngày lễ, Tết theo quy định và các ngày nghỉ đột xuất khác."
+  },
+  {
+    "id": "uit_extra_q017",
+    "question": "Sinh viên cần kiểm tra thông tin BHYT để chấm điểm rèn luyện HK1 năm học 2025-2026 tại hệ thống nào?",
+    "options": {
+      "A": "drl.uit.edu.vn",
+      "B": "thuvien.uit.edu.vn",
+      "C": "forum.uit.edu.vn",
+      "D": "dkxt.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-cap-nhat-bhyt-cham-diem-ren-luyen-hk1-nam-hoc-2025-2026?page=257"
+    ],
+    "gold_context": "Thông báo CTSV hướng dẫn sinh viên truy cập hệ thống Điểm rèn luyện tại drl.uit.edu.vn để kiểm tra thông tin BHYT mục 2.4.",
+    "explanation": "Thông báo CTSV hướng dẫn sinh viên truy cập hệ thống Điểm rèn luyện tại drl.uit.edu.vn để kiểm tra thông tin BHYT mục 2.4."
+  },
+  {
+    "id": "uit_extra_q018",
+    "question": "Trong thông báo BHYT 2026, nếu sinh viên có sai sót về bệnh viện, MSSV hoặc họ tên thì phải phản hồi trước thời điểm nào?",
+    "options": {
+      "A": "Trước 11 giờ ngày 24/12/2025",
+      "B": "Trước 17 giờ ngày 14/7/2026",
+      "C": "Trước 23 giờ ngày 21/6/2025",
+      "D": "Sau khi kết thúc học kỳ 6",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/danh-sach-sinh-vien-nop-tien-mua-bhyt-2026-va-dang-ky-benh-vien"
+    ],
+    "gold_context": "Thông báo danh sách BHYT 2026 yêu cầu phản hồi sai sót qua email CTSV trước 11 giờ ngày 24/12/2025.",
+    "explanation": "Thông báo danh sách BHYT 2026 yêu cầu phản hồi sai sót qua email CTSV trước 11 giờ ngày 24/12/2025."
+  },
+  {
+    "id": "uit_extra_q019",
+    "question": "Quy định học bổng KKHT mới số 58/QĐ-ĐHCNTT có hiệu lực từ đợt xét nào?",
+    "options": {
+      "A": "HK2 năm học 2025-2026",
+      "B": "HK1 năm học 2026-2027",
+      "C": "HK1 năm học 2024-2025",
+      "D": "Đợt xét tốt nghiệp 2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/huong-dan-ve-qui-dinh-hoc-bong-khuyen-khich-hoc-tap-moi"
+    ],
+    "gold_context": "CTSV nêu Quy định số 58/QĐ-ĐHCNTT có hiệu lực từ đợt xét học bổng KKHT tại học kỳ 01 năm học 2026-2027.",
+    "explanation": "CTSV nêu Quy định số 58/QĐ-ĐHCNTT có hiệu lực từ đợt xét học bổng KKHT tại học kỳ 01 năm học 2026-2027."
+  },
+  {
+    "id": "uit_extra_q020",
+    "question": "Đợt xét học bổng KKHT tại HK2 năm học 2025-2026 vẫn áp dụng quy định nào?",
+    "options": {
+      "A": "Quy định mới 58/QĐ-ĐHCNTT",
+      "B": "Quy định cũ 254/QĐ-ĐHCNTT ngày 22/04/2022",
+      "C": "Quy định của thư viện",
+      "D": "Quy định Newcastle 2+2",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/huong-dan-ve-qui-dinh-hoc-bong-khuyen-khich-hoc-tap-moi",
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-dang-ky-xet-cap-cac-loai-hoc-bong-hoc-ky-2-nam-hoc-2025-2026"
+    ],
+    "gold_context": "CTSV nêu đợt xét học bổng KKHT HK2 năm học 2025-2026 vẫn áp dụng quy định cũ 254/QĐ-ĐHCNTT ngày 22/04/2022.",
+    "explanation": "CTSV nêu đợt xét học bổng KKHT HK2 năm học 2025-2026 vẫn áp dụng quy định cũ 254/QĐ-ĐHCNTT ngày 22/04/2022."
+  },
+  {
+    "id": "uit_extra_q021",
+    "question": "UIT Job Fair 2026 diễn ra vào ngày nào theo bài viết của UIT?",
+    "options": {
+      "A": "15/05/2026",
+      "B": "09/07/2026",
+      "C": "14/06/2026",
+      "D": "12/12/2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-job-fair-2026-mo-rong-co-hoi-viec-lam-va-thuc-tap-cho-sinh-vien-it",
+      "https://www.uit.edu.vn/bai-viet/hon-2800-co-hoi-viec-lam-tai-uit-job-fair-2026-cua-truong-dh-cong-nghe-thong-tin"
+    ],
+    "gold_context": "Bài UIT nêu UIT Job Fair 2026 diễn ra sáng ngày 15/05/2026.",
+    "explanation": "Bài UIT nêu UIT Job Fair 2026 diễn ra sáng ngày 15/05/2026."
+  },
+  {
+    "id": "uit_extra_q022",
+    "question": "Bài UIT về Job Fair 2026 nêu sự kiện mang đến khoảng bao nhiêu cơ hội việc làm và thực tập?",
+    "options": {
+      "A": "280",
+      "B": "800",
+      "C": "2.800",
+      "D": "30.000",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/hon-2800-co-hoi-viec-lam-tai-uit-job-fair-2026-cua-truong-dh-cong-nghe-thong-tin"
+    ],
+    "gold_context": "Bài UIT nêu UIT Job Fair 2026 mang đến hơn 2.800 cơ hội việc làm và thực tập.",
+    "explanation": "Bài UIT nêu UIT Job Fair 2026 mang đến hơn 2.800 cơ hội việc làm và thực tập."
+  },
+  {
+    "id": "uit_extra_q023",
+    "question": "Theo thông báo ICPC/Olympic 2025 trên forum UIT, ICPC Quốc gia 2025 diễn ra vào thời gian nào?",
+    "options": {
+      "A": "11-12/10/2025",
+      "B": "18-19/10/2025",
+      "C": "25-26/10/2025",
+      "D": "08-09/11/2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://forum.uit.edu.vn/t/thong-bao-so-1-ve-olympic-tin-hoc-tri-tue-nhan-tao-sinh-vien-viet-nam-va-ky-thi-lap-trinh-sinh-vien-quoc-te-icpc-asia-hochiminh-city-2025/155923"
+    ],
+    "gold_context": "Thông báo trên forum UIT nêu ICPC Quốc gia 2025 diễn ra ngày 08-09/11/2025.",
+    "explanation": "Thông báo trên forum UIT nêu ICPC Quốc gia 2025 diễn ra ngày 08-09/11/2025."
+  },
+  {
+    "id": "uit_extra_q024",
+    "question": "Vòng ICPC miền Nam năm 2025 theo thông báo forum UIT diễn ra vào thời gian nào?",
+    "options": {
+      "A": "11-12/10/2025",
+      "B": "18-19/10/2025",
+      "C": "25-26/10/2025",
+      "D": "09-10/07/2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://forum.uit.edu.vn/t/thong-bao-so-1-ve-olympic-tin-hoc-tri-tue-nhan-tao-sinh-vien-viet-nam-va-ky-thi-lap-trinh-sinh-vien-quoc-te-icpc-asia-hochiminh-city-2025/155923"
+    ],
+    "gold_context": "Thông báo forum UIT nêu vòng ICPC miền Nam năm 2025 diễn ra ngày 11-12/10.",
+    "explanation": "Thông báo forum UIT nêu vòng ICPC miền Nam năm 2025 diễn ra ngày 11-12/10."
+  },
+  {
+    "id": "uit_extra_q025",
+    "question": "Vòng chung kết OlpAI'25 được tổ chức cùng thời điểm với sự kiện nào?",
+    "options": {
+      "A": "Lễ tốt nghiệp đợt 1 năm 2026",
+      "B": "Olympic Tin học Sinh viên Việt Nam",
+      "C": "UIT Job Fair 2026",
+      "D": "HCMUS-CTF 2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://forum.uit.edu.vn/t/moi-sinh-vien-tham-gia-ky-thi-olympic-tri-tue-nhan-tao-sinh-vien-viet-nam-2025/157764"
+    ],
+    "gold_context": "Thông báo forum UIT nêu vòng chung kết OlpAI'25 tổ chức cùng thời điểm với Olympic Tin học Sinh viên Việt Nam.",
+    "explanation": "Thông báo forum UIT nêu vòng chung kết OlpAI'25 tổ chức cùng thời điểm với Olympic Tin học Sinh viên Việt Nam."
+  },
+  {
+    "id": "uit_extra_q026",
+    "question": "Vòng chung kết HackTheon Sejong 2026 được tổ chức vào ngày nào?",
+    "options": {
+      "A": "25/04/2026",
+      "B": "15/05/2026",
+      "C": "09/07/2026",
+      "D": "10/07/2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-vao-chung-ket-hacktheon-sejong-2026",
+      "https://www.uit.edu.vn/bai-viet/doi-tuyen-truong-dai-hoc-cong-nghe-thong-tin-chinh-thuc-tranh-tai-tai-hacktheon-sejong-2026"
+    ],
+    "gold_context": "Bài UIT nêu vòng chung kết HackTheon Sejong 2026 tổ chức ngày 09/07/2026.",
+    "explanation": "Bài UIT nêu vòng chung kết HackTheon Sejong 2026 tổ chức ngày 09/07/2026."
+  },
+  {
+    "id": "uit_extra_q027",
+    "question": "Mỗi đội tham gia HackTheon Sejong 2026 tối đa bao nhiêu thành viên?",
+    "options": {
+      "A": "2 thành viên",
+      "B": "3 thành viên",
+      "C": "4 thành viên",
+      "D": "5 thành viên",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-vao-chung-ket-hacktheon-sejong-2026"
+    ],
+    "gold_context": "Bài UIT nêu mỗi đội HackTheon Sejong 2026 tối đa 4 thành viên.",
+    "explanation": "Bài UIT nêu mỗi đội HackTheon Sejong 2026 tối đa 4 thành viên."
+  },
+  {
+    "id": "uit_extra_q028",
+    "question": "NET Challenge 2026 có vòng sơ khảo và vòng chung kết lần lượt vào ngày nào?",
+    "options": {
+      "A": "09/5/2026 và 16/5/2026",
+      "B": "15/5/2026 và 18/5/2026",
+      "C": "14/6/2026 và 17/6/2026",
+      "D": "25/4/2026 và 09/7/2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/ket-qua-cuoc-thi-hoc-thuat-net-challenge-2026.html"
+    ],
+    "gold_context": "UIT.NC nêu vòng sơ khảo NET Challenge 2026 diễn ra ngày 09/5/2026 và vòng chung kết ngày 16/5/2026.",
+    "explanation": "UIT.NC nêu vòng sơ khảo NET Challenge 2026 diễn ra ngày 09/5/2026 và vòng chung kết ngày 16/5/2026."
+  },
+  {
+    "id": "uit_extra_q029",
+    "question": "NET Challenge 2026 thu hút bao nhiêu đội thi theo bài UIT.NC công bố kết quả?",
+    "options": {
+      "A": "15 đội",
+      "B": "30 đội",
+      "C": "89 đội",
+      "D": "269 đội",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/ket-qua-cuoc-thi-hoc-thuat-net-challenge-2026.html"
+    ],
+    "gold_context": "Bài UIT.NC nêu NET Challenge 2026 thu hút 89 đội thi từ 16 trường, với 269 thí sinh dự thi.",
+    "explanation": "Bài UIT.NC nêu NET Challenge 2026 thu hút 89 đội thi từ 16 trường, với 269 thí sinh dự thi."
+  },
+  {
+    "id": "uit_extra_q030",
+    "question": "Nhóm sinh viên nào có bài báo về Web Application Honeypots ứng dụng LLMs được chấp nhận tại SOICT 2025?",
+    "options": {
+      "A": "Phan Bá Cường và Phạm Đô Thành",
+      "B": "Huỳnh Minh Hiển và Ngô Trung Hiếu",
+      "C": "Nguyễn Văn Nam và Lê Hà Thanh Chương",
+      "D": "UIT-CrownStorm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/chuc-mung-nhom-sinh-vien-nganh-an-toan-thong-tin-co-bai-bao-duoc-chap-nhan-dang-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html"
+    ],
+    "gold_context": "UIT.NC nêu Phan Bá Cường và Phạm Đô Thành có bài nghiên cứu về Web Application Honeypots ứng dụng LLMs được chấp nhận tại SOICT 2025.",
+    "explanation": "UIT.NC nêu Phan Bá Cường và Phạm Đô Thành có bài nghiên cứu về Web Application Honeypots ứng dụng LLMs được chấp nhận tại SOICT 2025."
+  },
+  {
+    "id": "uit_extra_q031",
+    "question": "Hai sinh viên nào báo cáo nghiên cứu MPPO-GEM về evasive malware tại SOICT 2025?",
+    "options": {
+      "A": "Phan Bá Cường và Phạm Đô Thành",
+      "B": "Huỳnh Minh Hiển và Ngô Trung Hiếu",
+      "C": "ThS. Phạm Nhật Duy và ThS. Võ Tấn Khoa",
+      "D": "Nguyễn Văn Nam và Trần Quang Huy",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-trinh-bay-nghien-cuu-ve-malware-tai-soict-2025.html"
+    ],
+    "gold_context": "UIT.NC nêu Huỳnh Minh Hiển và Ngô Trung Hiếu báo cáo bài MPPO-GEM tại SOICT 2025.",
+    "explanation": "UIT.NC nêu Huỳnh Minh Hiển và Ngô Trung Hiếu báo cáo bài MPPO-GEM tại SOICT 2025."
+  },
+  {
+    "id": "uit_extra_q032",
+    "question": "Bài MPPO-GEM tại SOICT 2025 tập trung vào hướng nghiên cứu nào?",
+    "options": {
+      "A": "Tạo evasive malware bằng reinforcement learning",
+      "B": "Thiết kế thư viện số",
+      "C": "Chuyển tiếp Newcastle 2+2",
+      "D": "Tổ chức lễ tốt nghiệp",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-trinh-bay-nghien-cuu-ve-malware-tai-soict-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC nêu MPPO-GEM là Reinforcement Learning Approach for Generating Evasive Malware against malware detectors.",
+    "explanation": "Bài UIT.NC nêu MPPO-GEM là Reinforcement Learning Approach for Generating Evasive Malware against malware detectors."
+  },
+  {
+    "id": "uit_extra_q033",
+    "question": "Bài báo về GenAI tại SOICT 2025 được UIT.NC mô tả tập trung vào nội dung gì?",
+    "options": {
+      "A": "Tạo và đánh giá độ mạnh mật khẩu trong hệ thống điều khiển dựa trên xác thực mật khẩu",
+      "B": "Quản lý mượn sách thư viện",
+      "C": "Quy trình đóng BHYT",
+      "D": "Đăng ký môn học kỳ hè",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-bao-cao-nghien-cuu-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC nêu nghiên cứu Password Generation Based on GenAI tập trung vào tạo và đánh giá độ mạnh của mật khẩu.",
+    "explanation": "Bài UIT.NC nêu nghiên cứu Password Generation Based on GenAI tập trung vào tạo và đánh giá độ mạnh của mật khẩu."
+  },
+  {
+    "id": "uit_extra_q034",
+    "question": "Theo thông báo CTSV, Lễ tốt nghiệp và Trao bằng đợt 1 năm 2026 tổ chức tại đâu?",
+    "options": {
+      "A": "Hội trường A - Trường Đại học Công nghệ Thông tin",
+      "B": "Government Sejong Convention Center",
+      "C": "Thư viện UIT",
+      "D": "Birmingham City University",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-thoi-gian-chuc-le-tot-nghiep-va-nhan-le-phuc-dot-1-nam-2026"
+    ],
+    "gold_context": "Thông báo CTSV nêu địa điểm Lễ tốt nghiệp đợt 1 năm 2026 là Hội trường A - Trường Đại học Công nghệ Thông tin.",
+    "explanation": "Thông báo CTSV nêu địa điểm Lễ tốt nghiệp đợt 1 năm 2026 là Hội trường A - Trường Đại học Công nghệ Thông tin."
+  },
+  {
+    "id": "uit_extra_q035",
+    "question": "Thời gian nhận lễ phục Lễ tốt nghiệp đợt 1 năm 2026 là khi nào?",
+    "options": {
+      "A": "27/5 - 29/5/2026",
+      "B": "09/6 - 11/6/2026",
+      "C": "15/05/2026",
+      "D": "14/06/2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-thoi-gian-chuc-le-tot-nghiep-va-nhan-le-phuc-dot-1-nam-2026"
+    ],
+    "gold_context": "Thông báo CTSV nêu thời gian nhận lễ phục từ ngày 27/5 đến 29/5/2026.",
+    "explanation": "Thông báo CTSV nêu thời gian nhận lễ phục từ ngày 27/5 đến 29/5/2026."
+  },
+  {
+    "id": "uit_extra_q036",
+    "question": "Sinh viên muốn kiểm tra kết quả xét miễn Anh văn 1, 2 và 3 đợt 1 HK1 năm học 2025-2026 thì xem ở đâu?",
+    "options": {
+      "A": "Trong phần kết quả học tập HK1 năm học 2025-2026",
+      "B": "Trong danh sách BHYT 2026",
+      "C": "Trong OPAC thư viện",
+      "D": "Trong trang Job Fair",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://student.uit.edu.vn/cap-nhat-ket-qua-xet-mien-anh-van-thong-bao-ve-viec-xet-mien-cac-mon-anh-van-1-2-va-3-dot-1-trong-1"
+    ],
+    "gold_context": "Thông báo student.uit nêu sinh viên kiểm tra điểm miễn Anh văn trong phần kết quả học tập HK1 năm học 2025-2026.",
+    "explanation": "Thông báo student.uit nêu sinh viên kiểm tra điểm miễn Anh văn trong phần kết quả học tập HK1 năm học 2025-2026."
+  },
+  {
+    "id": "uit_extra_q037",
+    "question": "Học bổng UIT Global chỉ xét cấp khi sinh viên nộp chứng chỉ ngoại ngữ trong khoảng thời gian nào?",
+    "options": {
+      "A": "Trong 06 học kỳ đầu tiên kể từ khi nhập học",
+      "B": "Sau học kỳ 7 trở đi",
+      "C": "Chỉ trong ngày nhập học",
+      "D": "Bất kỳ lúc nào sau tốt nghiệp",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-trien-khai-hoc-bong-uit-global-tu-hoc-ky-1-nam-hoc-2025-2026"
+    ],
+    "gold_context": "Thông báo CTSV nêu sinh viên chỉ được xét cấp Học bổng UIT Global khi nộp chứng chỉ ngoại ngữ trong 06 học kỳ đầu tiên kể từ khi nhập học.",
+    "explanation": "Thông báo CTSV nêu sinh viên chỉ được xét cấp Học bổng UIT Global khi nộp chứng chỉ ngoại ngữ trong 06 học kỳ đầu tiên kể từ khi nhập học."
+  },
+  {
+    "id": "uit_extra_q038",
+    "question": "Trang tracker của student.uit.edu.vn đang liệt kê nhóm thông báo nào cho học kỳ hè 2025-2026?",
+    "options": {
+      "A": "Kết quả ĐKHP và TKB học kỳ hè 2025-2026",
+      "B": "Lịch thi đấu World Cup",
+      "C": "Giá vàng SJC",
+      "D": "Thủ tục cấp hộ chiếu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": null,
+    "source_urls": [
+      "https://student.uit.edu.vn/tracker?page=1"
+    ],
+    "gold_context": "Tracker student.uit.edu.vn liệt kê thông báo kết quả ĐKHP và TKB học kỳ hè 2025-2026 cùng các thông báo học vụ liên quan.",
+    "explanation": "Tracker student.uit.edu.vn liệt kê thông báo kết quả ĐKHP và TKB học kỳ hè 2025-2026 cùng các thông báo học vụ liên quan."
+  },
+  {
+    "id": "uit_extra_q039",
+    "question": "Tôi đi xe máy 125cc nhưng quên mang giấy phép lái xe thì mức phạt hiện nay là bao nhiêu?",
+    "options": {
+      "A": "IELTS 5.5 hoặc B2",
+      "B": "Hội trường A",
+      "C": "drl.uit.edu.vn",
+      "D": "SE365",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q040",
+    "question": "Đội tuyển nào vô địch World Cup gần nhất?",
+    "options": {
+      "A": "UIT-CrownStorm",
+      "B": "UIT-TuyCoNhungK",
+      "C": "NLP@UIT",
+      "D": "Data Chain",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q041",
+    "question": "Giá vàng SJC hôm nay tăng hay giảm so với hôm qua?",
+    "options": {
+      "A": "37 triệu đồng/năm",
+      "B": "80 triệu đồng/năm",
+      "C": "90 triệu đồng/năm",
+      "D": "2.800 cơ hội việc làm",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q042",
+    "question": "Tôi muốn học IELTS từ 5.5 lên 7.0 trong 3 tháng thì nên học lộ trình nào?",
+    "options": {
+      "A": "Chương trình BCU",
+      "B": "Chương trình Newcastle",
+      "C": "UIT Global",
+      "D": "OlpAI'25",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q043",
+    "question": "Nên build PC cấu hình nào để chơi game Cyberpunk 2077 ở 2K Ultra?",
+    "options": {
+      "A": "SE361",
+      "B": "Kỹ thuật máy tính",
+      "C": "Thư viện UIT",
+      "D": "NET Challenge",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q044",
+    "question": "Freelancer ở Việt Nam phải tính thuế thu nhập cá nhân như thế nào?",
+    "options": {
+      "A": "Học bổng KKHT",
+      "B": "BHYT 2026",
+      "C": "drl.uit.edu.vn",
+      "D": "UIT Job Fair",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q045",
+    "question": "Top quán phở ngon ở Hà Nội nên thử là những quán nào?",
+    "options": {
+      "A": "Hội trường A",
+      "B": "Thư viện UIT",
+      "C": "Career Day",
+      "D": "HCMUS-CTF",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q046",
+    "question": "Tôi muốn đổi giấy phép lái xe online thì vào cổng dịch vụ nào?",
+    "options": {
+      "A": "student.uit.edu.vn",
+      "B": "oep.uit.edu.vn",
+      "C": "thuvien.uit.edu.vn",
+      "D": "nc.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q047",
+    "question": "Cách đăng ký SIM chính chủ trên app nhà mạng là gì?",
+    "options": {
+      "A": "OPAC",
+      "B": "DSpace",
+      "C": "UIT Global",
+      "D": "ICPC miền Nam",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q048",
+    "question": "Euro hoặc World Cup năm nay được tổ chức ở quốc gia nào?",
+    "options": {
+      "A": "Birmingham City University",
+      "B": "Newcastle University",
+      "C": "Government Sejong Convention Center",
+      "D": "Hội trường A UIT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q049",
+    "question": "Tôi cần làm hộ chiếu online lần đầu thì chuẩn bị hồ sơ gì?",
+    "options": {
+      "A": "Bảng điểm rèn luyện",
+      "B": "Danh mục môn học",
+      "C": "Chứng chỉ IELTS 5.5",
+      "D": "Lễ phục tốt nghiệp",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_extra_q050",
+    "question": "MacBook hay laptop Windows phù hợp hơn để dựng video 4K chuyên nghiệp?",
+    "options": {
+      "A": "Khoa học dữ liệu",
+      "B": "Kỹ thuật phần mềm",
+      "C": "Thư viện UIT",
+      "D": "UIT Sport",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "E"
+    ],
+    "difficulty": null,
+    "source_urls": [],
+    "gold_context": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT.",
+    "explanation": "Câu hỏi nằm ngoài phạm vi tri thức UIT trong bộ test; đáp án đúng là E = Không liên quan đến UIT."
+  },
+  {
+    "id": "uit_mcq_ne_001",
+    "question": "Một thí sinh muốn học chương trình tiếng Anh ngành An toàn thông tin ở UIT năm 2026. Theo trang OEP, chương trình này có chỉ tiêu dự kiến bao nhiêu?",
+    "options": {
+      "A": "50 sinh viên",
+      "B": "30 sinh viên",
+      "C": "15 sinh viên",
+      "D": "80 sinh viên",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-tieng-anh-nganh-toan-thong-tin"
+    ],
+    "gold_context": "Trang OEP ghi Chương trình dạy và học bằng tiếng Anh ngành An toàn thông tin có mã 7480202TA và chỉ tiêu dự kiến 2026 là 50 sinh viên.",
+    "explanation": "Trang OEP ghi Chương trình dạy và học bằng tiếng Anh ngành An toàn thông tin có mã 7480202TA và chỉ tiêu dự kiến 2026 là 50 sinh viên."
+  },
+  {
+    "id": "uit_mcq_ne_002",
+    "question": "Nếu phụ huynh hỏi chương trình tiếng Anh ngành Khoa học dữ liệu ở UIT năm 2026 yêu cầu ngoại ngữ đầu vào tối thiểu thế nào, đáp án nào đúng?",
+    "options": {
+      "A": "Có chứng chỉ tương đương IELTS 5.0 trở lên",
+      "B": "Có chứng chỉ tương đương IELTS 6.5 trở lên",
+      "C": "Không cần chứng chỉ tiếng Anh đầu vào",
+      "D": "Bắt buộc IELTS 7.0",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-tieng-anh-nganh-khoa-hoc-du-lieu"
+    ],
+    "gold_context": "Trang chương trình tiếng Anh ngành Khoa học dữ liệu ghi đầu vào bắt buộc có chứng chỉ tương đương IELTS 5.0 trở lên.",
+    "explanation": "Trang chương trình tiếng Anh ngành Khoa học dữ liệu ghi đầu vào bắt buộc có chứng chỉ tương đương IELTS 5.0 trở lên."
+  },
+  {
+    "id": "uit_mcq_ne_003",
+    "question": "Một bạn muốn học ngành Khoa học máy tính bằng tiếng Anh tại UIT. Theo OEP, thời gian đào tạo của chương trình này là bao nhiêu học kỳ chính?",
+    "options": {
+      "A": "7 học kỳ chính",
+      "B": "8 học kỳ chính",
+      "C": "10 học kỳ chính",
+      "D": "12 học kỳ chính",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-tieng-anh-nganh-khoa-hoc-may-tinh"
+    ],
+    "gold_context": "Trang chương trình tiếng Anh ngành Khoa học máy tính ghi thời gian đào tạo là 7 học kỳ chính.",
+    "explanation": "Trang chương trình tiếng Anh ngành Khoa học máy tính ghi thời gian đào tạo là 7 học kỳ chính."
+  },
+  {
+    "id": "uit_mcq_ne_004",
+    "question": "Nếu một sinh viên muốn học Kỹ thuật phần mềm bằng tiếng Anh và quan tâm các xu hướng Cloud, DevOps, AI, Big Data, chương trình nào phù hợp nhất?",
+    "options": {
+      "A": "Chương trình tiếng Anh ngành Kỹ thuật phần mềm",
+      "B": "Chương trình tiếng Anh ngành An toàn thông tin",
+      "C": "Chương trình liên thông đại học",
+      "D": "Chương trình văn bằng 2 ngành Công nghệ thông tin",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/chuong-trinh-tieng-anh-nganh-ky-thuat-phan-mem"
+    ],
+    "gold_context": "Trang OEP mô tả chương trình Kỹ thuật phần mềm bằng tiếng Anh cập nhật các xu hướng AI, điện toán đám mây, Big Data, DevOps và tính toán lượng tử.",
+    "explanation": "Trang OEP mô tả chương trình Kỹ thuật phần mềm bằng tiếng Anh cập nhật các xu hướng AI, điện toán đám mây, Big Data, DevOps và tính toán lượng tử."
+  },
+  {
+    "id": "uit_mcq_ne_005",
+    "question": "Theo trang chủ UIT, chương trình giảng dạy bằng tiếng Anh của UIT bao gồm chương trình tiên tiến ngành nào?",
+    "options": {
+      "A": "Hệ thống thông tin",
+      "B": "Kỹ thuật máy tính",
+      "C": "Thương mại điện tử",
+      "D": "Truyền thông đa phương tiện",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://www.uit.edu.vn/",
+      "https://www.uit.edu.vn/thong-tin-thong-bao"
+    ],
+    "gold_context": "Trang UIT nêu Chương trình Giảng dạy bằng tiếng Anh gồm Chương trình Tiên tiến ngành Hệ thống thông tin và các ngành dạy bằng tiếng Anh khác.",
+    "explanation": "Trang UIT nêu Chương trình Giảng dạy bằng tiếng Anh gồm Chương trình Tiên tiến ngành Hệ thống thông tin và các ngành dạy bằng tiếng Anh khác."
+  },
+  {
+    "id": "uit_mcq_ne_006",
+    "question": "Trong chương trình liên kết BCU của UIT, việc xét tốt nghiệp và cấp bằng do đơn vị nào quyết định?",
+    "options": {
+      "A": "Đại học Birmingham City, Anh Quốc",
+      "B": "Đại học Newcastle, Úc",
+      "C": "Đại học Quốc gia TP.HCM",
+      "D": "Trường Đại học Bách khoa Hà Nội",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://oep.uit.edu.vn/vi/nganh-mang-may-tinh-va-toan-thong-tin-bcu"
+    ],
+    "gold_context": "Trang OEP về ngành Mạng máy tính và An toàn thông tin - BCU ghi việc xét tốt nghiệp do Đại học Birmingham City, Anh Quốc xem xét và cấp bằng.",
+    "explanation": "Trang OEP về ngành Mạng máy tính và An toàn thông tin - BCU ghi việc xét tốt nghiệp do Đại học Birmingham City, Anh Quốc xem xét và cấp bằng."
+  },
+  {
+    "id": "uit_mcq_ne_007",
+    "question": "Nếu thí sinh muốn theo chương trình liên kết với Đại học Newcastle tại UIT năm 2026, trường đối tác thuộc quốc gia nào?",
+    "options": {
+      "A": "Úc",
+      "B": "Anh",
+      "C": "Nhật Bản",
+      "D": "Hàn Quốc",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://tuyensinh.uit.edu.vn/2026-thong-bao-tuyen-sinh-trinh-do-dai-hoc-chuong-trinh-lien-ket-voi-truong-dai-hoc-newcastle-lien-bang-uc-nam-2026"
+    ],
+    "gold_context": "Thông báo tuyển sinh 2026 ghi chương trình liên kết với Trường Đại học Newcastle - Liên bang Úc.",
+    "explanation": "Thông báo tuyển sinh 2026 ghi chương trình liên kết với Trường Đại học Newcastle - Liên bang Úc."
+  },
+  {
+    "id": "uit_mcq_ne_008",
+    "question": "Theo hệ thống đăng ký xét tuyển UIT 2026, thí sinh đăng ký nguyện vọng chính thức trên hệ thống của Bộ GD&ĐT trong khoảng thời gian nào?",
+    "options": {
+      "A": "Từ ngày 02/7/2026 đến 17h00 ngày 14/7/2026",
+      "B": "Từ ngày 01/6/2026 đến 17h00 ngày 15/6/2026",
+      "C": "Từ ngày 20/7/2026 đến 31/7/2026",
+      "D": "Từ ngày 01/8/2026 đến 10/8/2026",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://dkxt.uit.edu.vn/"
+    ],
+    "gold_context": "Trang dkxt.uit.edu.vn lưu ý đăng ký nguyện vọng chính thức trên hệ thống của Bộ GD&ĐT từ 02/7/2026 đến 17h00 ngày 14/7/2026.",
+    "explanation": "Trang dkxt.uit.edu.vn lưu ý đăng ký nguyện vọng chính thức trên hệ thống của Bộ GD&ĐT từ 02/7/2026 đến 17h00 ngày 14/7/2026."
+  },
+  {
+    "id": "uit_mcq_ne_009",
+    "question": "Một sinh viên muốn tìm giờ phục vụ của Thư viện UIT. Theo trang thư viện, thư viện phục vụ từ thứ 2 đến thứ 6 trong khung giờ nào?",
+    "options": {
+      "A": "7:30 - 18:00",
+      "B": "8:00 - 16:00",
+      "C": "7:00 - 17:00",
+      "D": "13:00 - 21:00",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 1,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT ghi thời gian phục vụ thứ 2 - thứ 6 là 7:30 - 18:00.",
+    "explanation": "Trang Thư viện UIT ghi thời gian phục vụ thứ 2 - thứ 6 là 7:30 - 18:00."
+  },
+  {
+    "id": "uit_mcq_ne_010",
+    "question": "Theo trang Thư viện UIT, thư viện phục vụ vào thứ 7 trong khung giờ nào?",
+    "options": {
+      "A": "8:00 - 16:00",
+      "B": "7:30 - 18:00",
+      "C": "8:00 - 11:30",
+      "D": "13:30 - 18:00",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 1,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT ghi thời gian phục vụ thứ 7 là 8:00 - 16:00.",
+    "explanation": "Trang Thư viện UIT ghi thời gian phục vụ thứ 7 là 8:00 - 16:00."
+  },
+  {
+    "id": "uit_mcq_ne_011",
+    "question": "Nếu sinh viên cần liên hệ Thư viện UIT qua email, địa chỉ nào đúng theo trang thư viện?",
+    "options": {
+      "A": "thuvien@uit.edu.vn",
+      "B": "ctsv@uit.edu.vn",
+      "C": "phongdaotaodh@uit.edu.vn",
+      "D": "tuyensinh@uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 1,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT công bố email liên hệ là thuvien@uit.edu.vn.",
+    "explanation": "Trang Thư viện UIT công bố email liên hệ là thuvien@uit.edu.vn."
+  },
+  {
+    "id": "uit_mcq_ne_012",
+    "question": "Một bạn muốn tra cứu tài liệu thư viện trên hệ thống OPAC. Theo menu trang Thư viện UIT, OPAC thuộc nhóm mục nào?",
+    "options": {
+      "A": "Tra cứu tài liệu",
+      "B": "Công tác sinh viên",
+      "C": "Tuyển sinh",
+      "D": "Đăng ký học phần",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trên trang Thư viện UIT, mục Tra cứu tài liệu có mục Tra cứu OPAC Hệ thống Thư viện ĐHQG.",
+    "explanation": "Trên trang Thư viện UIT, mục Tra cứu tài liệu có mục Tra cứu OPAC Hệ thống Thư viện ĐHQG."
+  },
+  {
+    "id": "uit_mcq_ne_013",
+    "question": "Theo trang Thư viện UIT, mục nào sau đây nằm trong phần CSDL môn học?",
+    "options": {
+      "A": "Ngành An toàn Thông tin (ENG)",
+      "B": "Điểm rèn luyện HK1",
+      "C": "Học bổng UIT Global",
+      "D": "Lịch thi ICPC miền Nam",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "A"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT liệt kê CSDL môn học gồm các mục như Ngành An toàn Thông tin (ENG), Khoa học Dữ liệu (ENG), Thiết kế Vi mạch (ENG).",
+    "explanation": "Trang Thư viện UIT liệt kê CSDL môn học gồm các mục như Ngành An toàn Thông tin (ENG), Khoa học Dữ liệu (ENG), Thiết kế Vi mạch (ENG)."
+  },
+  {
+    "id": "uit_mcq_ne_014",
+    "question": "Một bạn muốn dùng nguồn học liệu của Thư viện UIT về sách mới. Theo trang thư viện, mục nào có các bài như 'Giới thiệu sách' và 'Giáo trình'?",
+    "options": {
+      "A": "Chương trình đặc biệt",
+      "B": "Giới thiệu nguồn học liệu",
+      "C": "Điểm chuẩn hàng năm",
+      "D": "Nhóm nghiên cứu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT có mục Giới thiệu nguồn học liệu với các bài giới thiệu sách, giáo trình và luận án.",
+    "explanation": "Trang Thư viện UIT có mục Giới thiệu nguồn học liệu với các bài giới thiệu sách, giáo trình và luận án."
+  },
+  {
+    "id": "uit_mcq_ne_015",
+    "question": "Một sinh viên muốn xem các liên kết nhanh như Website môn học UIT và Hệ thống Thư viện ĐHQG-HCM. Nguồn nào nên truy cập?",
+    "options": {
+      "A": "Trang tuyển sinh UIT",
+      "B": "Trang Thư viện UIT",
+      "C": "Trang forum ICPC",
+      "D": "Trang Data Chain",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://thuvien.uit.edu.vn/"
+    ],
+    "gold_context": "Trang Thư viện UIT có phần Liên kết nhanh, trong đó có Website môn học UIT và Hệ thống Thư viện ĐHQG-HCM.",
+    "explanation": "Trang Thư viện UIT có phần Liên kết nhanh, trong đó có Website môn học UIT và Hệ thống Thư viện ĐHQG-HCM."
+  },
+  {
+    "id": "uit_mcq_ne_016",
+    "question": "Kỳ tới mình muốn học SE356 - Kiến trúc phần mềm. Theo danh mục môn học UIT, điều kiện học trước đầy đủ là gì?",
+    "options": {
+      "A": "Chỉ SE104",
+      "B": "SE104 và SE100",
+      "C": "IT002 và IT004",
+      "D": "SE111",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT ghi SE356 - Kiến trúc phần mềm có môn học trước là SE104 và SE100.",
+    "explanation": "Danh mục môn học UIT ghi SE356 - Kiến trúc phần mềm có môn học trước là SE104 và SE100."
+  },
+  {
+    "id": "uit_mcq_ne_017",
+    "question": "Nếu muốn học SE361 - Phát triển phần mềm theo kiến trúc Microservices, sinh viên cần học trước cặp môn nào?",
+    "options": {
+      "A": "SE100 và SE104",
+      "B": "IT002 và IT004",
+      "C": "MM104 và IT001",
+      "D": "SE111 và SE122",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT ghi SE361 có điều kiện học trước là IT002 và IT004.",
+    "explanation": "Danh mục môn học UIT ghi SE361 có điều kiện học trước là IT002 và IT004."
+  },
+  {
+    "id": "uit_mcq_ne_018",
+    "question": "Mình muốn học môn Quản lý dự án phát triển phần mềm ở UIT. Theo danh mục môn học, môn học trước của SE358 là gì?",
+    "options": {
+      "A": "SE100",
+      "B": "SE104",
+      "C": "IT007",
+      "D": "MM104",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT ghi SE358 - Quản lý dự án phát triển phần mềm có môn học trước là SE104.",
+    "explanation": "Danh mục môn học UIT ghi SE358 - Quản lý dự án phát triển phần mềm có môn học trước là SE104."
+  },
+  {
+    "id": "uit_mcq_ne_019",
+    "question": "Nếu sinh viên thích Design Patterns trong Công nghệ phần mềm, môn nào ở UIT khớp trực tiếp nhất?",
+    "options": {
+      "A": "SE358 - Quản lý dự án phát triển phần mềm",
+      "B": "SE401 - Mẫu thiết kế",
+      "C": "SE363 - Phát triển ứng dụng trên nền tảng dữ liệu lớn",
+      "D": "SE364 - Thiết kế giao diện và trải nghiệm người dùng",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc",
+      "https://daa.uit.edu.vn/content/bang-tom-tat-mon-hoc"
+    ],
+    "gold_context": "Danh mục môn học và bảng tóm tắt môn học của DAA liệt kê SE401 là Mẫu thiết kế.",
+    "explanation": "Danh mục môn học và bảng tóm tắt môn học của DAA liệt kê SE401 là Mẫu thiết kế."
+  },
+  {
+    "id": "uit_mcq_ne_020",
+    "question": "Một bạn học multimedia muốn tìm môn xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện. Mã môn nào đúng?",
+    "options": {
+      "A": "MM202",
+      "B": "MM203",
+      "C": "MM204",
+      "D": "MM220",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT liệt kê MM203 là Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện.",
+    "explanation": "Danh mục môn học UIT liệt kê MM203 là Xử lý ngôn ngữ tự nhiên cho truyền thông đa phương tiện."
+  },
+  {
+    "id": "uit_mcq_ne_021",
+    "question": "Sinh viên muốn học môn Nghiệp vụ truyền thông và báo chí trong nhóm multimedia. Theo danh mục môn học, môn nào cần học trước?",
+    "options": {
+      "A": "IT001",
+      "B": "MM104",
+      "C": "SE104",
+      "D": "IT007",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT ghi MM209 - Nghiệp vụ truyền thông và báo chí có điều kiện học trước là MM104.",
+    "explanation": "Danh mục môn học UIT ghi MM209 - Nghiệp vụ truyền thông và báo chí có điều kiện học trước là MM104."
+  },
+  {
+    "id": "uit_mcq_ne_022",
+    "question": "Nếu sinh viên Công nghệ phần mềm muốn làm đồ án môn học mã nguồn mở, theo danh mục môn học UIT môn SE417 yêu cầu học trước môn nào?",
+    "options": {
+      "A": "SE104",
+      "B": "SE111",
+      "C": "SE100",
+      "D": "IT004",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://daa.uit.edu.vn/danh-muc-mon-hoc-dai-hoc"
+    ],
+    "gold_context": "Danh mục môn học UIT ghi SE417 - Đồ án môn học mã nguồn mở có môn học trước là SE111.",
+    "explanation": "Danh mục môn học UIT ghi SE417 - Đồ án môn học mã nguồn mở có môn học trước là SE111."
+  },
+  {
+    "id": "uit_mcq_ne_023",
+    "question": "Một bạn đang tra cứu điểm rèn luyện và thông tin BHYT HK1 năm học 2025-2026. Theo CTSV, hệ thống cần truy cập là gì?",
+    "options": {
+      "A": "thuvien.uit.edu.vn",
+      "B": "drl.uit.edu.vn",
+      "C": "dkxt.uit.edu.vn",
+      "D": "oep.uit.edu.vn",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-cap-nhat-bhyt-cham-diem-ren-luyen-hk1-nam-hoc-2025-2026?page=257"
+    ],
+    "gold_context": "Thông báo CTSV hướng dẫn sinh viên truy cập hệ thống Điểm rèn luyện tại https://drl.uit.edu.vn/ để kiểm tra thông tin BHYT.",
+    "explanation": "Thông báo CTSV hướng dẫn sinh viên truy cập hệ thống Điểm rèn luyện tại https://drl.uit.edu.vn/ để kiểm tra thông tin BHYT."
+  },
+  {
+    "id": "uit_mcq_ne_024",
+    "question": "Trong thông báo cập nhật BHYT để chấm điểm rèn luyện HK1 2025-2026, thông tin BHYT được kiểm tra ở mục nào của bảng điểm rèn luyện?",
+    "options": {
+      "A": "Mục 1.1 - Kết quả học tập",
+      "B": "Mục 2.4 - Ý thức tham gia BHYT",
+      "C": "Mục 3.2 - Hoạt động nghiên cứu",
+      "D": "Mục 5.1 - Khen thưởng",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-cap-nhat-bhyt-cham-diem-ren-luyen-hk1-nam-hoc-2025-2026?page=257"
+    ],
+    "gold_context": "Thông báo CTSV ghi sinh viên kiểm tra thông tin BHYT tại Mục 2.4 - Ý thức tham gia BHYT của Bảng điểm rèn luyện HK1 2025-2026.",
+    "explanation": "Thông báo CTSV ghi sinh viên kiểm tra thông tin BHYT tại Mục 2.4 - Ý thức tham gia BHYT của Bảng điểm rèn luyện HK1 2025-2026."
+  },
+  {
+    "id": "uit_mcq_ne_025",
+    "question": "Theo thông báo CTSV về danh sách sinh viên nộp tiền mua BHYT 2026, nếu có sai sót về bệnh viện, MSSV hoặc họ tên thì sinh viên phản hồi qua kênh nào?",
+    "options": {
+      "A": "Email Thư viện UIT",
+      "B": "Email Phòng Công tác Sinh viên",
+      "C": "Hệ thống OPAC",
+      "D": "Cổng tuyển sinh OEP",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/danh-sach-sinh-vien-nop-tien-mua-bhyt-2026-va-dang-ky-benh-vien"
+    ],
+    "gold_context": "Thông báo CTSV hướng dẫn nếu có sai sót về bệnh viện, MSSV hoặc họ tên, sinh viên phản hồi qua email Phòng Công tác Sinh viên trước thời hạn nêu trong thông báo.",
+    "explanation": "Thông báo CTSV hướng dẫn nếu có sai sót về bệnh viện, MSSV hoặc họ tên, sinh viên phản hồi qua email Phòng Công tác Sinh viên trước thời hạn nêu trong thông báo."
+  },
+  {
+    "id": "uit_mcq_ne_026",
+    "question": "Theo CTSV, học bổng UIT Global được triển khai từ học kỳ nào?",
+    "options": {
+      "A": "Học kỳ hè năm học 2024-2025",
+      "B": "Học kỳ 1 năm học 2025-2026",
+      "C": "Học kỳ 2 năm học 2023-2024",
+      "D": "Học kỳ 1 năm học 2022-2023",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "B"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/thong-bao-trien-khai-hoc-bong-uit-global-tu-hoc-ky-1-nam-hoc-2025-2026"
+    ],
+    "gold_context": "Thông báo CTSV có tiêu đề triển khai học bổng UIT Global từ học kỳ 1 năm học 2025-2026.",
+    "explanation": "Thông báo CTSV có tiêu đề triển khai học bổng UIT Global từ học kỳ 1 năm học 2025-2026."
+  },
+  {
+    "id": "uit_mcq_ne_027",
+    "question": "Theo thông báo dự kiến học bổng HK2 2025-2026, sinh viên lớp tài năng có thể nhận đồng thời học bổng nào?",
+    "options": {
+      "A": "BHYT và học bổng Newcastle",
+      "B": "Học bổng thư viện và học bổng OPAC",
+      "C": "Học bổng KKHT và học bổng tài năng",
+      "D": "Học bổng ICPC và học bổng thể thao",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/danh-sach-du-kien-nhan-cac-loai-hoc-bong-tai-hk2-2025-2026"
+    ],
+    "gold_context": "Thông báo CTSV ghi sinh viên được nhận đồng thời học bổng KKHT và học bổng tài năng nếu là sinh viên lớp tài năng.",
+    "explanation": "Thông báo CTSV ghi sinh viên được nhận đồng thời học bổng KKHT và học bổng tài năng nếu là sinh viên lớp tài năng."
+  },
+  {
+    "id": "uit_mcq_ne_028",
+    "question": "Sinh viên muốn xem các thông báo mới như TKB học kỳ hè 2025-2026, xét tốt nghiệp đợt 2 năm 2026 và xác nhận đăng ký học phần. Cổng nào phù hợp nhất?",
+    "options": {
+      "A": "thuvien.uit.edu.vn",
+      "B": "oep.uit.edu.vn",
+      "C": "student.uit.edu.vn/tracker",
+      "D": "nc.uit.edu.vn/tag/soict-2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://student.uit.edu.vn/tracker?page=1"
+    ],
+    "gold_context": "Trang tracker của student.uit.edu.vn liệt kê các thông báo như kết quả ĐKHP/TKB học kỳ hè 2025-2026, kế hoạch xét tốt nghiệp đợt 02 năm 2026 và xác nhận đăng ký học phần.",
+    "explanation": "Trang tracker của student.uit.edu.vn liệt kê các thông báo như kết quả ĐKHP/TKB học kỳ hè 2025-2026, kế hoạch xét tốt nghiệp đợt 02 năm 2026 và xác nhận đăng ký học phần."
+  },
+  {
+    "id": "uit_mcq_ne_029",
+    "question": "Theo thông báo trên student.uit.edu.vn, sinh viên nhận bằng tốt nghiệp đợt 2 năm 2025 cần mang giấy tờ gì để đối chiếu?",
+    "options": {
+      "A": "Thẻ thư viện",
+      "B": "Phiếu điểm IELTS",
+      "C": "Thẻ căn cước công dân",
+      "D": "Giấy xác nhận OPAC",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://student.uit.edu.vn/thong-bao-chung?page=8"
+    ],
+    "gold_context": "Thông báo nhận bằng tốt nghiệp đợt 2 năm 2025 ghi sinh viên khi đến nhận bằng mang thẻ căn cước công dân để đối chiếu.",
+    "explanation": "Thông báo nhận bằng tốt nghiệp đợt 2 năm 2025 ghi sinh viên khi đến nhận bằng mang thẻ căn cước công dân để đối chiếu."
+  },
+  {
+    "id": "uit_mcq_ne_030",
+    "question": "Nếu sinh viên cần xem quy trình xử lý học vụ đại học hệ chính quy, theo thông báo student.uit.edu.vn thì nguồn được dẫn đến là trang nào?",
+    "options": {
+      "A": "thuvien.uit.edu.vn",
+      "B": "tuyensinh.uit.edu.vn",
+      "C": "daa.uit.edu.vn",
+      "D": "forum.uit.edu.vn/c/ho-tro-doi-song",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://student.uit.edu.vn/thong-bao-chung?page=8"
+    ],
+    "gold_context": "Thông báo 'Ban hành quy trình xử lý học vụ đại học hệ chính quy' trên student.uit.edu.vn dẫn sinh viên đến nguồn tại daa.uit.edu.vn.",
+    "explanation": "Thông báo 'Ban hành quy trình xử lý học vụ đại học hệ chính quy' trên student.uit.edu.vn dẫn sinh viên đến nguồn tại daa.uit.edu.vn."
+  },
+  {
+    "id": "uit_mcq_ne_031",
+    "question": "Cuộc thi HackTheon Sejong 2026 mà UIT vào chung kết thuộc lĩnh vực nào?",
+    "options": {
+      "A": "Thư viện học thuật",
+      "B": "Tuyển sinh đại học",
+      "C": "An ninh mạng",
+      "D": "Bóng chuyền sinh viên",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-vao-chung-ket-hacktheon-sejong-2026",
+      "https://nc.uit.edu.vn/hoat-dong/uit-vao-chung-ket-hacktheon-sejong-2026.html"
+    ],
+    "gold_context": "Bài viết UIT mô tả HackTheon Sejong 2026 là cuộc thi an ninh mạng dành cho sinh viên đại học trong và ngoài Hàn Quốc.",
+    "explanation": "Bài viết UIT mô tả HackTheon Sejong 2026 là cuộc thi an ninh mạng dành cho sinh viên đại học trong và ngoài Hàn Quốc."
+  },
+  {
+    "id": "uit_mcq_ne_032",
+    "question": "Theo bài UIT vào chung kết HackTheon Sejong 2026, vòng chung kết diễn ra tại đâu?",
+    "options": {
+      "A": "Trường Đại học Công nghệ TP.HCM",
+      "B": "Hội trường A UIT",
+      "C": "Government Sejong Convention Center, Hàn Quốc",
+      "D": "Thư viện ĐHQG-HCM",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://www.uit.edu.vn/bai-viet/uit-vao-chung-ket-hacktheon-sejong-2026"
+    ],
+    "gold_context": "Bài viết ghi vòng chung kết HackTheon Sejong 2026 tổ chức ngày 9/7/2026 tại Government Sejong Convention Center, Hàn Quốc.",
+    "explanation": "Bài viết ghi vòng chung kết HackTheon Sejong 2026 tổ chức ngày 9/7/2026 tại Government Sejong Convention Center, Hàn Quốc."
+  },
+  {
+    "id": "uit_mcq_ne_033",
+    "question": "Theo bài viết trên trang học tập - nghiên cứu của UIT, đội UIT-TuyCoNhungK vượt qua bao nhiêu đội để vào vòng chung kết HackTheon Sejong 2026?",
+    "options": {
+      "A": "245 đội",
+      "B": "47 đội",
+      "C": "548 đội",
+      "D": "15 đội",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://www.uit.edu.vn/hoc-tap-nghien-cuu"
+    ],
+    "gold_context": "Trang học tập - nghiên cứu UIT nêu đội UIT-TuyCoNhungK vượt qua 548 đội thi từ 245 trường đại học thuộc 47 quốc gia để vào chung kết.",
+    "explanation": "Trang học tập - nghiên cứu UIT nêu đội UIT-TuyCoNhungK vượt qua 548 đội thi từ 245 trường đại học thuộc 47 quốc gia để vào chung kết."
+  },
+  {
+    "id": "uit_mcq_ne_034",
+    "question": "Theo forum UIT, vòng ICPC miền Nam năm 2025 mà sinh viên UIT được mời tham gia diễn ra vào ngày nào?",
+    "options": {
+      "A": "19/10/2025",
+      "B": "26/10/2025",
+      "C": "12/10/2025",
+      "D": "09/11/2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://forum.uit.edu.vn/t/moi-sv-dang-ky-tham-gia-cuoc-thi-lap-trinh-icpc-2025-mien-nam-ngay-12-10-2025/158566"
+    ],
+    "gold_context": "Bài forum UIT ghi vòng ICPC miền Nam diễn ra từ 8:00 đến 13:00 ngày 12/10/2025.",
+    "explanation": "Bài forum UIT ghi vòng ICPC miền Nam diễn ra từ 8:00 đến 13:00 ngày 12/10/2025."
+  },
+  {
+    "id": "uit_mcq_ne_035",
+    "question": "Theo thông báo số 1 về Olympic Tin học, Trí tuệ nhân tạo SVVN và ICPC 2025, kỳ thi ICPC Quốc gia 2025 diễn ra vào thời gian nào?",
+    "options": {
+      "A": "Ngày 11-12/10/2025",
+      "B": "Ngày 18-19/10/2025",
+      "C": "Ngày 8-9/11/2025",
+      "D": "Ngày 25-26/10/2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://forum.uit.edu.vn/t/thong-bao-so-1-ve-olympic-tin-hoc-tri-tue-nhan-tao-sinh-vien-viet-nam-va-ky-thi-lap-trinh-sinh-vien-quoc-te-icpc-asia-hochiminh-city-2025/155923"
+    ],
+    "gold_context": "Thông báo trên forum UIT ghi kỳ thi ICPC Quốc gia 2025 diễn ra ngày 8-9/11/2025.",
+    "explanation": "Thông báo trên forum UIT ghi kỳ thi ICPC Quốc gia 2025 diễn ra ngày 8-9/11/2025."
+  },
+  {
+    "id": "uit_mcq_ne_036",
+    "question": "Ngày hội Việc làm UIT 2025 được mô tả là sự kiện nhằm kết nối sinh viên với nhóm đối tượng nào?",
+    "options": {
+      "A": "Hệ thống thư viện ĐHQG-HCM",
+      "B": "Các đội bóng chuyền sinh viên",
+      "C": "Doanh nghiệp hàng đầu trong lĩnh vực công nghệ thông tin",
+      "D": "Ban tổ chức Olympic Toán THPT",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 2,
+    "source_urls": [
+      "https://student.uit.edu.vn/ngay-hoi-viec-lam-uit-2025-co-hoi-ket-noi-sinh-vien-va-doanh-nghiep"
+    ],
+    "gold_context": "Bài 'Ngày hội Việc làm UIT 2025' nêu sự kiện nhằm kết nối sinh viên của trường với các doanh nghiệp hàng đầu trong lĩnh vực công nghệ thông tin.",
+    "explanation": "Bài 'Ngày hội Việc làm UIT 2025' nêu sự kiện nhằm kết nối sinh viên của trường với các doanh nghiệp hàng đầu trong lĩnh vực công nghệ thông tin."
+  },
+  {
+    "id": "uit_mcq_ne_037",
+    "question": "Theo CTSV, UIT SPORT 2025 có bài viết liên quan đến mùa giải môn nào khép lại vào tháng 4/2025?",
+    "options": {
+      "A": "ICPC miền Nam",
+      "B": "BHYT 2026",
+      "C": "Bóng chuyền nam",
+      "D": "Tuyển sinh BCU",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/sinh-vien-uit-di-xe-buyt-tiet-kiem-hon-tien-loi-hon-moi-ngay?page=4"
+    ],
+    "gold_context": "Trang CTSV phần bài viết liên quan có mục 'UIT SPORT 2025 - Khép lại mùa giải Bóng chuyền Nam'.",
+    "explanation": "Trang CTSV phần bài viết liên quan có mục 'UIT SPORT 2025 - Khép lại mùa giải Bóng chuyền Nam'."
+  },
+  {
+    "id": "uit_mcq_ne_038",
+    "question": "Theo CTSV, trong năm 2025 có thông báo tổ chức hoạt động thể dục thể thao sinh viên cho những môn nào sau đây?",
+    "options": {
+      "A": "ICPC và Olympic AI",
+      "B": "OPAC và DSpace",
+      "C": "Bóng bàn và Cầu lông",
+      "D": "BCU và Newcastle",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "C"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://ctsv.uit.edu.vn/bai-viet/dang-ky-cac-khoa-hoc-google-career-certificate-gcc-tren-coursera-mien-phi?fbclid=IwY2xjawEw3DZleHRuA2FlbQIxMAABHam0IcLHwagu4lfkdG4G0YUS1gGii686yWEV922_QOFSOyJ7zwaD9hB4ZQ_aem_mGaZQZ7fTaiuDcthMyX68g&page=44"
+    ],
+    "gold_context": "Trang CTSV phần bài viết liên quan liệt kê 'Thông báo tổ chức các hoạt động Thể dục Thể thao sinh viên_Môn Bóng bàn, Cầu lông năm 2025'.",
+    "explanation": "Trang CTSV phần bài viết liên quan liệt kê 'Thông báo tổ chức các hoạt động Thể dục Thể thao sinh viên_Môn Bóng bàn, Cầu lông năm 2025'."
+  },
+  {
+    "id": "uit_mcq_ne_039",
+    "question": "Theo bài trên UIT.NC, sinh viên Nguyễn Đức Hiếu được chọn vào đội tuyển nào để tham dự International Cybersecurity Challenge 2025?",
+    "options": {
+      "A": "Team BCU",
+      "B": "Team Newcastle",
+      "C": "Team OPAC",
+      "D": "Team ASEAN",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://nc.uit.edu.vn/activities/chuc-mung-sinh-vien-nguyen-duc-hieu-duoc-chon-vao-doi-tuyen-du-cuoc-thi-international-cybersecurity-challenge-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC ghi Nguyễn Đức Hiếu, ngành An toàn thông tin khóa 2023, được chọn vào Team ASEAN để tham dự ICC 2025.",
+    "explanation": "Bài UIT.NC ghi Nguyễn Đức Hiếu, ngành An toàn thông tin khóa 2023, được chọn vào Team ASEAN để tham dự ICC 2025."
+  },
+  {
+    "id": "uit_mcq_ne_040",
+    "question": "International Cybersecurity Challenge 2025 mà sinh viên UIT Nguyễn Đức Hiếu tham dự dự kiến tổ chức ở thành phố nào?",
+    "options": {
+      "A": "Sejong",
+      "B": "Nha Trang",
+      "C": "Hà Nội",
+      "D": "Tokyo",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://nc.uit.edu.vn/activities/chuc-mung-sinh-vien-nguyen-duc-hieu-duoc-chon-vao-doi-tuyen-du-cuoc-thi-international-cybersecurity-challenge-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC ghi ICC 2025 sẽ diễn ra tại Tokyo, Nhật Bản, từ ngày 10 đến 15 tháng 11 năm 2025.",
+    "explanation": "Bài UIT.NC ghi ICC 2025 sẽ diễn ra tại Tokyo, Nhật Bản, từ ngày 10 đến 15 tháng 11 năm 2025."
+  },
+  {
+    "id": "uit_mcq_ne_041",
+    "question": "Theo trang FIT cập nhật 05/2026, nhóm nghiên cứu NLPQUIT của TS. Nguyễn Văn Kiệt thuộc bộ môn nào?",
+    "options": {
+      "A": "Hệ thống thông tin",
+      "B": "Công nghệ phần mềm",
+      "C": "Kỹ thuật máy tính",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu/7546-cac-nhom-nghien-cuu-cap-nhat-05-2026"
+    ],
+    "gold_context": "Trang nhóm nghiên cứu cập nhật 05/2026 ghi TS. Nguyễn Văn Kiệt thuộc Bộ môn Khoa học dữ liệu, nhóm nghiên cứu NLPQUIT.",
+    "explanation": "Trang nhóm nghiên cứu cập nhật 05/2026 ghi TS. Nguyễn Văn Kiệt thuộc Bộ môn Khoa học dữ liệu, nhóm nghiên cứu NLPQUIT."
+  },
+  {
+    "id": "uit_mcq_ne_042",
+    "question": "Một sinh viên muốn làm nghiên cứu về Social Media Text Processing, Cognitive Science for NLP, Multimodal Learning và LLMs for a Specific Domain. Theo FIT, nên xem nhóm nào?",
+    "options": {
+      "A": "BCU của Đại học Birmingham City",
+      "B": "OPAC của Thư viện UIT",
+      "C": "UIT SPORT",
+      "D": "NLPQUIT của TS. Nguyễn Văn Kiệt",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu/7546-cac-nhom-nghien-cuu-cap-nhat-05-2026"
+    ],
+    "gold_context": "Trang FIT liệt kê các hướng Social Media Text Processing, Cognitive Science for NLP, Multimodal Learning, LLMs for a Specific Domain dưới nhóm NLPQUIT của TS. Nguyễn Văn Kiệt.",
+    "explanation": "Trang FIT liệt kê các hướng Social Media Text Processing, Cognitive Science for NLP, Multimodal Learning, LLMs for a Specific Domain dưới nhóm NLPQUIT của TS. Nguyễn Văn Kiệt."
+  },
+  {
+    "id": "uit_mcq_ne_043",
+    "question": "Theo trang FIT các nhóm nghiên cứu, Data Chain gắn với bộ môn nào?",
+    "options": {
+      "A": "Mạng máy tính và truyền thông",
+      "B": "Công nghệ phần mềm",
+      "C": "Hệ thống thông tin",
+      "D": "Khoa học dữ liệu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trang FIT ghi nhóm nghiên cứu Data Chain thuộc Bộ môn Khoa học dữ liệu.",
+    "explanation": "Trang FIT ghi nhóm nghiên cứu Data Chain thuộc Bộ môn Khoa học dữ liệu."
+  },
+  {
+    "id": "uit_mcq_ne_044",
+    "question": "Theo trang FIT, nhóm Data Chain có hướng nghiên cứu nào sau đây?",
+    "options": {
+      "A": "BHYT, OPAC và bóng chuyền",
+      "B": "ICPC, OLP và HUSTEP",
+      "C": "BCU, Newcastle và IELTS",
+      "D": "Machine Learning, Data Science và Natural Language Processing",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://fit.uit.edu.vn/index.php/nckh/cac-nhom-nghien-cuu"
+    ],
+    "gold_context": "Trang FIT ghi Data Chain có các hướng Phương pháp máy học, Khoa học dữ liệu và Xử lý ngôn ngữ tự nhiên.",
+    "explanation": "Trang FIT ghi Data Chain có các hướng Phương pháp máy học, Khoa học dữ liệu và Xử lý ngôn ngữ tự nhiên."
+  },
+  {
+    "id": "uit_mcq_ne_045",
+    "question": "Hai sinh viên Võ Đức Chính và Từ Chí Kiên của UIT đã trình bày nghiên cứu tại hội nghị nào trong năm 2025?",
+    "options": {
+      "A": "HackTheon Sejong 2026",
+      "B": "UIT SPORT 2025",
+      "C": "Ngày hội Thư viện 2025",
+      "D": "SOICT 2025",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-bao-cao-nghien-cuu-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC ghi Võ Đức Chính và Từ Chí Kiên trình bày công trình tại Hội nghị khoa học Quốc tế SOICT 2025.",
+    "explanation": "Bài UIT.NC ghi Võ Đức Chính và Từ Chí Kiên trình bày công trình tại Hội nghị khoa học Quốc tế SOICT 2025."
+  },
+  {
+    "id": "uit_mcq_ne_046",
+    "question": "Nghiên cứu của Võ Đức Chính và Từ Chí Kiên tại SOICT 2025 tập trung vào chủ đề nào?",
+    "options": {
+      "A": "Thiết kế thư viện OPAC",
+      "B": "Tổ chức bóng chuyền UIT SPORT",
+      "C": "Tuyển sinh Newcastle 2+2",
+      "D": "Ứng dụng GenAI để tạo và đánh giá độ mạnh mật khẩu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/sinh-vien-uit-bao-cao-nghien-cuu-tai-hoi-nghi-khoa-hoc-quoc-te-soict-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC nêu nghiên cứu 'Password Generation Based on GenAI for Evaluating the Security of Password-Based Control Systems' tập trung vào GenAI trong tạo và đánh giá mật khẩu.",
+    "explanation": "Bài UIT.NC nêu nghiên cứu 'Password Generation Based on GenAI for Evaluating the Security of Password-Based Control Systems' tập trung vào GenAI trong tạo và đánh giá mật khẩu."
+  },
+  {
+    "id": "uit_mcq_ne_047",
+    "question": "Bài báo của sinh viên InSecLab được chấp nhận tại VCRIS 2025 có chủ đề nghiên cứu chính là gì?",
+    "options": {
+      "A": "Xây dựng chương trình BCU",
+      "B": "Tối ưu giờ phục vụ thư viện",
+      "C": "Xét miễn Anh văn 1, 2, 3",
+      "D": "Phát hiện mã độc tống tiền bằng mô hình học sâu",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://nc.uit.edu.vn/nckh/chuc-mung-nhom-sinh-vien-inseclab-co-bai-bao-nghien-cuu-duoc-chap-nhan-dang-tai-hoi-nghi-khoa-hoc-quoc-te-the-2nd-international-conference-on-cryptography-and-information-security-vcris-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC về VCRIS 2025 ghi chủ đề nghiên cứu là phát hiện mã độc tống tiền sử dụng mô hình học sâu.",
+    "explanation": "Bài UIT.NC về VCRIS 2025 ghi chủ đề nghiên cứu là phát hiện mã độc tống tiền sử dụng mô hình học sâu."
+  },
+  {
+    "id": "uit_mcq_ne_048",
+    "question": "Trong bài VCRIS 2025 của InSecLab, tên bài báo được nêu là gì?",
+    "options": {
+      "A": "Password Generation Based on GenAI for Evaluating the Security of Password-Based Control Systems",
+      "B": "FinSafeRAG: Một nền tảng AI bảo mật đa tầng",
+      "C": "AMMeKYC – Hệ thống xác minh eKYC đa phương thức",
+      "D": "Multimodal Fusion of Behavior Graphs and API Sequences for Ransomware Detection",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 4,
+    "source_urls": [
+      "https://nc.uit.edu.vn/nckh/chuc-mung-nhom-sinh-vien-inseclab-co-bai-bao-nghien-cuu-duoc-chap-nhan-dang-tai-hoi-nghi-khoa-hoc-quoc-te-the-2nd-international-conference-on-cryptography-and-information-security-vcris-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC VCRIS 2025 nêu tên bài báo là 'Multimodal Fusion of Behavior Graphs and API Sequences for Ransomware Detection'.",
+    "explanation": "Bài UIT.NC VCRIS 2025 nêu tên bài báo là 'Multimodal Fusion of Behavior Graphs and API Sequences for Ransomware Detection'."
+  },
+  {
+    "id": "uit_mcq_ne_049",
+    "question": "Theo bài UIT.NC về Data for Life 2025, UIT có bao nhiêu đội sinh viên góp mặt trong số 30 đội xuất sắc nhất toàn quốc ở Vòng Triển lãm?",
+    "options": {
+      "A": "2 đội",
+      "B": "10 đội",
+      "C": "30 đội",
+      "D": "4 đội",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/4-doi-thi-sinh-vien-uit-cung-30-doi-xuat-sac-nhat-toan-quoc-tham-gia-vong-trien-lam-cua-cuoc-thi-data-for-life.html"
+    ],
+    "gold_context": "Bài UIT.NC ghi ngày 12/12/2025, UIT góp mặt với 4 đội sinh viên trong số 30 đội xuất sắc nhất toàn quốc tại Vòng Triển lãm Data for Life 2025.",
+    "explanation": "Bài UIT.NC ghi ngày 12/12/2025, UIT góp mặt với 4 đội sinh viên trong số 30 đội xuất sắc nhất toàn quốc tại Vòng Triển lãm Data for Life 2025."
+  },
+  {
+    "id": "uit_mcq_ne_050",
+    "question": "Đội ANTformer của UIT đạt giải gì tại Chung kết Data for Life – Hack for Growth 2025?",
+    "options": {
+      "A": "Giải Nhất ICPC Quốc gia",
+      "B": "Giải Vô địch HackTheon Sejong",
+      "C": "Giải Nhất OPAC",
+      "D": "Giải Triển vọng",
+      "E": "Không liên quan đến UIT"
+    },
+    "answer": [
+      "D"
+    ],
+    "difficulty": 3,
+    "source_urls": [
+      "https://nc.uit.edu.vn/hoat-dong/chuc-mung-doi-antformer-dat-giai-trien-vong-tai-chung-ket-cuoc-thi-quoc-te-data-for-life-2025.html"
+    ],
+    "gold_context": "Bài UIT.NC ghi đội ANTformer nhận Giải Triển vọng tại Chung kết Data for Life – Hack for Growth mùa 3.",
+    "explanation": "Bài UIT.NC ghi đội ANTformer nhận Giải Triển vọng tại Chung kết Data for Life – Hack for Growth mùa 3."
+  }
+]
